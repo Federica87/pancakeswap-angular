@@ -3,10 +3,18 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FooterContainerComponent } from './footer/footer-container/footer-container.component';
+import { FooterLinkComponent } from './footer/footer-link/footer-link.component';
+import { FooterLogoComponent } from './footer/footer-logo/footer-logo.component';
+import { FooterSocialComponent } from './footer/footer-social/footer-social.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FooterContainerComponent,
+    FooterLinkComponent,
+    FooterLogoComponent,
+    FooterSocialComponent
   ],
   imports: [
     BrowserModule,
