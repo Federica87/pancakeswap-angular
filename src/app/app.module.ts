@@ -8,6 +8,9 @@ import { FooterContainerComponent } from './footer/footer-container/footer-conta
 import { FooterLinkComponent } from './footer/footer-link/footer-link.component';
 import { FooterLogoComponent } from './footer/footer-logo/footer-logo.component';
 import { FooterSocialComponent } from './footer/footer-social/footer-social.component';
+import { NavbarContainerComponent } from './navbar/navbar-container/navbar-container.component';
+import { NavbarLeftComponent } from './navbar/navbar-left/navbar-left.component';
+import { NavbarRightComponent } from './navbar/navbar-right/navbar-right.component';
 
 
 @NgModule({
@@ -18,7 +21,10 @@ import { FooterSocialComponent } from './footer/footer-social/footer-social.comp
     FooterContainerComponent,
     FooterLinkComponent,
     FooterLogoComponent,
-    FooterSocialComponent
+    FooterSocialComponent,
+    NavbarContainerComponent,
+    NavbarLeftComponent,
+    NavbarRightComponent
   ],
   imports: [
     BrowserModule,

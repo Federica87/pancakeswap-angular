@@ -1,0 +1,74 @@
+.icon-rabbit {
+    width: 2%;
+    position: absolute;
+    top: -5%;
+    right: 0;
+    transform: translate(-1200%, 60%);
+    z-index: 1;
+  }
+  
+.number-dollar {
+    width: 2%;
+    position: absolute;
+    top: 0%;
+    right: 0;
+    transform: translate(-1080%, 50%);
+    z-index: 1;
+  }
+  
+.number-dollar {
+    font-size: 110%;
+    text-decoration: none;
+    z-index: 1;
+  }
+  
+.icon-globe {
+    width: 2%;
+    position: absolute;
+    top: 0%;
+    right: 0;
+    transform: translate(-850%, 40%);
+    z-index: 1;
+  }
+  
+.icon-setting {
+    width: 2%;
+    position: absolute;
+    top: 0%;
+    right: 0;
+    transform: translate(-685%, 40%);
+    z-index: 1;
+  }
+  
+button {
+    -webkit-box-align: center;
+    align-items: center;
+    border: 0px;
+    border-radius: 16px;
+    box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    -webkit-box-pack: center;
+    justify-content: center;
+    letter-spacing: 0.03em;
+    line-height: 1;
+    opacity: 1;
+    outline: 0px;
+    transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+    height: 32px;
+    padding: 0px 16px;
+    background-color: rgb(31, 199, 212);
+    color: white;
+  }
+  
+button {
+    width: 160px;
+    position: absolute;
+    top: 0%;
+    right: 0;
+    transform: translate(-10%, 30%);
+    z-index: 1;
+  }
