@@ -1,0 +1,55 @@
+.animation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 576px;
+  height: 576px;
+  position: relative;
+}
+
+.bunny_img {
+    position: absolute;
+    animation: 3.5s ease-in-out 0s infinite normal none running bunny;
+  }
+  
+  @keyframes bunny {
+    0% {
+      transform: translate(0px, 0px);
+    }
+  
+    50% {
+      transform: translate(-5px, -5px);
+    }
+  
+    100% {
+      transform: translate(0px, 0px);
+    }
+  }
+  
+  .star1 {
+    position: absolute;
+    animation: 2s ease-in-out 1s infinite normal none running star;
+  }
+  
+  .star-r {
+    position: absolute;
+    animation: 5s ease-in-out 0.66s infinite normal none running star;
+  }
+  
+  .star-top {
+    animation: 2.5s ease-in-out 0.33s infinite normal none running star;
+  }
+  
+  @keyframes star {
+    0% {
+      opacity: 0.9;
+    }
+  
+    50% {
+      opacity: 0.1;
+    }
+  
+    100% {
+      opacity: 0.9;
+    }
+  }

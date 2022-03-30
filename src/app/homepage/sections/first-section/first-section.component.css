@@ -5,6 +5,14 @@
     margin: 48px 0;
 }
 
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 576px;
+  height: 576px;
+}
+
 h1 {
     color: var(--violachiaro);
     margin-bottom: 24px;
