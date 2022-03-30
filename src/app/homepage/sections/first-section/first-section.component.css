@@ -13,6 +13,10 @@
   height: 576px;
 }
 
+.btn-section {
+    margin-right: 8px;
+}
+
 h1 {
     color: var(--violachiaro);
     margin-bottom: 24px;
