@@ -1,1 +1,274 @@
-/* You can add global styles to this file, and also import other style files */
+/*Colori*/
+:root {
+    --violachiaro: #7645d9;
+    --violascuro: #280D5F;
+    --lilla: #7A6EAA;
+    --acqua: #1fc7d4;
+    --rosa: #ed4b9e;
+    --ocra: #cd9234;
+  }
+
+.w100 {
+    width: 100%;
+}
+  
+  /*Font*/
+  
+  /*Titolo*/
+  h1 {
+    font-family: "Kanit", sans-serif;
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 70px;
+  }
+  
+  /*Titolo sezione*/
+  h2 {
+    font-family: "Kanit", sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 44px;
+  }
+  
+  /*Sottotitolo e Top*/
+  h3 {
+    font-family: "Kanit", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 22px;
+  }
+  
+  /*Paragrafo e APR*/
+  p {
+    font-family: "Kanit", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  
+  /*Paragrafo bold*/
+  .pbold {
+    font-family: "Kanit", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+  }
+  
+  /*Percentuale*/
+  .perc {
+    font-family: "Kanit", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 18px;
+  }
+
+/*Valuta*/
+h4 {
+    font-family: "Kanit", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+  }
+  
+  /*Statistiche*/
+  .stat {
+    font-family: "Kanit", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 26px;
+  }  
+  
+
+/* Buttons */
+
+button {
+    font-family: "Kanit", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 16px;
+  }
+  
+  .btn-section {
+    background-color: var(--acqua);
+    color: white;
+    text-align: center;
+    border: 0;
+    border-radius: 16px;
+    box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+    padding: 0 24px;
+    height: 48px;
+  }
+  
+  .btn-section:hover {
+    opacity: 0.7;
+  }
+  
+  .btn-white {
+    background-color: transparent;
+    color: var(--acqua);
+    text-align: center;
+    border: 2px solid var(--acqua);
+    border-radius: 16px;
+    box-shadow: none;
+    padding: 0 24px;
+    height: 48px;
+  }
+  
+  .btn-white:hover {
+    opacity: 0.7;
+  }
+  
+  .buttons a {
+    font-family: "Kanit", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 16px;
+    margin-left: 16px;
+    color: var(--acqua);
+    text-decoration: none;
+  }
+  
+  .buttons a:hover {
+    text-decoration: underline;
+  }
+
+  /*Cards*/
+/* Containers */
+.cards-container,
+.tilted-cards-container {
+  width: 100%;
+  min-height: 400px;
+  height: fit-content;
+  display: flex;
+}
+
+/* Struttura cards*/
+.card,
+.tilted-card,
+.tilted-card2 {
+  border: 1px white solid;
+  box-shadow: 0px 6px 5px 0px #aaaaaa;
+  border-radius: 24px;
+  margin-right: 100px;
+  padding: 24px;
+  min-height: 168px;
+  height: fit-content;
+  width: 232px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:last-child {
+  margin-right: 0px;
+}
+
+/* Sistemazione SVG*/
+.card svg,
+.tilted-card svg,
+.tilted-card2 svg {
+  width: 36px;
+  height: 36px;
+  align-self: flex-end;
+}
+
+/* Colori SVG  cards*/
+#card1>svg {
+  fill: var(--violachiaro);
+}
+
+#card2>svg {
+  fill: var(--acqua);
+}
+
+#card3>svg {
+  fill: var(--rosa);
+}
+
+/* Colori testo + margini */
+.card h2:first-of-type {
+  color: var(--violascuro);
+  margin-top: 60px;
+}
+
+.card h2:last-of-type {
+  color: var(--violachiaro);
+  margin-bottom: 24px;
+}
+
+.card p {
+  color: var(--lilla);
+}
+
+/* Tilted cards */
+/* Tilted cards backgrounds */
+.tilted-card {
+  background: rgba(0, 0, 0, 0) linear-gradient(rgb(255, 178, 55) 0%,
+      rgb(255, 205, 81) 51.17%,
+      rgb(255, 231, 106) 100%);
+  transform: rotate(-2.36deg);
+}
+
+.tilted-card2 {
+  background: rgba(0, 0, 0, 0) linear-gradient(rgb(118, 69, 217) 0%, rgb(81, 33, 177) 100%) repeat scroll 0% 0%;
+  transform: rotate(1.43deg);
+}
+
+/* Formattazione testo*/
+/* Colori */
+.tilted-card p,
+.tilted-card h2 {
+  color: var(--violascuro);
+}
+
+.tilted-card2 p {
+  color: white;
+}
+
+.tilted-card2 h2 {
+  color: rgb(255, 178, 55);
+}
+
+/* Spazi */
+div .tilted-card,
+.tilted-card2 {
+  height: fit-content;
+}
+
+.tilted-card #p1,
+.tilted-card2 #p1 {
+  margin-top: 48px;
+  vertical-align: top;
+}
+
+.tilted-card h2,
+.tilted-card2 h2 {
+  margin: 8px 0px;
+}
+
+.tilted-card #p2,
+.tilted-card2 #p2 {
+  margin-bottom: 24px;
+}
+
+.tilted-card #p3,
+.tilted-card2 #p3 {
+  margin-bottom: 40px;
+}
+
+.tilted-card .riempitivo,
+.tilted-card2 .riempitivo {
+  width: 240px;
+  height: 55px;
+  border: 1px black solid;
+}
+
+/*Formattazione SVG tilted cards */
+.tilted-card svg,
+.tilted-card2 svg {
+  position: absolute;
+}
+
+.tilted-card2 svg {
+  fill: white;
+}
