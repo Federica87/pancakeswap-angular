@@ -7,129 +7,129 @@
 
 /*Colori*/
 :root {
-    --violachiaro: #7645d9;
-    --violascuro: #280D5F;
-    --lilla: #7A6EAA;
-    --acqua: #1fc7d4;
-    --rosa: #ed4b9e;
-    --ocra: #cd9234;
-  }
+  --violachiaro: #7645d9;
+  --violascuro: #280D5F;
+  --lilla: #7A6EAA;
+  --acqua: #1fc7d4;
+  --rosa: #ed4b9e;
+  --ocra: #cd9234;
+}
 
 .w100 {
-    width: 100%;
+  width: 100%;
 }
-  
-  /*Font*/
-  
-  /*Titolo*/
-  h1 {
-    font-size: 64px;
-    font-weight: 600;
-    line-height: 70px;
-  }
-  
-  /*Titolo sezione*/
-  h2 {
-    font-size: 40px;
-    font-weight: 600;
-    line-height: 44px;
-  }
-  
-  /*Sottotitolo e Top*/
-  h3 {
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 22px;
-  }
-  
-  /*Paragrafo e APR*/
-  p {  
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-  }
-  
-  /*Paragrafo bold*/
-  .pbold {   
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 24px;
-  }
-  
-  /*Percentuale*/
-  .perc {  
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 18px;
-  }
+
+/*Font*/
+
+/*Titolo*/
+h1 {
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 70px;
+}
+
+/*Titolo sezione*/
+h2 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 44px;
+}
+
+/*Sottotitolo e Top*/
+h3 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 22px;
+}
+
+/*Paragrafo e APR*/
+p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+/*Paragrafo bold*/
+.pbold {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+/*Percentuale*/
+.perc {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 18px;
+}
 
 /*Valuta*/
-h4 {   
-    font-size: 12px;
-    font-weight: 600;
-    line-height: 18px;
-  }
-  
-  /*Statistiche*/
-  .stat { 
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 26px;
-  }  
-  
+h4 {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 18px;
+}
+
+/*Statistiche*/
+.stat {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 26px;
+}
+
 
 /* Buttons */
 
-button {   
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 16px;
-  }
-  
-  .btn-section {
-    background-color: var(--acqua);
-    color: white;
-    text-align: center;
-    border: 0;
-    border-radius: 16px;
-    box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
-    padding: 0 24px;
-    height: 48px;
-  }
-  
-  .btn-section:hover {
-    opacity: 0.7;
-  }
-  
-  .btn-white {
-    background-color: transparent;
-    color: var(--acqua);
-    text-align: center;
-    border: 2px solid var(--acqua);
-    border-radius: 16px;
-    box-shadow: none;
-    padding: 0 24px;
-    height: 48px;
-  }
-  
-  .btn-white:hover {
-    opacity: 0.7;
-  }
-  
-  .buttons a {
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 16px;
-    margin-left: 16px;
-    color: var(--acqua);
-    text-decoration: none;
-  }
-  
-  .buttons a:hover {
-    text-decoration: underline;
-  }
+button {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 16px;
+}
 
-  /*Cards*/
+.btn-section {
+  background-color: var(--acqua);
+  color: white;
+  text-align: center;
+  border: 0;
+  border-radius: 16px;
+  box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+  padding: 0 24px;
+  height: 48px;
+}
+
+.btn-section:hover {
+  opacity: 0.7;
+}
+
+.btn-white {
+  background-color: transparent;
+  color: var(--acqua);
+  text-align: center;
+  border: 2px solid var(--acqua);
+  border-radius: 16px;
+  box-shadow: none;
+  padding: 0 24px;
+  height: 48px;
+}
+
+.btn-white:hover {
+  opacity: 0.7;
+}
+
+.buttons a {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 16px;
+  margin-left: 16px;
+  color: var(--acqua);
+  text-decoration: none;
+}
+
+.buttons a:hover {
+  text-decoration: underline;
+}
+
+/*Cards*/
 /* Containers */
 .cards-container,
 .tilted-cards-container {
