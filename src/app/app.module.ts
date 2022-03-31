@@ -11,6 +11,7 @@ import { FooterSocialComponent } from './footer/footer-social/footer-social.comp
 import { NavbarContainerComponent } from './navbar/navbar-container/navbar-container.component';
 import { NavbarLeftComponent } from './navbar/navbar-left/navbar-left.component';
 import { NavbarRightComponent } from './navbar/navbar-right/navbar-right.component';
+import { SecondSectionComponent } from './homepage/sections/second-section/second-section.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { NavbarRightComponent } from './navbar/navbar-right/navbar-right.compone
     FooterSocialComponent,
     NavbarContainerComponent,
     NavbarLeftComponent,
-    NavbarRightComponent
+    NavbarRightComponent,
+    SecondSectionComponent
   ],
   imports: [
     BrowserModule,
