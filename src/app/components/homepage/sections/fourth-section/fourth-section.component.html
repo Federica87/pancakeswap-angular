@@ -1,13 +1,15 @@
 <div class="fourth_section">
-    <app-bunny-bitcoins [img]="stats"></app-bunny-bitcoins>
-    <div class="text">
-        <h2><span>Earn</span> passive income with crypto.</h2>
-        <p>PancakeSwap makes it easy to make your crypto work for you.</p>
-        <div class="buttons">
-            <button class="btn-section">Explore</button>
-            <a href="https://docs.pancakeswap.finance/" target="_blank">Learn</a>
+    <div class="flex_container">
+        <app-bunny-bitcoins [img]="stats"></app-bunny-bitcoins>
+        <div class="text">
+            <h2><span>Earn</span> passive income with crypto.</h2>
+            <p>PancakeSwap makes it easy to make your crypto work for you.</p>
+            <div class="buttons">
+                <button class="btn-section">Explore</button>
+                <a href="https://docs.pancakeswap.finance/" target="_blank">Learn</a>
+            </div>
         </div>
-    </div>
-    <!-- div for farms and syrup pools stats -->
-    <div class="farm_stats"></div>
+    </div> 
+    <app-crypto-stats></app-crypto-stats>  
 </div>
+

@@ -15,6 +15,7 @@ import { SecondSectionComponent } from './components/homepage/sections/second-se
 import { ThirdSectionComponent } from './components/homepage/sections/third-section/third-section.component';
 import { FourthSectionComponent } from './components/homepage/sections/fourth-section/fourth-section.component';
 import { BunnyBitcoinsComponent } from './components/homepage/animations/bunny-bitcoins/bunny-bitcoins.component';
+import { CryptoStatsComponent } from './components/homepage/data/crypto-stats.component';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { BunnyBitcoinsComponent } from './components/homepage/animations/bunny-b
     SecondSectionComponent,
     ThirdSectionComponent,
     FourthSectionComponent,
-    BunnyBitcoinsComponent
+    BunnyBitcoinsComponent,
+    CryptoStatsComponent
   ],
   imports: [
     BrowserModule,
