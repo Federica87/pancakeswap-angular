@@ -12,7 +12,7 @@ export class CryptoStatsComponent implements OnInit {
   perc: number[] = this.getRandomPerc(100, 500);
   
 
-  constructor() { }
+  constructor() {setInterval( () => this.switchStats(), 4000) }
   ngOnInit(): void {
   }
 
