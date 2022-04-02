@@ -3,6 +3,11 @@
     padding: 48px 24px 98px;   
 }
 
+svg {
+    transform: scaleY(-1);
+    fill: rgb(240, 240, 245);
+}
+
 .flex_container {
     display: flex;
     justify-content: center;
