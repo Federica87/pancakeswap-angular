@@ -3,7 +3,7 @@
     position: absolute;
     top: -5%;
     right: 0;
-    transform: translate(-1200%, 60%);
+    transform: translate(-1000%, 60%);
     z-index: 1;
   }
   
@@ -12,7 +12,7 @@
     position: absolute;
     top: 0%;
     right: 0;
-    transform: translate(-1080%, 50%);
+    transform: translate(-890%, 50%);
     z-index: 1;
   }
   
@@ -23,20 +23,20 @@
   }
   
 .icon-globe {
-    width: 2%;
+    width: 1.5%;
     position: absolute;
     top: 0%;
     right: 0;
-    transform: translate(-850%, 40%);
+    transform: translate(-910%, 50%);
     z-index: 1;
   }
   
 .icon-setting {
-    width: 2%;
+    width: 1.5%;
     position: absolute;
     top: 0%;
     right: 0;
-    transform: translate(-685%, 40%);
+    transform: translate(-750%, 50%);
     z-index: 1;
   }
   
