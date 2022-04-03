@@ -1,0 +1,33 @@
+<section class="sixth_section">
+    <div class="flex_container">
+        <div class="text">
+            <h2><span>CAKE</span> makes our world go round.</h2>
+            <p>CAKE token is at the heart of the PancakeSwap ecosystem.
+                Buy it, win it, farm it, spend it, stake it... heck, you can even vote with it!
+            </p>
+            <div class="buttons">
+                <button class="btn-section">Buy CAKE</button>
+                <a href="https://docs.pancakeswap.finance/" target="_blank">Learn</a>
+            </div>
+        </div>
+        <app-bunny-bitcoins [img]="cake"></app-bunny-bitcoins>
+    </div>
+    <div class="CAKE_stats">
+        <div>
+            <p>Total supply</p>
+            <p class="stats">{{ cakeStats[0] | number }}</p>
+        </div>
+        <div>
+            <p>Burned to date</p>
+            <p class="stats">{{ cakeStats[1] | number }}</p>
+        </div>
+        <div id="responsive_border">
+            <p>Market cap</p>
+            <p class="stats">$2.6 billion</p>
+        </div>
+        <div>
+            <p>Current emissions</p>
+            <p class="stats">14.25/block</p>
+        </div>
+    </div>
+</section>

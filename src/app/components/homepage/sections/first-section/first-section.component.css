@@ -1,8 +1,15 @@
 .first_section {
     display: flex;
     justify-content: center;
-    padding: 0 24px;
-    margin: 48px 0;
+    padding: 48px 24px;   
+}
+
+svg {
+    position: absolute;
+    transform: rotate(180deg);
+    height: 650px;
+    z-index: -2;
+    fill: aliceblue;
 }
 
 .text {

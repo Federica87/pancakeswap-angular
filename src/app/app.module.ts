@@ -17,6 +17,9 @@ import { ThirdSectionComponent } from './components/homepage/sections/third-sect
 import { FourthSectionComponent } from './components/homepage/sections/fourth-section/fourth-section.component';
 import { BunnyBitcoinsComponent } from './components/homepage/animations/bunny-bitcoins/bunny-bitcoins.component';
 import { CryptoStatsComponent } from './components/homepage/data/crypto-stats.component';
+import { SixthSectionComponent } from './components/homepage/sections/sixth-section/sixth-section.component';
+import { LastSectionComponent } from './components/homepage/sections/last-section/last-section.component';
+import { FloatingCoinsComponent } from './components/homepage/animations/floating-coins/floating-coins.component';
 
 
 @NgModule({
@@ -36,7 +39,10 @@ import { CryptoStatsComponent } from './components/homepage/data/crypto-stats.co
     ThirdSectionComponent,
     FourthSectionComponent,
     BunnyBitcoinsComponent,
-    CryptoStatsComponent
+    CryptoStatsComponent,
+    SixthSectionComponent,
+    LastSectionComponent,
+    FloatingCoinsComponent
   ],
   imports: [
     BrowserModule,
