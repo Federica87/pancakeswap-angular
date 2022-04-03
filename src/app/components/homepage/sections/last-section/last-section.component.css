@@ -1,81 +1,54 @@
 .last_section {
-    background: var(--violachiaro);
+    background: rgb(90, 50, 180);
     display: flex;
     justify-content: center;
     height: 430px;
+    column-gap: 5%;
     overflow: hidden;
-  }
+}
   
-  .last_section .flex_container {
+.text {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: relative;
-  }
-  
-  .last section .flex_container {
-    margin: 0 150px;
-    position: relative;
-  }
-  
-  .last_section h2 {
-    font-family: "Kanit", sans-serif;
-    font-size: 40px;
-    font-weight: 600;
-    line-height: 44px;
     color: white;
+    position: relative;
+}
+
+h2 {
     margin-bottom: 24px;
-  }
+}
   
-  .last_section p {
-    font-family: "Kanit", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    color: white;
-  }
-  
-  .last_section .pbold {
+.pbold {
     font-weight: 600;
     margin-bottom: 24px;
-  }
+}
+
+button {
+  z-index: 2;
+}
   
-  .last_section a {
-    font-family: "Kanit", sans-serif;
-    font-size: 16px;
+a {
     font-weight: 600;
-    line-height: 16px;
     color: var(--acqua);
     text-decoration: none;
     margin-bottom: 24px;
-  }
-  
-  .animation-start1 {
-    width: 256px;
-    height: 256px;
-  }
-  
-  .animation-start2 {
-    width: 256px;
-    height: 256px;
-    margin-top: 160px;
-  }
-  
-  .first-start img {
-    position: absolute;
-    animation: 3s ease-in-out 1s infinite normal none running first;
-    width: 256px;
-  }
-  
-  .second-start img {
-    position: absolute;
-    animation: 3s ease-in-out 0.66s infinite normal none running second;
-    width: 256px;
-  }
-  
-  .third-start img {
-    position: absolute;
-    animation: 3s ease-in-out 0.33s infinite normal none running third;
-    width: 256px;
-  }
+    z-index: 2;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.ray {
+  position: absolute;
+}
+
+.ray svg {
+  width: 1500px;
+}
+
+.bottomRight {
+  margin-top: 160px;
+}

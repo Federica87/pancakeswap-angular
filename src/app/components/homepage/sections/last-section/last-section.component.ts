@@ -6,6 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./last-section.component.css']
 })
 export class LastSectionComponent implements OnInit {
+  topLeftCoins: string [] = [
+    "../../../../../assets/images/home/start/1-bottom.png",
+    "../../../../../assets/images/home/start/1-left.png",
+    "../../../../../assets/images/home/start/1-top.png"
+  ]
+
+  bottomRightCoins: string [] = [
+    "../../../../../assets/images/home/start/2-bottom.png",
+    "../../../../../assets/images/home/start/2-top.png",
+    "../../../../../assets/images/home/start/2-right.png"
+  ]
 
   constructor() { }
 
