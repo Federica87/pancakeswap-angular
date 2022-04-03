@@ -12,14 +12,11 @@ import { NavbarContainerComponent } from './components/navbar/navbar-container/n
 import { NavbarLeftComponent } from './components/navbar/navbar-left/navbar-left.component';
 import { NavbarRightComponent } from './components/navbar/navbar-right/navbar-right.component';
 import { SecondSectionComponent } from './components/homepage/sections/second-section/second-section.component';
-<<<<<<< HEAD
 import { CardSingleComponent } from './components/card-single/card-single.component';
-=======
 import { ThirdSectionComponent } from './components/homepage/sections/third-section/third-section.component';
 import { FourthSectionComponent } from './components/homepage/sections/fourth-section/fourth-section.component';
 import { BunnyBitcoinsComponent } from './components/homepage/animations/bunny-bitcoins/bunny-bitcoins.component';
 import { CryptoStatsComponent } from './components/homepage/data/crypto-stats.component';
->>>>>>> 1f073ee570bfef862ba9c9eb82084c9730b72245
 
 
 @NgModule({
@@ -35,14 +32,11 @@ import { CryptoStatsComponent } from './components/homepage/data/crypto-stats.co
     NavbarLeftComponent,
     NavbarRightComponent,
     SecondSectionComponent,
-<<<<<<< HEAD
-    CardSingleComponent
-=======
+    CardSingleComponent,
     ThirdSectionComponent,
     FourthSectionComponent,
     BunnyBitcoinsComponent,
     CryptoStatsComponent
->>>>>>> 1f073ee570bfef862ba9c9eb82084c9730b72245
   ],
   imports: [
     BrowserModule,
