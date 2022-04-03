@@ -12,6 +12,7 @@ import { NavbarContainerComponent } from './components/navbar/navbar-container/n
 import { NavbarLeftComponent } from './components/navbar/navbar-left/navbar-left.component';
 import { NavbarRightComponent } from './components/navbar/navbar-right/navbar-right.component';
 import { SecondSectionComponent } from './components/homepage/sections/second-section/second-section.component';
+import { CardSingleComponent } from './components/card-single/card-single.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { SecondSectionComponent } from './components/homepage/sections/second-se
     NavbarContainerComponent,
     NavbarLeftComponent,
     NavbarRightComponent,
-    SecondSectionComponent
+    SecondSectionComponent,
+    CardSingleComponent
   ],
   imports: [
     BrowserModule,
