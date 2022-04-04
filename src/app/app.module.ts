@@ -20,6 +20,7 @@ import { CryptoStatsComponent } from './components/homepage/data/crypto-stats.co
 import { SixthSectionComponent } from './components/homepage/sections/sixth-section/sixth-section.component';
 import { LastSectionComponent } from './components/homepage/sections/last-section/last-section.component';
 import { FloatingCoinsComponent } from './components/homepage/animations/floating-coins/floating-coins.component';
+import { WalletComponent } from './components/wallet/wallet.component';
 
 
 @NgModule({
@@ -42,7 +43,8 @@ import { FloatingCoinsComponent } from './components/homepage/animations/floatin
     CryptoStatsComponent,
     SixthSectionComponent,
     LastSectionComponent,
-    FloatingCoinsComponent
+    FloatingCoinsComponent,
+    WalletComponent
   ],
   imports: [
     BrowserModule,

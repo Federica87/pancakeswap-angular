@@ -6,6 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./first-section.component.css']
 })
 export class FirstSectionComponent implements OnInit {
+  wallet: boolean = false;
+  connectWallet(): void {
+    this.wallet = true;
+  }
 
   constructor() { }
 
