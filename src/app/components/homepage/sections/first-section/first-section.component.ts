@@ -8,7 +8,12 @@ import { Component, OnInit } from '@angular/core';
 export class FirstSectionComponent implements OnInit {
   wallet: boolean = false;
   connectWallet(): void {
+    if (this.wallet === false) {
     this.wallet = true;
+    }
+    else {
+      this.wallet = false;
+    }
   }
 
   constructor() { }

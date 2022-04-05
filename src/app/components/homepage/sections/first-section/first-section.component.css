@@ -4,14 +4,16 @@
     padding: 48px 24px;
     background: linear-gradient(to left top,rgb(241,242,255), rgb(230,253,255));
     position: relative;
-    z-index: -2;
 }
 
 svg {
     position: absolute;
     fill: white;
     bottom: 0;
-    z-index: -1;
+}
+
+.buttons {
+    z-index: 1;
 }
 
 .text {
