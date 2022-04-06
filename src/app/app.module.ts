@@ -21,6 +21,8 @@ import { SixthSectionComponent } from './components/homepage/sections/sixth-sect
 import { LastSectionComponent } from './components/homepage/sections/last-section/last-section.component';
 import { FloatingCoinsComponent } from './components/homepage/animations/floating-coins/floating-coins.component';
 import { WalletComponent } from './components/wallet/wallet.component';
+import { FooterBottomComponent } from './components/footer/footer-bottom/footer-bottom.component';
+
 
 
 @NgModule({
@@ -44,7 +46,8 @@ import { WalletComponent } from './components/wallet/wallet.component';
     SixthSectionComponent,
     LastSectionComponent,
     FloatingCoinsComponent,
-    WalletComponent
+    WalletComponent,
+    FooterBottomComponent
   ],
   imports: [
     BrowserModule,
