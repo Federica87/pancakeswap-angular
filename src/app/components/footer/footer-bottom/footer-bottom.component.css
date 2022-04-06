@@ -1,0 +1,158 @@
+.footer-nav {
+  display: flex;
+  margin: 0px 0px;
+  padding: 40px 0px;
+  justify-content: space-between;
+  border-top: 1px solid rgb(56, 58, 65);
+}
+
+.btn-bar {
+  background-color: var(--acqua);
+  color: white;
+  text-align: center;
+  border: 0;
+  border-radius: 16px;
+  box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+  padding: 0 16px;
+  height: 32px;
+}
+
+.btn-bar:hover {
+  opacity: 0.7;
+}
+
+.btn-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cake-arrow {
+  margin: 3px 0 0 10px;
+}
+
+button svg {
+  width: 20px;
+  fill: white;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.left p {
+  margin-bottom: 0;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+}
+
+.right .pbold {
+  font-family: "Kanit", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  color: var(--lilla);
+  margin-right: 20px;
+  margin-bottom: 0;
+}
+
+.lang-dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.language {
+  display: flex;
+}
+
+
+.language svg {
+  width: 25px;
+  margin-right: 10px;
+  fill: var(--lilla);
+}
+
+.language p {
+  font-family: "Kanit", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--lilla);
+}
+
+.logo-footer {
+  display: flex;
+}
+
+.logo-footer img {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  align-items: center;
+
+}
+
+.btn-switch {
+  margin-right: 20px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 50%;
+  background-image: url(src/assets/images/icons/sun.svg);
+  background-color: white;
+}
+
+.slider:hover:before {
+  box-shadow: var(--violachiaro) 0 0 0 4px;
+}
+
+input:checked+.slider {
+  background-color: #666171;
+}
+
+input:checked+.slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+  background-image: url(src/assets/images/icons/moon.svg);
+  background-color: #27262c;
+}
