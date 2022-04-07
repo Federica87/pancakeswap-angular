@@ -20,6 +20,10 @@ import { CryptoStatsComponent } from './components/homepage/data/crypto-stats.co
 import { SixthSectionComponent } from './components/homepage/sections/sixth-section/sixth-section.component';
 import { LastSectionComponent } from './components/homepage/sections/last-section/last-section.component';
 import { FloatingCoinsComponent } from './components/homepage/animations/floating-coins/floating-coins.component';
+import { FifthSectionComponent } from './components/homepage/sections/fifth-section/fifth-section.component';
+import { FloatingCardsComponent } from './components/homepage/animations/floating-cards/floating-cards.component';
+import { FloatingBallsComponent } from './components/homepage/animations/floating-balls/floating-balls.component';
+import { TiltedCardsComponent } from './components/tilted-cards/tilted-cards.component';
 
 
 @NgModule({
@@ -42,7 +46,11 @@ import { FloatingCoinsComponent } from './components/homepage/animations/floatin
     CryptoStatsComponent,
     SixthSectionComponent,
     LastSectionComponent,
-    FloatingCoinsComponent
+    FloatingCoinsComponent,
+    FifthSectionComponent,
+    FloatingCardsComponent,
+    FloatingBallsComponent,
+    TiltedCardsComponent
   ],
   imports: [
     BrowserModule,
