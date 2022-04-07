@@ -24,6 +24,9 @@ import { FifthSectionComponent } from './components/homepage/sections/fifth-sect
 import { FloatingCardsComponent } from './components/homepage/animations/floating-cards/floating-cards.component';
 import { FloatingBallsComponent } from './components/homepage/animations/floating-balls/floating-balls.component';
 import { TiltedCardsComponent } from './components/tilted-cards/tilted-cards.component';
+import { WalletComponent } from './components/wallet/wallet.component';
+import { FooterBottomComponent } from './components/footer/footer-bottom/footer-bottom.component';
+
 
 
 @NgModule({
@@ -50,7 +53,9 @@ import { TiltedCardsComponent } from './components/tilted-cards/tilted-cards.com
     FifthSectionComponent,
     FloatingCardsComponent,
     FloatingBallsComponent,
-    TiltedCardsComponent
+    TiltedCardsComponent,
+    WalletComponent,
+    FooterBottomComponent
   ],
   imports: [
     BrowserModule,
