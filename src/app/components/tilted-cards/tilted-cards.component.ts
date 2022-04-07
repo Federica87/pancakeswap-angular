@@ -14,7 +14,7 @@ import { ITiltedCards } from 'src/app/models/ITiltedCards';
 export class TiltedCardsComponent implements OnInit {
 
 
-  random:number= 0;
+  random:number= 19832;
 
   tiltedCards: ITiltedCards[]=
   [
@@ -29,7 +29,7 @@ export class TiltedCardsComponent implements OnInit {
    {
     id:2,
     firstLine:'Lottery',
-    secondLine: '',
+    secondLine: this.random,
     thirdLine: 'in CAKE prizes this round',
     fourthLine:'Buy tickets with CAKE, win CAKE if your numbers match',
     buttonLine:'Buy tickets'
