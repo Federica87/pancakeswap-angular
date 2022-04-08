@@ -20,48 +20,36 @@
 
 <!-- Navbar Links -->
 
-<ul class="navbar-links">
+<ul [style.listStyleType]="'none'" [style.display]="'flex'" [style.zIndex]="1" class="navbar-links">
     <li class="navbar-dropdown">
         <a href="#">Trade</a>
         <div class="dropdown">
-            <a href="#">Exchange</a>
-            <a href="#">Liquidity</a>
+            <a href="#" *ngFor="let trade of trades;">{{ trade.trade }}</a>
         </div>
     </li>
     <li class="navbar-dropdown">
         <a href="#">Earn</a>
         <div class="dropdown">
-            <a href="#">Farms</a>
-            <a href="#">Pools</a>
+            <a href="#" *ngFor="let earn of earns;">{{ earn.earn }}</a>
         </div>
     </li>
+
     <li class="navbar-dropdown">
         <a href="#">Win</a>
         <div class="dropdown">
-            <a href="#">Trading Competition</a>
-            <a href="#">Prediction (BETA)</a>
-            <a href="#">Lottery</a>
+            <a href="#" *ngFor="let win of wins;">{{ win.win }}</a>
         </div>
     </li>
     <li class="navbar-dropdown">
         <a href="#">NFT</a>
         <div class="dropdown">
-            <a href="#">Overview</a>
-            <a href="#">Collections</a>
-            <a href="#">Activity</a>
+            <a href="#" *ngFor="let nft of nfts;">{{ nft.nft }}</a>
         </div>
     </li>
     <li class="navbar-dropdown">
         <a href="#">...</a>
         <div class="dropdown">
-            <a href="#">Info</a>
-            <a href="#">IFO</a>
-            <a href="#">Voting</a>
-            <hr>
-            <a href="#">Leaderboard</a>
-            <hr>
-            <a href="#">Blog</a>
-            <a href="#">Docs</a>
+            <a href="#" *ngFor="let other of others;">{{ other.other }}</a>
         </div>
     </li>
 </ul>
