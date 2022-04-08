@@ -28,7 +28,7 @@ export class NavbarLeftComponent implements OnInit {
 
   wins: IWin[] = [
     {
-      win: "TRading Competitions"
+      win: "Trading Competitions"
     },
     {
       win: "Prediction (BETA)"
