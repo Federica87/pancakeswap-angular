@@ -1,19 +1,19 @@
-export interface trade {
+export interface ITrade {
     trade: string;
 }
 
-export interface earn {
+export interface IEarn {
     earn: string;
 }
 
-export interface win {
+export interface IWin {
     win: string;
 }
 
-export interface nft {
+export interface INft {
     nft: string;
 }
 
-export interface other {
+export interface IOther {
     other: string;
 }

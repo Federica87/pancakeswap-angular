@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { earn, nft, other, trade, win } from 'src/app/models/INav';
+import { IEarn, INft, IOther, ITrade, IWin } from 'src/app/models/INav';
 
 @Component({
   selector: 'app-navbar-left',
@@ -8,7 +8,7 @@ import { earn, nft, other, trade, win } from 'src/app/models/INav';
 })
 export class NavbarLeftComponent implements OnInit {
 
-  trades: trade[] = [
+  trades: ITrade[] = [
     {
       trade: "Exchange"
     },
@@ -17,7 +17,7 @@ export class NavbarLeftComponent implements OnInit {
     },
   ]
 
-  earns: earn[] = [
+  earns: IEarn[] = [
     {
       earn: "Farms"
     },
@@ -26,7 +26,7 @@ export class NavbarLeftComponent implements OnInit {
     }
   ]
 
-  wins: win[] = [
+  wins: IWin[] = [
     {
       win: "TRading Competitions"
     },
@@ -38,7 +38,7 @@ export class NavbarLeftComponent implements OnInit {
     }
   ]
 
-  nfts: nft[] = [
+  nfts: INft[] = [
     {
       nft: "Overview"
     },
@@ -50,7 +50,7 @@ export class NavbarLeftComponent implements OnInit {
     }
   ]
 
-  others: other[] = [
+  others: IOther[] = [
     {
       other: "Info"
     },
