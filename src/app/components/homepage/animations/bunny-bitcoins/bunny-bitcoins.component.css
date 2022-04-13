@@ -2,14 +2,14 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 430px;
-    height: 430px;
+    width: 100%;
+    height: 100%;
+    position: relative;
 }
 
 .first {
     position: absolute;
     animation: 3s ease-in-out 1s infinite normal none running first;
-    width: 430px;
 }
 
 @keyframes first {
@@ -29,7 +29,6 @@
 .second {
     position: absolute;
     animation: 3s ease-in-out 0.66s infinite normal none running second;
-    width: 430px;
 }
 
 @keyframes second {
@@ -49,7 +48,6 @@
 .third {
     position: absolute;
     animation: 3s ease-in-out 0.33s infinite normal none running third;
-    width: 430px;
 }
   
   @keyframes third {
@@ -83,8 +81,4 @@
     100% {
       transform: translate(0px, 0px);
     }
-  }
-
-  img {
-    width: 100%;
   }

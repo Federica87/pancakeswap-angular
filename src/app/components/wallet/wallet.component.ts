@@ -6,7 +6,7 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
   styleUrls: ['./wallet.component.css']
 })
 export class WalletComponent implements OnInit {
-  @Output() exit = new EventEmitter();
+  @Output() exit = new EventEmitter<void>();
   more: boolean = false;
 
   constructor() { }

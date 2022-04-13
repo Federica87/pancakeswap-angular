@@ -1,4 +1,3 @@
-/* Sixth Section */
 
 .sixth_section {
     display: flex;
@@ -16,6 +15,11 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 430px;
+    height: 430px;
+}
+
+.animation {
     width: 430px;
     height: 430px;
 }
@@ -37,28 +41,38 @@ p {
     margin-bottom: 24px;
 }
 
-.CAKE_stats p {
-    margin: 0;
+.cake {
+    width: 860px;
+    margin-top: 24px;
 }
 
-.CAKE_stats {
-    width: 860px;
-    display: flex;
-    justify-content: space-between;
-}
-  
-.CAKE_stats div {
-    padding-left: 16px;
-    border-left: 1px solid gainsboro;
-}
-  
-.CAKE_stats :first-child {
-    border: none;
-    padding: 0;
-}
-  
-.CAKE_stats .stats {
-    font-size: 24px;
-    font-weight: 600;
-    color: var(--violascuro);
+@media screen and (max-width: 852px) {
+
+    .sixth_section {
+        align-items: stretch;
+    }
+
+    .flex_container {
+        flex-direction: column-reverse;
+    }
+
+    .text {
+        width: initial;
+        height: initial;
+    }
+
+    .animation {
+        width: 192px;
+        height: 192px;
+        align-self: flex-end;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    .cake {
+        width: initial;
+    }
+    
 }
