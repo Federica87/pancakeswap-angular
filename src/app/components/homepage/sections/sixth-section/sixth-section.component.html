@@ -10,24 +10,7 @@
                 <a href="https://docs.pancakeswap.finance/" target="_blank">Learn</a>
             </div>
         </div>
-        <app-bunny-bitcoins [img]="cake"></app-bunny-bitcoins>
+        <app-bunny-bitcoins [img]="cake" class="animation"></app-bunny-bitcoins>
     </div>
-    <div class="CAKE_stats">
-        <div>
-            <p>Total supply</p>
-            <p class="stats">{{ cakeStats[0] | number }}</p>
-        </div>
-        <div>
-            <p>Burned to date</p>
-            <p class="stats">{{ cakeStats[1] | number }}</p>
-        </div>
-        <div id="responsive_border">
-            <p>Market cap</p>
-            <p class="stats">$2.6 billion</p>
-        </div>
-        <div>
-            <p>Current emissions</p>
-            <p class="stats">14.25/block</p>
-        </div>
-    </div>
+    <app-cake-stats class="cake"></app-cake-stats>
 </section>

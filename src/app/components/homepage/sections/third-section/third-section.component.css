@@ -12,6 +12,11 @@
   height: 430px;
 }
 
+.animation {
+    width: 430px;
+    height: 430px;
+}
+
 h2 {
     color: var(--violascuro);
     margin-bottom: 24px;
@@ -24,4 +29,23 @@ span {
 p {
     color: var(--lilla);
     margin-bottom: 24px;
+}
+
+@media screen and (max-width: 852px) {
+
+    .third_section {
+        flex-direction: column-reverse;
+    }
+
+    .text {
+        width: initial;
+        height: initial;
+    }
+
+    .animation {
+        width: 192px;
+        height: 192px;
+        align-self: flex-end;
+    }
+    
 }

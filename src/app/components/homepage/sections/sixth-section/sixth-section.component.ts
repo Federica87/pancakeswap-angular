@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Stats } from 'src/app/models/Stats';
 
 @Component({
   selector: 'app-sixth-section',
@@ -12,13 +13,8 @@ export class SixthSectionComponent implements OnInit {
     "../../../../../assets/images/home/cake/coin.png",
     "../../../../../assets/images/home/cake/top-left.png"
   ]
-
-  cakeStats: number [] = [265869181, 413201331];
-
-  constructor() { 
-    setInterval(() => this.cakeStats[0] += Math.floor(Math.random() * (100 - 10) + 10), 5000)
-    setInterval(() => this.cakeStats[1] += 1, 10000)
-  }
+  
+  constructor() {}
 
   ngOnInit(): void {
   }
