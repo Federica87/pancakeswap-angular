@@ -58,3 +58,19 @@
     color: var(--violachiaro);
   }
   
+  @media screen and (max-width: 852px) {
+    .fifth_section {
+      height: fit-content;
+      min-height: 1100px;
+    }
+    .exterior_container {
+      height: fit-content;
+      margin-left:13px;
+      margin-right: 13px;
+    }
+    .text {
+      font-size: 32px;
+    }
+  
+
+  }

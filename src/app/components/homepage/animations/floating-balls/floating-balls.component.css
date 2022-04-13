@@ -109,3 +109,23 @@
   .animation-fortune2 div {
       position: absolute;
   }
+
+@media screen and (max-width: 852px) {
+  .animation-fortune2,
+  .animation-fortune2 .first img,
+  .animation-fortune2 .second img,
+  .animation-fortune2 .third img,
+  .animation-fortune2 .fourth img,
+  .animation-fortune2 .fifth img{
+    width: 190px;
+    height: 190px;
+    margin:0px;
+  }
+  .animation-fortune2 {
+    position:absolute;
+    top:-60px;
+    right:0px;
+  }
+
+
+}

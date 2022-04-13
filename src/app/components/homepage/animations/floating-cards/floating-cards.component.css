@@ -109,3 +109,19 @@
   .animation-fortune1 div {
       position: absolute;
   }
+
+@media screen and (max-width: 852px) {
+  .animation-fortune1,
+  .animation-fortune1 .first img,
+  .animation-fortune1 .second img,
+  .animation-fortune1 .third img,
+  .animation-fortune1 .fourth img{
+    width: 190px;
+    height: 190px;
+    margin:0px;
+  }
+  .animation-fortune1 {
+    position: absolute;
+    bottom: -60px;  
+  }
+}

@@ -79,3 +79,26 @@
     color: var(--rosa);
     fill: var(--rosa);
   }
+
+  @media only screen and (max-width: 852px) {
+    .card {
+      max-width: 280px;
+      max-height: 165px;
+      margin: 0;
+      margin-bottom: 16px;
+    }
+    .card svg {
+      flex-shrink: 0;
+      position: absolute;
+    }
+    .card h2:first-of-type {
+      margin: 0px;
+    }
+    .card h2 {
+      font-size: 32px;
+      max-height: 36px;
+    }  
+    .d-flex {
+      flex-direction: column;
+    }
+  }
