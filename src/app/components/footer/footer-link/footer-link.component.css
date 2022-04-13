@@ -7,7 +7,7 @@
 ul,
 li {
   list-style-type: none;
-  margin: 0px 0px 8px 0;
+  margin: 0px 0px 10px 0;
   font-family: "Kanit", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -33,4 +33,30 @@ li a:hover {
 
 li.store a {
   color: var(--ocra);
+}
+
+@media screen and (max-width: 852px) {
+  .link-footer {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 56px 0px 90px 0px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .logo-link {
+    display: none;
+  }
+
+  .link-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+
+  ul {
+    margin-bottom: 60px;
+  }
 }

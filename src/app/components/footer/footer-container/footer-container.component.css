@@ -2,3 +2,49 @@ footer {
   background-color: #27262C;
   padding: 0 15%;
 }
+
+.logo-top {
+  display: none;
+}
+
+@media screen and (max-width: 852px) {
+  footer {
+    padding: 0 10%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  footer {
+    padding: 0px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4% 15% 65% 16%;
+    grid-template-areas:
+      "logo"
+      "bottom"
+      "link"
+      "social";
+  }
+
+  .logo-top {
+    display: block;
+    padding-left: 10px;
+  }
+
+  app-footer-logo {
+    grid-area: logo;
+  }
+
+  app-footer-bottom {
+    grid-area: bottom;
+  }
+
+  app-footer-social {
+    grid-area: social;
+  }
+
+  app-footer-link {
+    grid-area: link;
+  }
+
+}

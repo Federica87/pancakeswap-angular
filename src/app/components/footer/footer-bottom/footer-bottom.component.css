@@ -156,3 +156,35 @@ input:checked+.slider:before {
   background-image: url(src/assets/images/icons/moon.svg);
   background-color: #27262c;
 }
+
+@media screen and (max-width: 576px) {
+  .footer-nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+      "right right"
+      "left .";
+    margin: 15px 15px;
+    padding: 0px 0px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(56, 58, 65);
+  }
+
+  .left {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    grid-area: left;
+  }
+
+  .right {
+    display: flex;
+    justify-content: space-between;
+    grid-area: right;
+  }
+
+  .logo-footer {
+    margin-top: 7px;
+  }
+}
