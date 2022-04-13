@@ -16,12 +16,17 @@ import { CardSingleComponent } from './components/card-single/card-single.compon
 import { ThirdSectionComponent } from './components/homepage/sections/third-section/third-section.component';
 import { FourthSectionComponent } from './components/homepage/sections/fourth-section/fourth-section.component';
 import { BunnyBitcoinsComponent } from './components/homepage/animations/bunny-bitcoins/bunny-bitcoins.component';
-import { CryptoStatsComponent } from './components/homepage/data/crypto-stats.component';
+import { CryptoStatsComponent } from './components/homepage/data/crypto-stats/crypto-stats.component';
 import { SixthSectionComponent } from './components/homepage/sections/sixth-section/sixth-section.component';
 import { LastSectionComponent } from './components/homepage/sections/last-section/last-section.component';
 import { FloatingCoinsComponent } from './components/homepage/animations/floating-coins/floating-coins.component';
+import { FifthSectionComponent } from './components/homepage/sections/fifth-section/fifth-section.component';
+import { FloatingCardsComponent } from './components/homepage/animations/floating-cards/floating-cards.component';
+import { FloatingBallsComponent } from './components/homepage/animations/floating-balls/floating-balls.component';
+import { TiltedCardsComponent } from './components/tilted-cards/tilted-cards.component';
 import { WalletComponent } from './components/wallet/wallet.component';
 import { FooterBottomComponent } from './components/footer/footer-bottom/footer-bottom.component';
+import { CakeStatsComponent } from './components/homepage/data/cake-stats/cake-stats.component';
 
 
 
@@ -46,8 +51,13 @@ import { FooterBottomComponent } from './components/footer/footer-bottom/footer-
     SixthSectionComponent,
     LastSectionComponent,
     FloatingCoinsComponent,
+    FifthSectionComponent,
+    FloatingCardsComponent,
+    FloatingBallsComponent,
+    TiltedCardsComponent,
     WalletComponent,
-    FooterBottomComponent
+    FooterBottomComponent,
+    CakeStatsComponent,
   ],
   imports: [
     BrowserModule,

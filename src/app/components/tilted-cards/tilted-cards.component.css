@@ -1,0 +1,136 @@
+.tilted-card1 {
+    background: rgba(0, 0, 0, 0)
+      linear-gradient(
+        rgb(255, 178, 55) 0%,
+        rgb(255, 205, 81) 51.17%,
+        rgb(255, 231, 106) 100%
+      );
+    transform: rotate(-2.36deg);
+    margin-right: 25px;
+  }
+  
+  .tilted-card2 {
+    background: rgba(0, 0, 0, 0)
+      linear-gradient(rgb(118, 69, 217) 0%, rgb(81, 33, 177) 100%) repeat scroll
+      0% 0%;
+    transform: rotate(1.43deg);
+  }
+  .tilted-card1,
+  .tilted-card2 {
+  border: 1px white solid;
+  box-shadow: 0px 5px 5px 0px #aaaaaa;
+  border-radius: 24px;
+  padding: 24px;
+  min-height: 168px;
+  height: fit-content;
+  width: 280px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.tilted-cards-container {
+    width: 100%;
+    height: fit-content;
+    justify-content: center;
+    align-items: flex-end;
+    display: flex;
+  }
+  .tilted-svg {
+    fill: rgb(216, 203, 237);
+    width: 100%;
+    height: 100%;
+    max-height: 48px;
+    flex-shrink: 0;
+    align-self: center;
+    margin-top:15px;
+    /* z-index: 1; */
+    background-color: white;
+  }
+  .tilted-card1 svg,
+  .tilted-card2 svg {
+    width: 36px;
+    height: 36px;
+    align-self: flex-end;
+  }  
+  /* Formattazione testo*/
+  /* Colori */
+  .tilted-card1 p,
+  .tilted-card1 h2 {
+    color: var(--violascuro);
+  }
+  
+  .tilted-card2 p {
+    color: white;
+  }
+  
+  .tilted-card2 h2 {
+    color: rgb(255, 178, 55);
+  }
+  
+  /* Spazi */
+  div .tilted-card,
+  .tilted-card2 {
+    height: fit-content;
+  }
+  
+  .tilted-card1 #p1,
+  .tilted-card2 #p1 {
+    margin-top: 48px;
+    vertical-align: top;
+  }
+  
+  .tilted-card1 h2,
+  .tilted-card2 h2 {
+    margin: 8px 0px;
+  }
+  
+  .tilted-card1 #p2,
+  .tilted-card2 #p2 {
+    margin-bottom: 24px;
+  }
+  
+  .tilted-card1 #p3,
+  .tilted-card2 #p3 {
+    margin-bottom: 40px;
+  }
+  
+  .tilted-card1 .btn-section,
+  .tilted-card2 .btn-section {
+    width: 240px;
+    height: 55px;
+    text-align: center;
+  }
+  
+  .tilted-card1 .btn-section svg,
+  .tilted-card2 .btn-section svg {
+    height: 20px;
+    width: 20px;
+    margin-left: 4px;
+    fill: white;
+  }
+  
+  /*Formattazione SVG tilted cards */
+  .tilted-card1 svg,
+  .tilted-card2 svg {
+    position: absolute;
+  }
+  
+  .tilted-card2 svg {
+    fill: white;
+  }
+
+@media screen and (max-width: 852px) {
+  .tilted-cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .tilted-card1,
+  .tilted-card2 {
+    transform: none;
+    margin: 0;
+  }
+  .tilted-card1 {
+    margin-bottom: 32px;
+  }
+}

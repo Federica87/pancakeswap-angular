@@ -1,6 +1,9 @@
 .fourth_section {
     background-color: rgb(240, 240, 245);
-    padding: 48px 24px 98px;   
+    padding: 48px 24px 98px;
+    display: flex;   
+    flex-direction: column;
+    align-items: center;
 }
 
 svg {
@@ -11,6 +14,11 @@ svg {
 .flex_container {
     display: flex;
     justify-content: center;
+}
+
+.animation {
+    width: 430px;
+    height: 430px;
 }
 
 .text {
@@ -33,4 +41,40 @@ span {
 .fourth_section p {
     color: var(--lilla);
     margin-bottom: 24px;
+}
+
+.stats {
+    width: 860px;
+    margin-top: 24px;
+}
+
+
+@media screen and (max-width: 852px) {
+
+    .fourth_section {
+        align-items: stretch;
+    }
+
+    .flex_container {
+        flex-direction: column;
+    }
+
+    .text {
+        width: initial;
+        height: initial;
+    }
+
+    .animation {
+        width: 192px;
+        height: 192px;
+        align-self: flex-end;
+    }
+
+    .stats {
+        width: initial;
+    }
+    
+    h2 {
+        font-size: 32px;
+    }
 }

@@ -1,0 +1,6 @@
+<div class="CAKE_stats">
+    <div *ngFor="let stat of cakeStats">
+        <p>{{ stat.name }}</p>
+        <p class="stats"><span *ngIf="stat.name === 'Market cap'">$</span>{{ stat.data | number }}<span *ngIf="stat.name === 'Market cap'"> billion</span><span *ngIf="stat.name === 'Current emissions'">/block</span></p>
+    </div>
+</div>

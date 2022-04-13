@@ -1,0 +1,40 @@
+p {
+    color: var(--lilla);
+    margin: 0;
+}
+
+.CAKE_stats {
+    display: flex;
+    justify-content: space-between;
+}
+  
+.CAKE_stats div {
+    padding-left: 16px;
+    border-left: 1px solid gainsboro;
+}
+  
+.CAKE_stats :first-child {
+    border: none;
+    padding: 0;
+}
+  
+.CAKE_stats .stats {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--violascuro);
+}
+
+@media screen and (max-width: 852px) {
+
+    .CAKE_stats {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 15px;
+    }
+
+    .CAKE_stats :nth-child(3) {
+        border: none;
+        padding: 0;
+    }
+    
+}

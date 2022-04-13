@@ -1,15 +1,7 @@
-.animation {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    position: relative;
-}
-
 .first {
     position: absolute;
     animation: 3s ease-in-out 1s infinite normal none running first;
+    width: 430px;
 }
 
 @keyframes first {
@@ -29,6 +21,7 @@
 .second {
     position: absolute;
     animation: 3s ease-in-out 0.66s infinite normal none running second;
+    width: 430px;
 }
 
 @keyframes second {
@@ -48,6 +41,7 @@
 .third {
     position: absolute;
     animation: 3s ease-in-out 0.33s infinite normal none running third;
+    width: 430px;
 }
   
   @keyframes third {
@@ -82,3 +76,52 @@
       transform: translate(0px, 0px);
     }
   }
+
+  img {
+    width: 100%;
+  }
+
+  .fifth {
+    position: absolute;
+    animation: 3s ease-in-out 0.66s infinite normal none running fifth;
+  }
+
+  @keyframes fifth {
+    0% {
+      transform: translate(0px, 0px);
+    }
+  
+    50% {
+      transform: translate(5px, 10px);
+    }
+  
+    100% {
+      transform: translate(0px, 0px);
+    }
+  }
+
+  .animation-fortune1 {
+    width: 512px;
+    height: 512px;
+    margin-top: 320px;
+    z-index: 1;
+  }
+  .animation-fortune1 div {
+      position: absolute;
+  }
+
+@media screen and (max-width: 852px) {
+  .animation-fortune1,
+  .animation-fortune1 .first img,
+  .animation-fortune1 .second img,
+  .animation-fortune1 .third img,
+  .animation-fortune1 .fourth img{
+    width: 190px;
+    height: 190px;
+    margin:0px;
+  }
+  .animation-fortune1 {
+    position: absolute;
+    bottom: -60px;  
+  }
+}

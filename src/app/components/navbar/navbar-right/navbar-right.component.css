@@ -17,12 +17,14 @@
   }
   
 .number-dollar {
+    color: rgb(122, 110, 170);
     font-size: 110%;
     text-decoration: none;
     z-index: 1;
   }
   
 .icon-globe {
+    fill: rgb(122, 110, 170);
     width: 1.5%;
     position: absolute;
     top: 0%;
@@ -32,6 +34,7 @@
   }
   
 .icon-setting {
+    fill: rgb(122, 110, 170);
     width: 1.5%;
     position: absolute;
     top: 0%;

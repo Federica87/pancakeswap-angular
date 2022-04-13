@@ -52,3 +52,9 @@ a:hover {
 .bottomRight {
   margin-top: 160px;
 }
+
+@media screen and (max-width: 852px) {
+  .coins {
+    display: none;
+  }
+}
