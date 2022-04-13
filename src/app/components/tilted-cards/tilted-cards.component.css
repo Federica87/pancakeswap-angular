@@ -128,7 +128,7 @@
   .tilted-card1,
   .tilted-card2 {
     transform: none;
-    margin-left: 16px;
+    margin: 0;
   }
   .tilted-card1 {
     margin-bottom: 32px;
