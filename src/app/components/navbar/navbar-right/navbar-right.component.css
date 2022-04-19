@@ -75,3 +75,17 @@ button {
     transform: translate(-10%, 30%);
     z-index: 1;
   }
+
+  @media (max-width: 940px) {
+    .icon-rabbit {
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(0%, -100%);
+    }
+
+    .button {
+      position: fixed;
+    }
+  }
+ 

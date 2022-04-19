@@ -67,3 +67,18 @@
     left: 0;
     transform: translate(50%, -5%);
   }
+
+@media (max-width: 940px) {
+
+  .logo {
+    position: fixed;
+  }
+
+  .navbar-links li a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(0%, -100%);
+  }
+
+}
