@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ICard } from 'src/app/models/ICard';
-import { mockCards } from 'src/app/mockup-data/cards-data';
+import { mockCards } from 'src/app/mockup-data/cardsData';
 @Component({
   selector: 'app-card-single',
   templateUrl: './card-single.component.html',

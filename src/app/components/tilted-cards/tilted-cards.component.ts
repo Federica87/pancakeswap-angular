@@ -1,6 +1,6 @@
 import { formatNumber } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { mockTiltedCards } from 'src/app/mockup-data/cards-data';
+import { mockTiltedCards } from 'src/app/mockup-data/cardsData';
 import { ITiltedCards } from 'src/app/models/ITiltedCards';
 
 
