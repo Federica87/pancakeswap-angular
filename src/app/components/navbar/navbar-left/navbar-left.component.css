@@ -71,7 +71,7 @@
 @media (max-width: 940px) {
 
   .logo {
-    position: fixed;
+    position: absolute;
   }
 
   .navbar-links li a {
