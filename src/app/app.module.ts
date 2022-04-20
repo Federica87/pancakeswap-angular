@@ -8,9 +8,6 @@ import { FooterContainerComponent } from './components/footer/footer-container/f
 import { FooterLinkComponent } from './components/footer/footer-link/footer-link.component';
 import { FooterLogoComponent } from './components/footer/footer-logo/footer-logo.component';
 import { FooterSocialComponent } from './components/footer/footer-social/footer-social.component';
-import { NavbarContainerComponent } from './components/navbar/navbar-container/navbar-container.component';
-import { NavbarLeftComponent } from './components/navbar/navbar-left/navbar-left.component';
-import { NavbarRightComponent } from './components/navbar/navbar-right/navbar-right.component';
 import { SecondSectionComponent } from './components/homepage/sections/second-section/second-section.component';
 import { CardSingleComponent } from './components/card-single/card-single.component';
 import { ThirdSectionComponent } from './components/homepage/sections/third-section/third-section.component';
@@ -27,6 +24,7 @@ import { TiltedCardsComponent } from './components/tilted-cards/tilted-cards.com
 import { WalletComponent } from './components/wallet/wallet.component';
 import { FooterBottomComponent } from './components/footer/footer-bottom/footer-bottom.component';
 import { CakeStatsComponent } from './components/homepage/data/cake-stats/cake-stats.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 
 
@@ -39,9 +37,6 @@ import { CakeStatsComponent } from './components/homepage/data/cake-stats/cake-s
     FooterLinkComponent,
     FooterLogoComponent,
     FooterSocialComponent,
-    NavbarContainerComponent,
-    NavbarLeftComponent,
-    NavbarRightComponent,
     SecondSectionComponent,
     CardSingleComponent,
     ThirdSectionComponent,
@@ -58,6 +53,7 @@ import { CakeStatsComponent } from './components/homepage/data/cake-stats/cake-s
     WalletComponent,
     FooterBottomComponent,
     CakeStatsComponent,
+    NavbarComponent,
   ],
   imports: [
     BrowserModule,

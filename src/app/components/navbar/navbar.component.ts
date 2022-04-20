@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { IEarn, INft, IOther, ITrade, IWin } from 'src/app/models/INav';
+import { IEarn, ILanguage, INft, IOther, ITrade, IWin } from 'src/app/models/INav';
 
 @Component({
-  selector: 'app-navbar-left',
-  templateUrl: './navbar-left.component.html',
-  styleUrls: ['./navbar-left.component.css']
+  selector: 'app-navbar',
+  templateUrl: './navbar.component.html',
+  styleUrls: ['./navbar.component.css']
 })
-export class NavbarLeftComponent implements OnInit {
+export class NavbarComponent implements OnInit {
 
   trades: ITrade[] = [
     {
@@ -70,6 +70,46 @@ export class NavbarLeftComponent implements OnInit {
       other: "Docs"
     }
   ]
+
+  languages: ILanguage[]=[
+    {
+      linguage:"العربي"
+    },
+    {
+      linguage: "বাংলা"
+    },
+    {
+      linguage: "English"
+    },
+    {
+      linguage: "Deutsch"
+    },
+    {
+      linguage: "Ελληνικά"
+    },
+    {
+      linguage:"Español"
+    },
+    {
+      linguage:"Suomalainen"
+    },
+    {
+      linguage:"Filipino"
+    },
+    {
+      linguage:"Français"
+    },
+    {
+      linguage:"हिंदी"
+    },
+    {
+      linguage:"Magyar"
+    },
+    {
+      linguage:"Bahasa Indonesia"
+    }
+  ]
+
 
   constructor() { }
 

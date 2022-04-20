@@ -17,3 +17,7 @@ export interface INft {
 export interface IOther {
     other: string;
 }
+
+export interface ILanguage {
+    linguage: string;
+}
