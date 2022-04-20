@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Stats } from 'src/app/models/Stats';
+import { Stat } from 'src/app/models/Stats';
 
 @Component({
   selector: 'app-sixth-section',

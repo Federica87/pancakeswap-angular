@@ -1,7 +1,6 @@
-import { ICard } from "../models/ICard";
-import { ITiltedCards } from "../models/ITiltedCards";
+import { Card } from "../models/Card";
 
-export let mockCards: ICard[]=
+export const mockCards: Card []=
    [
     {
       firstLine:'3.8 Million',
@@ -23,7 +22,7 @@ export let mockCards: ICard[]=
     }
   ]
 
-export let mockTiltedCards: ITiltedCards[]=
+export const mockTiltedCards: Card []=
   [
    {
      id:1,

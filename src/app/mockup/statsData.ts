@@ -1,6 +1,6 @@
-import { Stats } from "../models/Stats";
+import { Stat } from "../models/Stats";
 
-export const farmStatsMockup: Stats[] = [
+export const farmStatsMockup: Stat[] = [
     {
       name: "TEM-BUSD LP",
       data:  0,
@@ -28,7 +28,7 @@ export const farmStatsMockup: Stats[] = [
     }
   ]
 
-export const SyrupStatsMockup: Stats[] = [
+export const SyrupStatsMockup: Stat[] = [
     {
       name: "Stake CAKE - Earn XWG",
       data: 0,
@@ -56,7 +56,7 @@ export const SyrupStatsMockup: Stats[] = [
     }
   ]
 
-export const cakeStatsMockup: Stats[] = [
+export const cakeStatsMockup: Stat[] = [
     {
       name: "Total supply",
       data: 265869181

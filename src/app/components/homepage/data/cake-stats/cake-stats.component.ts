@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { cakeStatsMockup } from 'src/app/mockup-data/statsData';
-import { Stats } from 'src/app/models/Stats';
+import { cakeStatsMockup } from 'src/app/mockup/statsData';
+import { Stat } from 'src/app/models/Stats';
+import { DataService } from 'src/app/services/data.service';
 
 @Component({
   selector: 'app-cake-stats',
@@ -9,16 +10,15 @@ import { Stats } from 'src/app/models/Stats';
 })
 export class CakeStatsComponent implements OnInit {
 
-  cakeStats: Stats [] = cakeStatsMockup
+  cakeStats = this.dataService.getStats('cake');
 
-  constructor() {
-    setInterval(() => {
-      this.cakeStats[0].data -= 1;
-      this.cakeStats[1].data += 1;
-    },30)
-  }
+  constructor( private dataService: DataService ) {}
 
   ngOnInit(): void {
+    setInterval(() => {
+      this.cakeStats![0].data -= 1;
+      this.cakeStats![1].data += 1;
+    },30)
   }
 
 }

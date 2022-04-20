@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { farmStatsMockup, SyrupStatsMockup } from 'src/app/mockup-data/statsData';
-import { Stats } from 'src/app/models/Stats';
+import { farmStatsMockup, SyrupStatsMockup } from 'src/app/mockup/statsData';
+import { Stat } from 'src/app/models/Stats';
+import { DataService } from 'src/app/services/data.service';
 
 @Component({
   selector: 'app-crypto-stats',
@@ -9,17 +10,17 @@ import { Stats } from 'src/app/models/Stats';
 })
 export class CryptoStatsComponent implements OnInit {
   headers: string[] = ["Farms", "Syrup Pools"];
-  // 67,69 e 100,500
 
-  farmStats: Stats[] = farmStatsMockup;
+  farmStats = this.dataService.getStats('farm');
 
-  syrupStats: Stats[] = SyrupStatsMockup;
+  syrupStats = this.dataService.getStats('syrup');
 
-  constructor() {setInterval( () => this.switchStats(), 10000) }
+  constructor( private dataService: DataService ) {}
   
   ngOnInit(): void {
-    this.farmStats.map(stat => stat.data = this.getRandomPerc(67, 69));
-    this.syrupStats.map(stat => stat.data = this.getRandomPerc(100, 500));
+    setInterval( () => this.switchStats(), 10000) 
+    this.farmStats!.map(stat => stat.data = this.getRandomPerc(67, 69));
+    this.syrupStats!.map(stat => stat.data = this.getRandomPerc(100, 500));
   }
 
   switchStats(): void {

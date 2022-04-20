@@ -1,16 +1,17 @@
 import { Component, OnInit } from '@angular/core';
-import { ICard } from 'src/app/models/ICard';
-import { mockCards } from 'src/app/mockup-data/cardsData';
+import { Card } from 'src/app/models/Card';
+import { mockCards } from 'src/app/mockup/cardsData';
+import { DataService } from 'src/app/services/data.service';
 @Component({
   selector: 'app-card-single',
   templateUrl: './card-single.component.html',
   styleUrls: ['./card-single.component.css']
 })
 export class CardSingleComponent implements OnInit {
- cards: ICard[]=mockCards;
 
+  cards = this.dataService.getCards('cards');
 
-  constructor() { }
+  constructor( private dataService: DataService ) {}
 
   ngOnInit(): void {
   }

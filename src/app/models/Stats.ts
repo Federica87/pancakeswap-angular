@@ -1,4 +1,4 @@
-export interface Stats {
+export interface Stat {
     name: string
     data: number
     info?: string
