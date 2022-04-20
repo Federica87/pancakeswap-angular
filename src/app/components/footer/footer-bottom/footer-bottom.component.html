@@ -2,7 +2,7 @@
   <div class="left">
     <div class="btn-switch">
       <label class="switch">
-        <input type="checkbox">
+        <input type="checkbox" (click)="darkMode()">
         <span class="slider"></span>
       </label>
     </div>
@@ -14,12 +14,15 @@
         </svg>
         <p>EN</p>
       </div>
+      <div class="language-content">
+        <a href="#" *ngFor="let language of languages">{{ language }}</a>
+      </div>
     </div>
   </div>
   <div class="right">
     <div class="logo-footer">
       <img src="assets/images/logo.png" alt="Logo">
-      <p class="pbold">$7.333</p>
+      <p class="pbold">${{ cryptoValue  }}</p>
     </div>
     <button class="btn-bar btn-flex">Buy CAKE
       <div class="cake-arrow">

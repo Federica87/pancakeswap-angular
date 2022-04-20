@@ -5,6 +5,10 @@
   font-family: "Kanit", sans-serif;
 }
 
+body.dark {
+  background-color: #08060B;
+}
+
 /*Colori*/
 :root {
   --violachiaro: #7645d9;

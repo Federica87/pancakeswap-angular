@@ -1,20 +1,20 @@
 .first_section {
-    display: flex;
-    justify-content: center;
-    padding: 48px 24px;
-    background: linear-gradient(to left top,rgb(241,242,255), rgb(230,253,255));
-    position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 48px 24px;
+  background: linear-gradient(to left top, rgb(241, 242, 255), rgb(230, 253, 255));
+  position: relative;
 }
 
 .animation {
-    width: 576px;
-    height: 576px;
+  width: 576px;
+  height: 576px;
 }
 
 svg {
-    position: absolute;
-    fill: white;
-    bottom: 0;
+  position: absolute;
+  fill: white;
+  bottom: 0;
 }
 
 .text {
@@ -27,36 +27,36 @@ svg {
 }
 
 .btn-section {
-    margin-right: 8px;
+  margin-right: 8px;
 }
 
 h1 {
-    color: var(--violachiaro);
-    margin-bottom: 24px;
+  color: var(--violachiaro);
+  margin-bottom: 24px;
 }
 
 h3 {
-    color: var(--violascuro);
-    margin-bottom: 24px;
+  color: var(--violascuro);
+  margin-bottom: 24px;
 }
 
 @media screen and (max-width: 852px) {
-    .first_section {
-        flex-direction: column-reverse;
-    }
+  .first_section {
+    flex-direction: column-reverse;
+  }
 
-    .text {
-        width: initial;
-        height: initial;
-    }
+  .text {
+    width: initial;
+    height: initial;
+  }
 
-    .animation {
-        width: 192px;
-        height: 192px;
-        align-self: flex-end;
-    }
+  .animation {
+    width: 192px;
+    height: 192px;
+    align-self: flex-end;
+  }
 
-    h1 {
-        font-size: 48px;
-    }
+  h1 {
+    font-size: 48px;
+  }
 }
