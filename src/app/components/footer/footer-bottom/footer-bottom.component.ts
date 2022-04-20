@@ -9,7 +9,17 @@ export class FooterBottomComponent implements OnInit {
 
   languages: Array<string> = ['العربية', 'বাংলা', 'English', 'Deutsch', 'Ελληνικά', 'Español', 'Suomalainen', 'Filipino', 'Français', 'हिंदी', 'Magyar', 'Bahasa Indonesia', 'Italiano', '日本語', '한국어', 'Nederlands', 'Polski', 'Português (Brazil)', 'Português', 'Română', 'Русский', 'Svenska', 'தமிழ்', 'Türkçe', 'Українська', 'Tiếng Việt', '简体中文', '繁體中文']
 
-  constructor() { }
+  constructor() {setInterval(() => this.randomCryptoValue(), 10000);}
+
+  cryptoValue: number = 7000; 
+
+  randomCryptoValue(min: number = 6500, max: number = 7500): void {
+    this.cryptoValue = Math.floor(Math.random() * (max-min) + min);
+  }
+
+  darkMode() {
+    document.body.classList.toggle('dark');
+  }
 
   ngOnInit(): void {
   }
