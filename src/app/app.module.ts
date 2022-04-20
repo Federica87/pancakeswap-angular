@@ -25,6 +25,8 @@ import { WalletComponent } from './components/wallet/wallet.component';
 import { FooterBottomComponent } from './components/footer/footer-bottom/footer-bottom.component';
 import { CakeStatsComponent } from './components/homepage/data/cake-stats/cake-stats.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { HomepageComponentComponent } from './components/homepage/homepage-component/homepage-component.component';
+import { AppRoutingModule } from './app-routing.module';
 
 
 
@@ -54,10 +56,12 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     FooterBottomComponent,
     CakeStatsComponent,
     NavbarComponent,
-  ],
+    HomepageComponentComponent
+    ],
   imports: [
     BrowserModule,
-    NgbModule
+    NgbModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
