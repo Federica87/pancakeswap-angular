@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { IEarn, ILanguage, INft, IOther, ITrade, IWin } from 'src/app/models/INav';
+import { WalletService } from 'src/app/services/wallet.service';
 
 @Component({
   selector: 'app-navbar',
@@ -111,9 +112,13 @@ export class NavbarComponent implements OnInit {
   ]
 
 
-  constructor() { }
+  constructor( private walletService: WalletService ) { }
 
   ngOnInit(): void {
+  }
+
+  connectWallet(): void {
+    this.walletService.connect();
   }
 
 }

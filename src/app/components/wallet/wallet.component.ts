@@ -1,4 +1,5 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { WalletService } from 'src/app/services/wallet.service';
 
 @Component({
   selector: 'app-wallet',
@@ -6,16 +7,16 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
   styleUrls: ['./wallet.component.css']
 })
 export class WalletComponent implements OnInit {
-  @Output() exit = new EventEmitter<void>();
+
   more: boolean = false;
 
-  constructor() { }
+  constructor( private walletService: WalletService ) { }
 
   ngOnInit(): void {
   }
 
   exitWallet(): void {
-    this.exit.emit();
+    this.walletService.exit()
   }
 
   openMore(): void {

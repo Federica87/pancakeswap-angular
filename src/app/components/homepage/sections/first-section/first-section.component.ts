@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { WalletService } from 'src/app/services/wallet.service';
 
 @Component({
   selector: 'app-first-section',
@@ -6,17 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./first-section.component.css']
 })
 export class FirstSectionComponent implements OnInit {
-  wallet: boolean = false;
-  connectWallet(): void {
-    if (this.wallet === false) {
-    this.wallet = true;
-    }
-    else {
-      this.wallet = false;
-    }
-  }
 
-  constructor() { }
+  connectWallet(): void { this.walletService.connect() }
+
+  constructor( private walletService: WalletService) { }
 
   ngOnInit(): void {
   }

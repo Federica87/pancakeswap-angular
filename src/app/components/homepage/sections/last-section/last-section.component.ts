@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { WalletService } from 'src/app/services/wallet.service';
 
 @Component({
   selector: 'app-last-section',
@@ -18,7 +19,11 @@ export class LastSectionComponent implements OnInit {
     "../../../../../assets/images/home/start/2-right.png"
   ]
 
-  constructor() { }
+  connectWallet(): void {
+    this.walletService.connect();
+  }
+  
+  constructor( private walletService: WalletService ) { }
 
   ngOnInit(): void {
   }
