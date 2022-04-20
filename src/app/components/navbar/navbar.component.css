@@ -249,5 +249,47 @@ button {
 }
 
 @media (max-width: 852px) {
-  
+  .navbar {
+      height: 55px;
+  }
+
+  .logo {
+      position: absolute;
+  }
+
+  .navbar-links {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translate(0%, -100%);
+  }
+
+  .icon-rabbit {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(0%, -100%);
+  }
+
+  .number-dollar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(0%, -100%);
+  }
+
+  /* .language-links {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(0%, -100%); 
+  }
+
+  .icon-setting {
+    position: absolute;
+    top: 0%;
+    right: 0;
+    transform: translate(0%, -100%);
+  } */
+
 }
