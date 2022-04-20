@@ -1,5 +1,5 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { Subscription } from 'rxjs';
+import { Observable, Subscription } from 'rxjs';
 import { WalletService } from 'src/app/services/wallet.service';
 
 @Component({
@@ -7,18 +7,13 @@ import { WalletService } from 'src/app/services/wallet.service';
   templateUrl: './homepage-container.html',
   styleUrls: ['./homepage-container.css']
 })
-export class HomepageContainerComponent implements OnInit, OnDestroy {
-  wallet: boolean = false;
-  subscription!: Subscription;
+export class HomepageContainerComponent implements OnInit {
+  wallet$!: Observable<boolean>;
 
   constructor( private walletService: WalletService ) {}
 
   ngOnInit() {
-    this.subscription= this.walletService.getStatus().subscribe(data => this.wallet = data);
-  }
-
-  ngOnDestroy(): void {
-    this.subscription.unsubscribe();
+    this.wallet$ = this.walletService.getStatus();
   }
 
 }
