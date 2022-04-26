@@ -27,6 +27,7 @@ import { CakeStatsComponent } from './components/homepage/data/cake-stats/cake-s
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomepageContainerComponent } from './components/homepage/homepage-container/homepage-container';
 import { AppRoutingModule } from './app-routing.module';
+import { PoolsContainerComponent } from './components/earn/pools/pools-container/pools-container.component';
 
 
 
@@ -56,7 +57,8 @@ import { AppRoutingModule } from './app-routing.module';
     FooterBottomComponent,
     CakeStatsComponent,
     NavbarComponent,
-    HomepageContainerComponent
+    HomepageContainerComponent,
+    PoolsContainerComponent
     ],
   imports: [
     BrowserModule,
