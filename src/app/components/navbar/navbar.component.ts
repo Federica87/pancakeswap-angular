@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { IEarn, ILanguage, INft, IOther, ITrade, IWin } from 'src/app/models/INav';
-import { CakeValueService } from 'src/app/services/cake-value.service';
+import { NavDollarService } from 'src/app/services/nav-dollar.service';
 import { WalletService } from 'src/app/services/wallet.service';
 
 @Component({
@@ -116,12 +116,12 @@ export class NavbarComponent implements OnInit {
   ]
 
 
-  constructor(private cakeValueService: CakeValueService, private walletService: WalletService ) { }
+  constructor(private navDollarService: NavDollarService, private walletService: WalletService ) { }
 
-  cakeValueObs$!: Observable<number>;
+  navDollarObs$!: Observable<number>;
 
   ngOnInit(): void {
-    this.cakeValueObs$ = this.cakeValueService.getCakeValue();
+   this.navDollarObs$ = this.navDollarService.getNavDollar();
   }
 
   connectWallet(): void {
