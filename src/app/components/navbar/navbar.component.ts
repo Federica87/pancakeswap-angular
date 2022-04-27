@@ -22,9 +22,11 @@ export class NavbarComponent implements OnInit {
 
   earns: IEarn[] = [
     {
+      link:"/earn/farms",
       earn: "Farms"
     },
     {
+      link:"earn/pools",
       earn: "Pools"
     }
   ]

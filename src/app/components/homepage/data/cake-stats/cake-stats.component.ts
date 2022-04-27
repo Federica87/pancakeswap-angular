@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { cakeStatsMockup } from 'src/app/mockup/statsData';
 import { Stat } from 'src/app/models/Stats';
-import { DataService } from 'src/app/services/data.service';
+import { CakeStatsService } from 'src/app/services/cake-stats.service';
 
 @Component({
   selector: 'app-cake-stats',
@@ -10,9 +10,9 @@ import { DataService } from 'src/app/services/data.service';
 })
 export class CakeStatsComponent implements OnInit {
 
-  cakeStats = this.dataService.getStats('cake');
+  cakeStats = this.cakeStatsService.get();
 
-  constructor( private dataService: DataService ) {}
+  constructor( private cakeStatsService: CakeStatsService ) {}
 
   ngOnInit(): void {
     setInterval(() => {

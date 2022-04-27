@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { farmStatsMockup, SyrupStatsMockup } from 'src/app/mockup/statsData';
 import { Stat } from 'src/app/models/Stats';
-import { DataService } from 'src/app/services/data.service';
+import { FarmStatsService } from 'src/app/services/farm-stats.service';
+import { SyrupStatsService } from 'src/app/services/syrup-stats.service';
 
 @Component({
   selector: 'app-crypto-stats',
@@ -11,11 +12,11 @@ import { DataService } from 'src/app/services/data.service';
 export class CryptoStatsComponent implements OnInit {
   headers: string[] = ["Farms", "Syrup Pools"];
 
-  farmStats = this.dataService.getStats('farm');
+  farmStats = this.farmStatsService.get();
 
-  syrupStats = this.dataService.getStats('syrup');
+  syrupStats = this.syrupStatService.get();
 
-  constructor( private dataService: DataService ) {}
+  constructor( private farmStatsService: FarmStatsService, private syrupStatService: SyrupStatsService ) {}
   
   ngOnInit(): void {
     setInterval( () => this.switchStats(), 10000) 

@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Card } from 'src/app/models/Card';
-import { mockCards } from 'src/app/mockup/cardsData';
-import { DataService } from 'src/app/services/data.service';
+import { CardsService } from 'src/app/services/cards.service';
+
 @Component({
   selector: 'app-card-single',
   templateUrl: './card-single.component.html',
@@ -9,9 +8,9 @@ import { DataService } from 'src/app/services/data.service';
 })
 export class CardSingleComponent implements OnInit {
 
-  cards = this.dataService.getCards('cards');
+  cards = this.cardsService.get();
 
-  constructor( private dataService: DataService ) {}
+  constructor( private cardsService: CardsService ) {}
 
   ngOnInit(): void {
   }
