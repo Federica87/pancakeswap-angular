@@ -27,6 +27,7 @@ import { CakeStatsComponent } from './components/homepage/data/cake-stats/cake-s
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomepageContainerComponent } from './components/homepage/homepage-container/homepage-container';
 import { AppRoutingModule } from './app-routing.module';
+import { EarnModule } from './components/earn/earn.module';
 
 
 
@@ -61,6 +62,7 @@ import { AppRoutingModule } from './app-routing.module';
   imports: [
     BrowserModule,
     NgbModule,
+    EarnModule,
     AppRoutingModule
   ],
   providers: [],

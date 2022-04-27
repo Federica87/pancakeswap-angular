@@ -1,0 +1,12 @@
+a {
+    text-decoration: none;
+    margin: 0px 15px;
+    border-bottom: 3px var(--acqua) solid;
+    color: var(--violachiaro);
+}
+a.active {
+    font-weight: bold;
+}
+.container {
+    margin-top:8px;
+}
