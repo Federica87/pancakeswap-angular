@@ -3,6 +3,7 @@ export interface ITrade {
 }
 
 export interface IEarn {
+    link: string;
     earn: string;
 }
 
