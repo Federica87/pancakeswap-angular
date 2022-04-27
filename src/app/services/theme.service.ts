@@ -6,16 +6,14 @@ import { Injectable } from '@angular/core';
 })
 export class ThemeService {
 
-private themeSwitch = new BehaviorSubject<boolean>(false);
-public theme$ = this.themeSwitch.asObservable();
+toggle = document.getElementById('theme-switch') as HTMLInputElement;
 
   switchTheme() {
-    if(this.theme$) {
+    if(true) {
       document.documentElement.setAttribute('data-theme', 'dark');
     } else {
       document.documentElement.setAttribute('data-theme', 'light');
     }
   }
-
-  constructor() { }
+constructor() { }
 }
