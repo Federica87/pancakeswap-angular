@@ -60,7 +60,15 @@
     
     
     <img src="assets/logo.png" alt="#" class="icon-rabbit">
-    <a href="#" class="number-dollar"><b>$7.241</b></a>
+    <!-- <a href="#" class="number-dollar"><b>$7.241</b></a> -->
+
+    <a href="#" class="number-dollar">
+        <b>
+        <ng-container *ngIf="cakeValueObs$ | async as cakeValue">
+            {{ cakeValue | currency: "USD":"symbol":"1.0-0" }}
+        </ng-container>
+        </b>
+    </a>
     
     <ul [style.listStyleType]="'none'" [style.display]="'flex'" [style.zIndex]="1" class="language-links">
         <li class="language-dropdown">

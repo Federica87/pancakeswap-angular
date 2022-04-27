@@ -93,13 +93,19 @@
     transform: translate(-1380%, 60%);
     z-index: 1;
   }
+
+  .number-dollar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   
 .number-dollar {
     /* width: 2%; */
     position: absolute;
     top: 0%;
     right: 0;
-    transform: translate(-650%, 60%);
+    transform: translate(-600%, 60%);
   }
   
 .number-dollar {
