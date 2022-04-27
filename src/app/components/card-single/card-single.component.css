@@ -1,31 +1,32 @@
 .card {
-  border: 1px white solid;
-  box-shadow: 0px 5px 5px 0px #aaaaaa;
+  border: 1px var(--border);
+  box-shadow: 0px 5px 5px 0px var(--boxshadow);
   border-radius: 24px;
   margin-right: 16px;
   padding: 24px;
   min-height: 168px;
   height: fit-content;
   width: 280px;
-  background-color: white;
+  background-color: var(--cardsbg);
   display: flex;
   flex-direction: column;
 }
+
 .card:last-child {
-    margin-right: 0px;
-  }
-  
-  /* Sistemazione SVG*/
-  .card svg,
-  .tilted-card svg,
-  .tilted-card2 svg {
-    width: 36px;
-    height: 36px;
-    align-self: flex-end;
-  }
-  
-  /* Colori SVG  cards*/
-  /* #card1 > svg {
+  margin-right: 0px;
+}
+
+/* Sistemazione SVG*/
+.card svg,
+.tilted-card svg,
+.tilted-card2 svg {
+  width: 36px;
+  height: 36px;
+  align-self: flex-end;
+}
+
+/* Colori SVG  cards*/
+/* #card1 > svg {
     fill: var(--violachiaro);
   }
   
@@ -36,69 +37,75 @@
   #card3 > svg {
     fill: var(--rosa);
   } */
-  
-  /*Testo + margini */
+
+/*Testo + margini */
+.card {
+  text-align: left;
+}
+
+.card h2 {
+  font-family: "Kanit", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 44px;
+}
+
+.card h2:first-of-type {
+  color: var(--violascuro);
+  margin-top: 60px;
+}
+
+.card h2:last-of-type {
+  margin-bottom: 24px;
+}
+
+.card p {
+  color: var(--lilla);
+  font-family: "Kanit", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+
+.color1 {
+  color: var(--violachiaro);
+  fill: var(--violachiaro);
+}
+
+.color2 {
+  color: var(--acqua);
+  fill: var(--acqua);
+}
+
+.color3 {
+  color: var(--rosa);
+  fill: var(--rosa);
+}
+
+@media only screen and (max-width: 852px) {
   .card {
-    text-align: left;
+    max-width: 280px;
+    max-height: 165px;
+    margin: 0;
+    margin-bottom: 16px;
   }
-  
-  .card h2 {
-    font-family: "Kanit", sans-serif;
-    font-size: 40px;
-    font-weight: 600;
-    line-height: 44px;
+
+  .card svg {
+    flex-shrink: 0;
+    position: absolute;
   }
-  
+
   .card h2:first-of-type {
-    color: var(--violascuro);
-    margin-top: 60px;
-  }
-  
-  .card h2:last-of-type {
-    margin-bottom: 24px;
+    margin: 0px;
   }
 
-  .card p {
-    color: var(--lilla);
-    font-family: "Kanit", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-  }
-  
-
-  .color1 {
-    color:var(--violachiaro); 
-    fill:var(--violachiaro);
-  }
-  .color2 {
-    color: var(--acqua);
-    fill: var(--acqua);
-  }
-  .color3 {
-    color: var(--rosa);
-    fill: var(--rosa);
+  .card h2 {
+    font-size: 32px;
+    max-height: 36px;
   }
 
-  @media only screen and (max-width: 852px) {
-    .card {
-      max-width: 280px;
-      max-height: 165px;
-      margin: 0;
-      margin-bottom: 16px;
-    }
-    .card svg {
-      flex-shrink: 0;
-      position: absolute;
-    }
-    .card h2:first-of-type {
-      margin: 0px;
-    }
-    .card h2 {
-      font-size: 32px;
-      max-height: 36px;
-    }  
-    .d-flex {
-      flex-direction: column;
-    }
+  .d-flex {
+    flex-direction: column;
   }
+}

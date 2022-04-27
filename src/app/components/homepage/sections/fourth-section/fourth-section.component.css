@@ -1,24 +1,24 @@
 .fourth_section {
-    background-color: rgb(240, 240, 245);
-    padding: 48px 24px 98px;
-    display: flex;   
-    flex-direction: column;
-    align-items: center;
+  background-color: var(--fourthsection);
+  padding: 48px 24px 98px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 svg {
-    transform: scaleY(-1);
-    fill: rgb(240, 240, 245);
+  transform: scaleY(-1);
+  fill: var(--fourthsection);
 }
 
 .flex_container {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .animation {
-    width: 430px;
-    height: 430px;
+  width: 430px;
+  height: 430px;
 }
 
 .text {
@@ -30,51 +30,51 @@ svg {
 }
 
 h2 {
-    color: var(--violascuro);
-    margin-bottom: 24px;
+  color: var(--violascuro);
+  margin-bottom: 24px;
 }
 
 span {
-    color: var(--violachiaro);
+  color: var(--violachiaro);
 }
 
 .fourth_section p {
-    color: var(--lilla);
-    margin-bottom: 24px;
+  color: var(--lilla);
+  margin-bottom: 24px;
 }
 
 .stats {
-    width: 860px;
-    margin-top: 24px;
+  width: 860px;
+  margin-top: 24px;
 }
 
 
 @media screen and (max-width: 852px) {
 
-    .fourth_section {
-        align-items: stretch;
-    }
+  .fourth_section {
+    align-items: stretch;
+  }
 
-    .flex_container {
-        flex-direction: column;
-    }
+  .flex_container {
+    flex-direction: column;
+  }
 
-    .text {
-        width: initial;
-        height: initial;
-    }
+  .text {
+    width: initial;
+    height: initial;
+  }
 
-    .animation {
-        width: 192px;
-        height: 192px;
-        align-self: flex-end;
-    }
+  .animation {
+    width: 192px;
+    height: 192px;
+    align-self: flex-end;
+  }
 
-    .stats {
-        width: initial;
-    }
-    
-    h2 {
-        font-size: 32px;
-    }
+  .stats {
+    width: initial;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
 }
