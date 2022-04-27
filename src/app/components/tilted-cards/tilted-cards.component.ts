@@ -2,7 +2,7 @@ import { formatNumber } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { mockTiltedCards } from 'src/app/mockup/cardsData';
 import { Card } from 'src/app/models/Card';
-import { DataService } from 'src/app/services/data.service';
+import { TiltedCardsService } from 'src/app/services/tilted-cards.service';
 
 
 @Component({
@@ -12,13 +12,13 @@ import { DataService } from 'src/app/services/data.service';
 })
 export class TiltedCardsComponent implements OnInit {
 
-  tiltedCards = this.dataService.getCards('tilted');
+  tiltedCards = this.tiltedCardService.get();
 
   numberGenerator(max: number= 19800, min: number= 19999): void {
     this.tiltedCards![1].secondLine = Math.trunc((Math.random() * (max - min) + min))
   }
 
-  constructor( private dataService: DataService ) {}
+  constructor( private tiltedCardService: TiltedCardsService ) {}
 
   ngOnInit(): void {
     setInterval( () => this.numberGenerator(), 4000)
