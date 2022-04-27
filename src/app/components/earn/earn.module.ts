@@ -4,12 +4,14 @@ import { RouterModule } from "@angular/router";
 import { EarnComponent } from "./earn.component";
 import { FarmsContainerComponent } from "./farms/farms-container/farms-container.component";
 import { FarmsDataComponent } from './farms/farms-data/farms-data.component';
+import { PoolsContainerComponent } from "./pools/pools-container/pools-container.component";
 
 @NgModule({
     declarations: [
         EarnComponent,
         FarmsContainerComponent,
-        FarmsDataComponent
+        FarmsDataComponent,
+        PoolsContainerComponent
     ],
     imports:[
         CommonModule,

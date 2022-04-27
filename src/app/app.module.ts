@@ -28,7 +28,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomepageContainerComponent } from './components/homepage/homepage-container/homepage-container';
 import { AppRoutingModule } from './app-routing.module';
 import { EarnModule } from './components/earn/earn.module';
-
+import { LimitContainerComponent } from './components/trade/limit/limit-container/limit-container.component';
 
 
 @NgModule({
@@ -57,7 +57,8 @@ import { EarnModule } from './components/earn/earn.module';
     FooterBottomComponent,
     CakeStatsComponent,
     NavbarComponent,
-    HomepageContainerComponent
+    HomepageContainerComponent,
+    LimitContainerComponent
     ],
   imports: [
     BrowserModule,
