@@ -7,8 +7,13 @@
 
 .navbar {
   height: 56px;
+<<<<<<< HEAD
+  background-color: rgb(255, 255, 255);
+  border-bottom: 1px solid rgb(231, 227, 235);
+=======
   background-color: var(--cardsbg);
   border-bottom: 1px solid var(--cardsbg);
+>>>>>>> feature/theme
 }
 
 /* Navbar Left */
@@ -21,6 +26,15 @@
   transform: translate(10%, 50%);
   z-index: 1;
 }
+<<<<<<< HEAD
+
+/* .navbar-links {
+  list-style-type: none;
+  display: flex;
+  z-index: 1;
+} */
+
+=======
 
 svg {
   fill: var(--logo);
@@ -32,6 +46,7 @@ svg {
     z-index: 1;
   } */
 
+>>>>>>> feature/theme
 .navbar-links li a {
   display: block;
   text-decoration: none;
@@ -90,6 +105,10 @@ svg {
 /* Navbar Right */
 
 .icon-rabbit {
+<<<<<<< HEAD
+=======
+  /* width: 1.5%; */
+>>>>>>> feature/theme
   position: absolute;
   top: 0%;
   right: 0;
@@ -98,11 +117,19 @@ svg {
 }
 
 .number-dollar {
+<<<<<<< HEAD
   position: absolute;
   top: 7px;
   right: 0;
   /* transform: translate(-550%, 60%); */
   transform: translate(-600%, 35%);
+=======
+  /* width: 2%; */
+  position: absolute;
+  top: 0%;
+  right: 0;
+  transform: translate(-650%, 60%);
+>>>>>>> feature/theme
 }
 
 .number-dollar {
@@ -111,6 +138,7 @@ svg {
 }
 
 /* .icon-globe {
+<<<<<<< HEAD
   fill: rgb(122, 110, 170);
   width: 1.5%;
   position: absolute;
@@ -119,6 +147,16 @@ svg {
   transform: translate(-910%, 50%);
   z-index: 1;
 } */
+=======
+    fill: rgb(122, 110, 170);
+    width: 1.5%;
+    position: absolute;
+    top: 0%;
+    right: 0;
+    transform: translate(-910%, 50%);
+    z-index: 1;
+  } */
+>>>>>>> feature/theme
 
 .icon-setting {
   fill: rgb(122, 110, 170);
@@ -214,10 +252,17 @@ button {
 }
 
 .language-links {
+<<<<<<< HEAD
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-870%, 30%); 
+=======
   position: absolute;
   top: 0;
   right: 0;
   transform: translate(-870%, 30%);
+>>>>>>> feature/theme
 }
 
 @media (max-width: 576px) {

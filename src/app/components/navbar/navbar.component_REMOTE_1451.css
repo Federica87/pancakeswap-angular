@@ -90,6 +90,7 @@ svg {
 /* Navbar Right */
 
 .icon-rabbit {
+  /* width: 1.5%; */
   position: absolute;
   top: 0%;
   right: 0;
@@ -98,11 +99,11 @@ svg {
 }
 
 .number-dollar {
+  /* width: 2%; */
   position: absolute;
-  top: 7px;
+  top: 0%;
   right: 0;
-  /* transform: translate(-550%, 60%); */
-  transform: translate(-600%, 35%);
+  transform: translate(-650%, 60%);
 }
 
 .number-dollar {
@@ -111,14 +112,14 @@ svg {
 }
 
 /* .icon-globe {
-  fill: rgb(122, 110, 170);
-  width: 1.5%;
-  position: absolute;
-  top: 0%;
-  right: 0;
-  transform: translate(-910%, 50%);
-  z-index: 1;
-} */
+    fill: rgb(122, 110, 170);
+    width: 1.5%;
+    position: absolute;
+    top: 0%;
+    right: 0;
+    transform: translate(-910%, 50%);
+    z-index: 1;
+  } */
 
 .icon-setting {
   fill: rgb(122, 110, 170);

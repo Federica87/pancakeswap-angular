@@ -5,8 +5,8 @@
   font-family: "Kanit", sans-serif;
 }
 
-body.dark {
-  background-color: #08060B;
+body {
+  background-color: var(--bg-color);
 }
 
 /*Colori*/
@@ -17,6 +17,43 @@ body.dark {
   --acqua: #1fc7d4;
   --rosa: #ed4b9e;
   --ocra: #cd9234;
+  --bg-color: #FFFFFF;
+  --firstsection1: rgb(241, 242, 255);
+  --firstsection2: rgb(230, 253, 255);
+  --svg: white;
+  --secondsection1: rgb(249, 250, 255);
+  --secondsection2: rgb(215, 202, 236);
+  --fourthsection: rgb(240, 240, 245);
+  --fifthsection1: rgb(111, 182, 241);
+  --fifthsection2: rgb(234, 242, 246);
+  --exteriorcontainer: rgba(255, 255, 255, 0.6);
+  --border: rgb(231, 227, 235);
+  --boxshadow: #AAAAAA;
+  --cardsbg: white;
+  --logo: black;
+}
+
+[data-theme="dark"] {
+  --violachiaro: #7645d9;
+  --violascuro: #FFFFFF;
+  --lilla: #7A6EAA;
+  --acqua: #1fc7d4;
+  --rosa: #ed4b9e;
+  --ocra: #cd9234;
+  --bg-color: #08060B;
+  --firstsection1: rgb(25, 19, 38);
+  --firstsection2: rgb(29, 22, 48);
+  --svg: #09070E;
+  --secondsection1: #0F0C17;
+  --secondsection2: #201335;
+  --fourthsection: #3B374B;
+  --fifthsection1: #0B4576;
+  --fifthsection2: #091115;
+  --exteriorcontainer: rgb(9, 28, 48, 0.6);
+  --border: rgb(30, 32, 43);
+  --boxshadow: #383241;
+  --cardsbg: #27262C;
+  --logo: white;
 }
 
 .w100 {

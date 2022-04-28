@@ -7,8 +7,8 @@
 
 .navbar {
   height: 56px;
-  background-color: var(--cardsbg);
-  border-bottom: 1px solid var(--cardsbg);
+  background-color: rgb(255, 255, 255);
+  border-bottom: 1px solid rgb(231, 227, 235);
 }
 
 /* Navbar Left */
@@ -22,15 +22,11 @@
   z-index: 1;
 }
 
-svg {
-  fill: var(--logo);
-}
-
 /* .navbar-links {
-    list-style-type: none;
-    display: flex;
-    z-index: 1;
-  } */
+  list-style-type: none;
+  display: flex;
+  z-index: 1;
+} */
 
 .navbar-links li a {
   display: block;
@@ -214,10 +210,10 @@ button {
 }
 
 .language-links {
-  position: absolute;
-  top: 0;
-  right: 0;
-  transform: translate(-870%, 30%);
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-870%, 30%); 
 }
 
 @media (max-width: 576px) {
@@ -262,12 +258,12 @@ button {
   }
 
   .icon-setting {
-    fill: rgb(122, 110, 170);
-    position: absolute;
-    /* top: 0%;
+  fill: rgb(122, 110, 170);
+  position: absolute;
+  /* top: 0%;
   right: 0; */
-    margin-right: -70px;
-    /* transform: translate(-750%, 35%); */
+  margin-right: -70px;
+  /* transform: translate(-750%, 35%); */
   }
 
   button {
@@ -282,18 +278,18 @@ button {
 
 @media (max-width: 852px) {
   .navbar {
-    height: 55px;
+      height: 55px;
   }
 
   .logo {
-    position: absolute;
+      position: absolute;
   }
 
   .navbar-links {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(0%, -100%);
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translate(0%, -100%);
   }
 
   .icon-rabbit {
