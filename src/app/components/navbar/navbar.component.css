@@ -168,7 +168,7 @@ button {
 .language-links li a {
   display: block;
   text-decoration: none;
-  color: #7A6EAA;
+  color: var(--violascuro);
   padding: 20px 20px;
   transition: 0.2s all;
 }
@@ -192,7 +192,7 @@ button {
   transform: translateY(50px);
   left: 0;
   width: 250px;
-  background-color: #fff;
+  background-color: var(--cardsbg);
   box-shadow: 0px 10px 10px 3px rgba(0, 0, 0, 0.3);
   z-index: 111;
   transition: 0.3s all;
@@ -207,6 +207,7 @@ button {
 
 .language-dropdown .dropdown- a:hover {
   padding-left: 30px;
+  color: var(--violachiaro);
 }
 
 .language-links li a:hover {
