@@ -2,7 +2,7 @@
   <div class="left">
     <div class="btn-switch">
       <label class="switch">
-        <input id="theme-switch" type="checkbox" (click)="toggleSwitch()">
+        <input type="checkbox" (change)="toggleSwitch()" [value]="isDarkModeEnabled$ | async">
         <span class="slider"></span>
       </label>
     </div>

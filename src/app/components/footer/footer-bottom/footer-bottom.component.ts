@@ -10,6 +10,8 @@ export class FooterBottomComponent implements OnInit {
 
   languages: Array<string> = ['العربية', 'বাংলা', 'English', 'Deutsch', 'Ελληνικά', 'Español', 'Suomalainen', 'Filipino', 'Français', 'हिंदी', 'Magyar', 'Bahasa Indonesia', 'Italiano', '日本語', '한국어', 'Nederlands', 'Polski', 'Português (Brazil)', 'Português', 'Română', 'Русский', 'Svenska', 'தமிழ்', 'Türkçe', 'Українська', 'Tiếng Việt', '简体中文', '繁體中文']
 
+  isDarkModeEnabled$ = this.themeService.isDarkModeEnabled();
+
   constructor(private themeService: ThemeService) {
     setInterval(() => this.randomCryptoValue(), 5000);
   }
@@ -22,7 +24,7 @@ export class FooterBottomComponent implements OnInit {
 
 
   toggleSwitch() {
-    this.themeService.switchTheme();
+    this.themeService.toggleDarkMode();
   }
 
   ngOnInit(): void {

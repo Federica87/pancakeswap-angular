@@ -1,4 +1,4 @@
-import { BehaviorSubject } from 'rxjs';
+import { BehaviorSubject, tap } from 'rxjs';
 import { Injectable } from '@angular/core';
 
 @Injectable({
@@ -6,14 +6,37 @@ import { Injectable } from '@angular/core';
 })
 export class ThemeService {
 
-toggle = document.getElementById('theme-switch') as HTMLInputElement;
+private themeSubject = new BehaviorSubject<boolean>(false);
+public theme$ = this.themeSubject.asObservable();
 
-  switchTheme() {
-    if(true) {
+private _isDarkModeEnabled = false;
+private isDarkModeEnabled$ = new BehaviorSubject<boolean>(this._isDarkModeEnabled);
+
+toggleDarkMode() {
+  this._isDarkModeEnabled = !this._isDarkModeEnabled;
+  this.isDarkModeEnabled$.next(this._isDarkModeEnabled);
+}
+
+isDarkModeEnabled() {
+  return this.isDarkModeEnabled$.asObservable().pipe(
+    tap(isDarkModeEnabled => {
+      if(isDarkModeEnabled) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      } else {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+    })
+  )
+}
+
+ switchTheme() {
+    if(this.theme$) {
       document.documentElement.setAttribute('data-theme', 'dark');
     } else {
       document.documentElement.setAttribute('data-theme', 'light');
     }
   }
+
+
 constructor() { }
 }
