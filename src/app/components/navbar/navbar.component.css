@@ -226,7 +226,7 @@ button {
     transform: translate(0%, -100%);
   }
 
-  .number-dollar {
+  .icon-dollar {
     position: absolute;
     top: 0;
     right: 0;
@@ -238,16 +238,12 @@ button {
     top: 0;
     right: 0;
     margin-right: -75px;
-    /* transform: translate(-870%, 30%);  */
   }
 
   .icon-setting {
     fill: rgb(122, 110, 170);
     position: absolute;
-    /* top: 0%;
-  right: 0; */
     margin-right: -70px;
-    /* transform: translate(-750%, 35%); */
   }
 
   button {
@@ -283,7 +279,7 @@ button {
     transform: translate(0%, -100%);
   }
 
-  .number-dollar {
+  .icon-dollar {
     position: absolute;
     top: 0;
     right: 0;
