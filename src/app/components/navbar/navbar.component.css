@@ -90,10 +90,6 @@ svg {
 /* Navbar Right */
 
 .icon-rabbit {
-<<<<<<< HEAD
-=======
-  /* width: 1.5%; */
->>>>>>> feature/theme
   position: absolute;
   top: 0%;
   right: 0;
@@ -102,19 +98,11 @@ svg {
 }
 
 .number-dollar {
-<<<<<<< HEAD
   position: absolute;
   top: 7px;
   right: 0;
   /* transform: translate(-550%, 60%); */
   transform: translate(-600%, 35%);
-=======
-  /* width: 2%; */
-  position: absolute;
-  top: 0%;
-  right: 0;
-  transform: translate(-650%, 60%);
->>>>>>> feature/theme
 }
 
 .number-dollar {
@@ -123,7 +111,6 @@ svg {
 }
 
 /* .icon-globe {
-<<<<<<< HEAD
   fill: rgb(122, 110, 170);
   width: 1.5%;
   position: absolute;
@@ -132,16 +119,6 @@ svg {
   transform: translate(-910%, 50%);
   z-index: 1;
 } */
-=======
-    fill: rgb(122, 110, 170);
-    width: 1.5%;
-    position: absolute;
-    top: 0%;
-    right: 0;
-    transform: translate(-910%, 50%);
-    z-index: 1;
-  } */
->>>>>>> feature/theme
 
 .icon-setting {
   fill: rgb(122, 110, 170);
@@ -191,11 +168,7 @@ button {
 .language-links li a {
   display: block;
   text-decoration: none;
-<<<<<<< HEAD
   color: var(--violascuro);
-=======
-  color: #7A6EAA;
->>>>>>> feature/theme
   padding: 20px 20px;
   transition: 0.2s all;
 }
@@ -219,11 +192,7 @@ button {
   transform: translateY(50px);
   left: 0;
   width: 250px;
-<<<<<<< HEAD
   background-color: var(--cardsbg);
-=======
-  background-color: #fff;
->>>>>>> feature/theme
   box-shadow: 0px 10px 10px 3px rgba(0, 0, 0, 0.3);
   z-index: 111;
   transition: 0.3s all;
@@ -238,10 +207,7 @@ button {
 
 .language-dropdown .dropdown- a:hover {
   padding-left: 30px;
-<<<<<<< HEAD
   color: var(--violachiaro);
-=======
->>>>>>> feature/theme
 }
 
 .language-links li a:hover {
