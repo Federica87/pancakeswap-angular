@@ -89,7 +89,11 @@ button svg {
 .language-content {
   display: none;
   position: absolute;
+<<<<<<< HEAD
   background-color: var(--cardsbg);
+=======
+  background-color: var(--bg-color);
+>>>>>>> feature/theme
   text-align: center;
   z-index: 1;
   padding: 12px 16px;
