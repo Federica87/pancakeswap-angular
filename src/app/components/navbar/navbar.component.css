@@ -83,11 +83,6 @@ svg {
 
 /* Navbar Right */
 
-/* .container-rabbit {
-  display: block;
-  padding: 20px 20px;
-} */
-
 .icon-rabbit {
   position: absolute;
   top: 0%;
@@ -101,25 +96,6 @@ svg {
   right: 0;
   margin-right: 270px;
   color: rgb(122, 110, 170);
-}
-
-/* .icon-rabbit {
-  position: absolute;
-  top: 0%;
-  right: 0;
-  transform: translate(-1380%, 60%);
-} */
-
- /* .number-dollar {
-  position: absolute;
-  top: 0%;
-  right: 0;
-  transform: translate(-610%, 55%);
- }  */
-
-.number-dollar {
-  color: rgb(122, 110, 170);
-  text-decoration: none;
 }
 
 .icon-setting {
