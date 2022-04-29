@@ -26,12 +26,6 @@ svg {
   fill: var(--logo);
 }
 
-/* .navbar-links {
-    list-style-type: none;
-    display: flex;
-    z-index: 1;
-  } */
-
 .navbar-links li a {
   display: block;
   text-decoration: none;
@@ -89,40 +83,47 @@ svg {
 
 /* Navbar Right */
 
+/* .container-rabbit {
+  display: block;
+  padding: 20px 20px;
+} */
+
 .icon-rabbit {
   position: absolute;
   top: 0%;
   right: 0;
-  transform: translate(-1380%, 60%);
-  z-index: 1;
+  transform: translate(-1350%, 60%);
 }
 
-.number-dollar {
+.icon-dollar {
   position: absolute;
-  top: 7px;
+  top: 14px;
   right: 0;
-  /* transform: translate(-550%, 60%); */
-  transform: translate(-600%, 35%);
+  margin-right: 270px;
+  color: rgb(122, 110, 170);
 }
+
+/* .icon-rabbit {
+  position: absolute;
+  top: 0%;
+  right: 0;
+  transform: translate(-1380%, 60%);
+} */
+
+ /* .number-dollar {
+  position: absolute;
+  top: 0%;
+  right: 0;
+  transform: translate(-610%, 55%);
+ }  */
 
 .number-dollar {
   color: rgb(122, 110, 170);
   text-decoration: none;
 }
 
-/* .icon-globe {
-  fill: rgb(122, 110, 170);
-  width: 1.5%;
-  position: absolute;
-  top: 0%;
-  right: 0;
-  transform: translate(-910%, 50%);
-  z-index: 1;
-} */
-
 .icon-setting {
   fill: rgb(122, 110, 170);
-  /* width: 1.5%; */
   position: absolute;
   top: 0%;
   right: 0;
