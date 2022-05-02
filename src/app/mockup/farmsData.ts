@@ -1,6 +1,6 @@
 import { Farms } from './../models/Farms';
 
-export const farmStat: Farms[] = [
+export const farmCrypto: Farms[] = [
     {
         crypto1: "CAKE.svg",
         crypto2: "BNB.svg",
