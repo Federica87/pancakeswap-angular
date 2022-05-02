@@ -29,7 +29,7 @@ svg {
 .navbar-links li a {
   display: block;
   text-decoration: none;
-  color: #7A6EAA;
+  color: var(--lilla);
   padding: 20px 20px;
   transition: 0.4s all;
 }
@@ -82,6 +82,10 @@ svg {
 }
 
 /* Navbar Right */
+.flex-nav {
+  display: flex;
+  align-items: center;
+}
 
 .icon-rabbit {
   position: absolute;
@@ -90,18 +94,26 @@ svg {
   transform: translate(-1350%, 60%);
 }
 
+.icon-globe svg {
+  width: 25px;
+  fill: var(--lilla);
+  margin-top: 5px;
+  margin-right: 1px;
+}
+
 .icon-dollar {
   position: absolute;
   top: 14px;
   right: 0;
   margin-right: 270px;
-  color: rgb(122, 110, 170);
+  color: var(--lilla);
 }
 
-.icon-setting {
-  fill: rgb(122, 110, 170);
+.icon-setting svg {
+  width: 25px;
+  fill: var(--lilla);
   position: absolute;
-  top: 0%;
+  top: 5px;
   right: 0;
   transform: translate(-750%, 35%);
   z-index: 1;
@@ -240,8 +252,8 @@ button {
     margin-right: -75px;
   }
 
-  .icon-setting {
-    fill: rgb(122, 110, 170);
+  .icon-setting svg {
+    fill: var(--lilla);
     position: absolute;
     margin-right: -70px;
   }

@@ -1,67 +1,68 @@
 svg {
-    width: 24px;
-    fill: rgb(136, 125, 179);
+  width: 24px;
+  fill: rgb(136, 125, 179);
 }
 
 button {
-    width: 48px;
-    border: none;
+  background-color: transparent;
+  width: 48px;
+  border: none;
 }
 
 .header {
-    font-size: 20px;
-    font-weight: 600;
-    color: var(--violascuro);
-    margin-bottom: 24px;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--violascuro);
+  margin-bottom: 24px;
 }
 
 span {
-    color: var(--violachiaro);
+  color: var(--violachiaro);
 }
 
 span:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .stats {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
-.stats > div {
-    border-left: 1px solid gainsboro;
-    padding-left: 16px;
+.stats>div {
+  border-left: 1px solid gainsboro;
+  padding-left: 16px;
 }
 
 .stats :first-child {
-    border: none;
-    padding: 0;
+  border: none;
+  padding: 0;
 }
 
 .name {
-    color: var(--violachiaro);
-    font-size: 12px;
-    margin-bottom: 8px;
-    font-weight: 600;
+  color: var(--violachiaro);
+  font-size: 12px;
+  margin-bottom: 8px;
+  font-weight: 600;
 }
 
 .perc {
-    color: var(--violascuro);
+  color: var(--violascuro);
 }
 
 .APR {
-    color: var(--lilla);
+  color: var(--lilla);
 }
 
 @media screen and (max-width: 576px) {
-    .stats {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        row-gap: 10px;
-    }
+  .stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 10px;
+  }
 
-    .stats > div {
-        border-left: initial;
-        padding-left: initial;
-    }
+  .stats>div {
+    border-left: initial;
+    padding-left: initial;
+  }
 }
