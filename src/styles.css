@@ -31,6 +31,8 @@ body {
   --boxshadow: #AAAAAA;
   --cardsbg: white;
   --logo: black;
+  --wallet1: rgb(229, 253, 255);
+  --wallet2: rgb(243, 239, 255);
 }
 
 [data-theme="dark"] {
@@ -54,6 +56,8 @@ body {
   --boxshadow: #383241;
   --cardsbg: #27262C;
   --logo: white;
+  --wallet1: #323C5B;
+  --wallet2: #3C2B54;
 }
 
 .w100 {
