@@ -6,6 +6,7 @@ import { FarmsContainerComponent } from "./farms/farms-container/farms-container
 import { FarmsDataComponent } from './farms/farms-data/farms-data.component';
 import { PoolsContainerComponent } from "./pools/pools-container/pools-container.component";
 import { BtnSectionComponent } from './btn-section/btn-section.component';
+import { PoolsCardComponent } from './pools/pools-card/pools-card.component';
 
 @NgModule({
     declarations: [
@@ -13,7 +14,8 @@ import { BtnSectionComponent } from './btn-section/btn-section.component';
         FarmsContainerComponent,
         FarmsDataComponent,
         PoolsContainerComponent,
-        BtnSectionComponent
+        BtnSectionComponent,
+        PoolsCardComponent
     ],
     imports:[
         CommonModule,
