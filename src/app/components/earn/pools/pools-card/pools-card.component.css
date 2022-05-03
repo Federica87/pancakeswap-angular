@@ -1,0 +1,106 @@
+
+.pools-cards-container {
+    margin:0 15%;
+    border:2px solid rgb(233, 234, 235);
+    border-radius: 20px;
+    padding: 20px;
+}
+.pools-card {
+    border-bottom: 2px solid rgb(233, 234, 235);
+}
+.w-fit-content {
+    width: fit-content;
+}
+.tokens {
+    max-height: 40px;
+    max-width: 40px;
+    width: 92%;
+    inset: 0px auto auto 0px;
+    z-index: 5;
+    position: relative;
+    margin-right: 8px;
+}
+.tokens::before, .big-token::before, .small-token::before {
+    border-radius: 50%;
+    content: "";
+    height: 100%;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    z-index: 7;
+}
+.tokens::after, .big-token::after, .small-token::after {
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+.big-token {
+    position: absolute;
+    width: 92%;
+    inset: 0px auto auto 0px;
+    z-index: 5;
+}
+.big-token svg {
+    width:36.8px;
+    height:36.8px;
+}
+.small-token {
+    position: absolute;
+    width: 50%;
+    inset: auto 0px 0px auto;
+    z-index: 6;
+    max-height: 20px;
+    max-width: 20px;
+}
+.small-token svg {
+    width:20px;
+    height:20px;
+}
+#text p {
+    line-height:1;
+}
+.mx-6 {
+    margin: 0 4.25em;
+}
+.ms-7 {
+    margin: 0 7em;
+}
+.text1 p {
+    color: var(--violascuro);
+    font-weight: bold;
+
+}
+.text1 p.subtitle {
+    color: var(--lilla);
+    font-weight: normal;
+    font-size: 12px;
+    width: 6rem;
+}
+.text2 p {
+    font-size: 12px;
+    color: rgb(189, 194, 196);
+}
+.text2 .p-staked {
+    color: var(--lilla);
+    width: fit-content;
+}
+.text2 .fs-16, div.text3 p, .text4  {
+    font-size: 16px;
+    font-weight: bold;
+}
+.text3 .fs-12, .text4 .fs-12, .text5 .fs-12 {
+    font-size: 12px;
+    color: var(--lilla);
+}
+.text3 .cake-numbers {
+    color: var(--violascuro);
+}
+.text4 p:last-of-type, .text5 p:last-of-type {
+    color:var(--violascuro);
+}
+.details-btn {
+    height: min-content;
+    color: var(--acqua);
+    font-weight: bold;
+}
