@@ -13,7 +13,7 @@ body {
 :root {
   --violachiaro: #7645d9;
   --violascuro: #280D5F;
-  --lilla: #7A6EAA;
+  --lilla: rgb(122, 110, 170);
   --acqua: #1fc7d4;
   --rosa: #ed4b9e;
   --ocra: #cd9234;
@@ -38,7 +38,7 @@ body {
 [data-theme="dark"] {
   --violachiaro: #7645d9;
   --violascuro: #FFFFFF;
-  --lilla: #7A6EAA;
+  --lilla: rgb(184, 173, 210);
   --acqua: #1fc7d4;
   --rosa: #ed4b9e;
   --ocra: #cd9234;
