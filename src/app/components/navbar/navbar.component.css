@@ -11,8 +11,6 @@
   border-bottom: 1px solid var(--cardsbg);
 }
 
-/* Navbar Left */
-
 .logo {
   width: 180px;
   position: absolute;
@@ -81,7 +79,6 @@ svg {
   transform: translate(60%, -5%);
 }
 
-/* Navbar Right */
 .flex-nav {
   display: flex;
   align-items: center;
@@ -151,8 +148,6 @@ button {
   transform: translate(-10%, 30%);
   z-index: 1;
 }
-
-/* Language Dropdown */
 
 .language-links li a {
   display: block;
@@ -297,19 +292,5 @@ button {
     right: 0;
     transform: translate(0%, -100%);
   }
-
-  /* .language-links {
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(0%, -100%); 
-  }
-
-  .icon-setting {
-    position: absolute;
-    top: 0%;
-    right: 0;
-    transform: translate(0%, -100%);
-  } */
 
 }
