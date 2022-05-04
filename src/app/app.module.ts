@@ -29,6 +29,7 @@ import { HomepageContainerComponent } from './components/homepage/homepage-conta
 import { AppRoutingModule } from './app-routing.module';
 import { EarnModule } from './components/earn/earn.module';
 import { LimitContainerComponent } from './components/trade/limit/limit-container/limit-container.component';
+import { HttpClientModule } from '@angular/common/http'
 
 
 @NgModule({
@@ -64,7 +65,8 @@ import { LimitContainerComponent } from './components/trade/limit/limit-containe
     BrowserModule,
     NgbModule,
     EarnModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

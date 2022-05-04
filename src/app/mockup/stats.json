@@ -1,0 +1,20 @@
+{
+    "cakeStats": [
+    {
+      "name": "Total supply",
+      "data": 265869181
+    },
+    {
+      "name": "Burned to date",
+      "data": 413201331
+    },
+    {
+      "name": "Market cap",
+      "data": 2.4
+    },
+    {
+      "name": "Current emissions",
+      "data": 14.25
+    }
+]
+}

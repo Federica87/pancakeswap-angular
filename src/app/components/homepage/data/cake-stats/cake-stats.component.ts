@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { cakeStatsMockup } from 'src/app/mockup/statsData';
+import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Subscription } from 'rxjs';
 import { Stat } from 'src/app/models/Stats';
 import { CakeStatsService } from 'src/app/services/cake-stats.service';
 
@@ -8,9 +8,10 @@ import { CakeStatsService } from 'src/app/services/cake-stats.service';
   templateUrl: './cake-stats.component.html',
   styleUrls: ['./cake-stats.component.css']
 })
-export class CakeStatsComponent implements OnInit {
+export class CakeStatsComponent implements OnInit, OnDestroy {
 
-  cakeStats = this.cakeStatsService.get();
+  cakeStats!: Stat [];
+  cakeStats$!: Subscription;
 
   constructor( private cakeStatsService: CakeStatsService ) {}
 
@@ -19,6 +20,12 @@ export class CakeStatsComponent implements OnInit {
       this.cakeStats![0].data -= 1;
       this.cakeStats![1].data += 1;
     },30)
+    
+    this.cakeStats$ = this.cakeStatsService.get().subscribe(data => this.cakeStats = data)
+  }
+
+  ngOnDestroy(): void {
+    this.cakeStats$.unsubscribe();
   }
 
 }
