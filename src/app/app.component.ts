@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
 import { WalletService } from './services/wallet.service';
 
 @Component({
@@ -6,6 +7,13 @@ import { WalletService } from './services/wallet.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
+  wallet$!: Observable<boolean>;
+
+  constructor( private walletService: WalletService ) {}
+
+  ngOnInit() {
+    this.wallet$ = this.walletService.getStatus();
+  }
 
 }

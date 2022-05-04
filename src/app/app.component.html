@@ -2,3 +2,6 @@
 <router-outlet></router-outlet>
 <router-outlet></router-outlet>
 <app-footer-container></app-footer-container>
+<ng-container *ngIf="wallet$ | async">
+    <app-wallet></app-wallet>
+</ng-container>

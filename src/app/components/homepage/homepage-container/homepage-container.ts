@@ -8,12 +8,9 @@ import { WalletService } from 'src/app/services/wallet.service';
   styleUrls: ['./homepage-container.css']
 })
 export class HomepageContainerComponent implements OnInit {
-  wallet$!: Observable<boolean>;
 
-  constructor( private walletService: WalletService ) {}
+  constructor() {}
 
-  ngOnInit() {
-    this.wallet$ = this.walletService.getStatus();
-  }
+  ngOnInit() { }
 
 }

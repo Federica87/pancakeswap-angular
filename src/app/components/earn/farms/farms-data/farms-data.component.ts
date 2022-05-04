@@ -1,6 +1,7 @@
 import { Farms } from './../../../../models/Farms';
 import { Component, OnInit } from '@angular/core';
 import { farmCrypto } from 'src/app/mockup/farmsData';
+import { WalletService } from 'src/app/services/wallet.service';
 
 @Component({
   selector: 'app-farms-data',
@@ -9,11 +10,15 @@ import { farmCrypto } from 'src/app/mockup/farmsData';
 })
 export class FarmsDataComponent implements OnInit {
 
-farms: Farms[] = farmCrypto;
+  farms: Farms[] = farmCrypto;
 
-  constructor() { }
+  constructor( private walletService: WalletService) { }
 
   ngOnInit(): void {
+  }
+
+  connectWallet(): void {
+    this.walletService.connect();
   }
 
 }

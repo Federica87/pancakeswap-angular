@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output } from '@angular/core';
+import { Farms } from 'src/app/models/Farms';
+import { EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-farms-card',
@@ -7,10 +9,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FarmsCardComponent implements OnInit {
 
-  details: string[] = ['Details', 'Hide']
+  @Input() cardsData: Farms [] = [];
+  @Output() connected = new EventEmitter<void>();
 
-  openDetails(): void {
-    [this.details[0], this.details[1]] = [this.details[1], this.details[0]];
+  details: boolean[] = Array.from({length: this.cardsData.length}).map(x => x = false);
+
+  openDetails(index: number): void {
+    if (this.details[index] === true) {
+      this.details[index] = false;
+    }
+    else {
+      this.details[index] = true;
+    }
+  }
+
+  connectWallet(): void {
+    this.connected.emit();
   }
 
   constructor() { }
