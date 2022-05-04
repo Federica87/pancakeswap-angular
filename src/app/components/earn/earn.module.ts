@@ -7,6 +7,7 @@ import { FarmsDataComponent } from './farms/farms-data/farms-data.component';
 import { PoolsContainerComponent } from "./pools/pools-container/pools-container.component";
 import { BtnSectionComponent } from './btn-section/btn-section.component';
 import { PoolsCardComponent } from './pools/pools-card/pools-card.component';
+import { LabelComponent } from './label/label.component';
 
 @NgModule({
     declarations: [
@@ -15,7 +16,8 @@ import { PoolsCardComponent } from './pools/pools-card/pools-card.component';
         FarmsDataComponent,
         PoolsContainerComponent,
         BtnSectionComponent,
-        PoolsCardComponent
+        PoolsCardComponent,
+        LabelComponent
     ],
     imports:[
         CommonModule,
