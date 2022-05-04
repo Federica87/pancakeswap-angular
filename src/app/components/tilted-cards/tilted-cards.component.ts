@@ -1,7 +1,4 @@
-import { formatNumber } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { mockTiltedCards } from 'src/app/mockup/cardsData';
-import { Card } from 'src/app/models/Card';
 import { TiltedCardsService } from 'src/app/services/tilted-cards.service';
 
 

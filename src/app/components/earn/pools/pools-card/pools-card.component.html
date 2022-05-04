@@ -1,8 +1,8 @@
-<div class="pools-cards-container">
+<div class="pools-cards-container" *ngFor="let pool of pools">
     <div class="pools-card d-flex">
         <div class="tokens">
             <div class="big-token">
-                <svg fill="none" viewBox="0 0 96 96"><path fill="#5194C4" d="M48 96C74.5097 96 96 74.5097 96 48C96 21.4903 74.5097 0 48 0C21.4903 0 0 21.4903 0 48C0 74.5097 21.4903 96 48 96Z"/><path fill="#fff" fill-rule="evenodd" d="M68.9576 38.8732L47.9999 59.831L36.5069 47.662L56.7886 27.3803L47.9999 18.5916L18.2534 47.662L48.676 77.4085L77.7464 47.662L68.9576 38.8732Z" clip-rule="evenodd"/></svg>
+               <img src="assets/images/pools/{{ pool.crypto }} ">
             </div>
             <div class="small-token">
                 <svg viewBox="0 0 96 96" fill="none">
@@ -39,12 +39,12 @@
         </div>
         <div class="text3 mx-6" id="text">
             <p class="fw-normal mb-0 fs-12">Total staked</p>
-            <p class="fw-normal cake-numbers">1,000,000 CAKE</p>
+            <p class="fw-normal cake-numbers">{{pool.total}} CAKE</p>
         </div>
         <div class="text4 mx-6" id="text">
             <p class="mb-0 fs-12">APR</p>
             <p class="mb-0">
-                60.44%
+                {{pool.apr}}%
                 <svg viewBox="0 0 24 24" color="textSubtle" width="20px" fill="var(--lilla)">
                     <path d="M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3ZM19 19H5V5H19V19Z"></path>
                     <path d="M11.25 7.72H6.25V9.22H11.25V7.72Z"></path>
@@ -58,13 +58,13 @@
         <div class="text5 mx-6" id="text">
             <p class="mb-0 fs-12">Ends in</p>
             <p class="mb-0">
-                1,500,000 blocks
+                {{pool.end}} blocks
                 <svg viewBox="0 0 24 24" fill="var(--violascuro)" width="20px" class="ms-2">
                     <path d="M15.0701 1.01H9.07007V3.01H15.0701V1.01ZM11.0701 14.01H13.0701V8.01H11.0701V14.01ZM19.1001 7.39L20.5201 5.97C20.0901 5.46 19.6201 4.98 19.1101 4.56L17.6901 5.98C16.1401 4.74 14.1901 4 12.0701 4C7.10007 4 3.07007 8.03 3.07007 13C3.07007 17.97 7.09007 22 12.0701 22C17.0501 22 21.0701 17.97 21.0701 13C21.0701 10.89 20.3301 8.94 19.1001 7.39ZM12.0701 20.01C8.20007 20.01 5.07007 16.88 5.07007 13.01C5.07007 9.14 8.20007 6.01 12.0701 6.01C15.9401 6.01 19.0701 9.14 19.0701 13.01C19.0701 16.88 15.9401 20.01 12.0701 20.01Z"></path>
                 </svg>
             </p>
         </div>
-        <div class="details d-flex ms-7 me-0 align-items-center">
+        <div class="details me-0 align-items-center">
             <a href="" class="details-btn text-decoration-none mb-3">
                 Details
                 <svg viewBox="0 0 24 24" width="20px" fill="var(--acqua)">
