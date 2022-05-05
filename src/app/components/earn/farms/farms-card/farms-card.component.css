@@ -102,6 +102,7 @@ h2 {
 }
 
 .APR button {
+  color: var(--violascuro);
   display: flex;
   align-items: center;
   column-gap: 8px;
@@ -116,7 +117,7 @@ h2 {
 }
 
 .APR button svg {
-  fill: rgb(40, 13, 95);
+  fill: var(--violascuro);
 }
 
 .earn {
@@ -150,7 +151,7 @@ p {
 }
 
 .harvest button {
-  background-color: rgb(233, 234, 235);
+  background-color: var(--harvest);
   border: none;
   color: rgb(189, 194, 196);
   border-radius: 16px;

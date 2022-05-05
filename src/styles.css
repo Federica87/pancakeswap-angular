@@ -33,6 +33,8 @@ body {
   --logo: black;
   --wallet1: rgb(229, 253, 255);
   --wallet2: rgb(243, 239, 255);
+  --harvest: rgb(233, 234, 235);
+  --search: rgb(238, 234, 244);
 }
 
 [data-theme="dark"] {
@@ -58,6 +60,8 @@ body {
   --logo: white;
   --wallet1: #323C5B;
   --wallet2: #3C2B54;
+  --harvest: #3C3742;
+  --search: #372f47;
 }
 
 .w100 {
