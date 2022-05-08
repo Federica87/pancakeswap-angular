@@ -6,7 +6,6 @@ header {
 header * {
   margin: 0px 10px;
 }
-
 button {
   background: none;
   border: none;
@@ -17,6 +16,7 @@ button {
 }
 
 button svg {
+
   width: 20px;
   height: 20px;
   fill: rgb(189, 194, 196);
@@ -46,7 +46,7 @@ button svg {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background-color: var(--harvest);
   -webkit-transition: 0.4s;
   transition: 0.4s;
   border-radius: 34px;
@@ -62,7 +62,7 @@ button svg {
   -webkit-transition: 0.4s;
   transition: 0.4s;
   border-radius: 50%;
-  background-color: white;
+  background-color: var(--cardsbg);
 }
 
 .slider:hover:before {
@@ -77,7 +77,7 @@ input:checked+.slider:before {
   -webkit-transform: translateX(12px);
   -ms-transform: translateX(12px);
   transform: translateX(12px);
-  background-color: white;
+  background-color: var(--cardsbg);
 }
 
 span {
@@ -102,8 +102,8 @@ div.container>p {
 }
 
 .double-btn {
-  background-color: rgb(238, 234, 244);
-  border: 1px solid rgb(215, 202, 236);
+  background-color: var(--search);
+  border: 1px solid var(--secondsection2);
   border-radius: 40px;
   padding: 5px;
 }
@@ -115,16 +115,18 @@ div.container>p {
 #dropdown {
   margin: 0;
   padding: 5px;
-  border: 1px solid rgb(215, 202, 236);
+
+  border: 1px solid var(--secondsection2);
   border-radius: 40px;
   width: 168px;
   color: var(--violascuro);
+  background-color: var(--search);
   font-weight: 400;
 }
 
 .search-bar {
-  background-color: rgb(238, 234, 244);
-  border: 1px solid rgb(215, 202, 236);
+  background-color: var(--search);
+  border: 1px solid var(--secondsection2);
   color: var(--violascuro);
   border-radius: 40px;
   padding: 8px;
