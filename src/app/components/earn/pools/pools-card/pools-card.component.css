@@ -1,128 +1,154 @@
 .card-container {
-    flex-wrap: wrap;
-    margin-left: 19%;
-    margin-right: 0%;
-    max-width: 1175px;
-    justify-content:space-around;
-    color: var(--violascuro);
+  flex-wrap: wrap;
+  margin-left: 19%;
+  margin-right: 0%;
+  max-width: 1175px;
+  justify-content: space-around;
+  color: var(--violascuro);
 }
+
 .card {
-    min-width: 350px;
-    max-width: 350px;
-    min-height: 385px;
-    margin-bottom: 50px;
-    background: rgb(255, 255, 255) none repeat scroll 0% 0%;
-    box-shadow: 0px 5px 5px 0px var(--boxshadow);
-    border-radius: 24px;
+  min-width: 350px;
+  max-width: 350px;
+  min-height: 385px;
+  margin-bottom: 50px;
+  background: var(--cardsbg) none repeat scroll 0% 0%;
+  box-shadow: 0px 5px 5px 0px var(--boxshadow);
+  border-radius: 24px;
 }
+
 .card-top {
-    background: rgba(0, 0, 0, 0) linear-gradient(111.68deg, rgb(242, 236, 242) 0%, rgb(232, 242, 246) 100%) repeat scroll 0% 0%;
-    border-radius: 24px 24px 0px 0px;
-    padding: 15px;
-    padding-right: 30px;
+  background: rgba(0, 0, 0, 0) linear-gradient(111.68deg, var(--wallet1) 0%, var(--wallet2) 100%) repeat scroll 0% 0%;
+  border-radius: 24px 24px 0px 0px;
+  padding: 15px;
+  padding-right: 30px;
 }
+
 .card-top p:first-of-type {
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 1.1;
-    color: var(--violachiaro);
-    margin-bottom:0;
-    padding-top:10px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.1;
+  color: var(--violachiaro);
+  margin-bottom: 0;
+  padding-top: 10px;
 }
+
 .card-top p {
-    padding-left: 10px;
-    width: fit-content;
-    font-weight: 400;
-    line-height: 1.5;
-    font-size: 14px;
-    color: var(--lilla)
-    
+  padding-left: 10px;
+  width: fit-content;
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 14px;
+  color: var(--lilla)
 }
+
+.border-bot {
+  border-bottom: 1px solid var(--border);
+}
+
 .tokens {
-    max-height: 40px;
-    max-width: 40px;
-    width: 92%;
-    inset: 0px auto auto 0px;
-    z-index: 3;
-    position:relative;
-    margin-top:10px;
-    margin-right: 10px;
+  max-height: 40px;
+  max-width: 40px;
+  width: 92%;
+  inset: 0px auto auto 0px;
+  z-index: 3;
+  position: relative;
+  margin-top: 10px;
+  margin-right: 10px;
 }
-.tokens::before, .big-token::before, .small-token::before {
-    border-radius: 50%;
-    content: "";
-    height: 100%;
-    left: 0px;
-    /* position: absolute; */
-    top: 0px;
-    width: 100%;
-    z-index: 7;
+
+.tokens::before,
+.big-token::before,
+.small-token::before {
+  border-radius: 50%;
+  content: "";
+  height: 100%;
+  left: 0px;
+  /* position: absolute; */
+  top: 0px;
+  width: 100%;
+  z-index: 7;
 }
-.tokens::after, .big-token::after, .small-token::after {
-    content: "";
-    display: block;
-    padding-top: 100%;
+
+.tokens::after,
+.big-token::after,
+.small-token::after {
+  content: "";
+  display: block;
+  padding-top: 100%;
 }
+
 .big-token {
-    position: absolute;
-    width: 92%;
-    inset: 0px auto auto 0px;
-    z-index: 5;
+  position: absolute;
+  width: 92%;
+  inset: 0px auto auto 0px;
+  z-index: 5;
 }
-.big-token img,.big-token svg {
-    width:58px;
-    height:58px;
+
+.big-token img,
+.big-token svg {
+  width: 58px;
+  height: 58px;
 }
+
 .small-token {
-    position: absolute;
-    width: 50%;
-    inset: auto 0px 0px auto;
-    z-index: 6;
-    max-height: 9px;
-    max-width: 10px;
+  position: absolute;
+  width: 50%;
+  inset: auto 0px 0px auto;
+  z-index: 6;
+  max-height: 9px;
+  max-width: 10px;
 }
+
 .small-token svg {
-    width:32px;
-    height:32px;
+  width: 32px;
+  height: 32px;
 }
-.connect-wallet > p {
-    color:var(--lilla);
-    font-weight: 600;
-    line-height: 1.5;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-    font-size: 12px;
+
+.connect-wallet>p {
+  color: var(--lilla);
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-size: 12px;
 }
+
 .btn-section {
-    width: 90%;
+  width: 90%;
 }
+
 .card-middle p:first-of-type {
-    text-decoration: underline dotted var(--lilla);
+  text-decoration: underline dotted var(--lilla);
 }
+
 div.bottom {
-    display: inline-flex;
+  display: inline-flex;
 }
+
 div.bottom .manual {
-    color :var(--lilla);
-    border: 2px solid var(--violachiaro);
-    border-radius: 16px;
-    padding: 1px 9px;
-    height: fit-content;
-    font-size: 14px;
+  color: var(--lilla);
+  border: 2px solid var(--violachiaro);
+  border-radius: 16px;
+  padding: 1px 9px;
+  height: fit-content;
+  font-size: 14px;
 }
+
 .details {
-    position:relative;
-    /* left: 78%; */
-    padding-right: 10px;
+  position: relative;
+  /* left: 78%; */
+  padding-right: 10px;
 }
+
 .details-btn {
-    height: min-content;
-    color: var(--acqua);
-    font-weight: bold;
-    background: none;
-	border: none;
-	padding: 0;
-    cursor: pointer;
-	font: inherit;
-	outline: inherit;
+  height: min-content;
+  color: var(--acqua);
+  font-weight: bold;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font: inherit;
+  outline: inherit;
 }
