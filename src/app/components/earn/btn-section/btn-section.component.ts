@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-btn-section',
@@ -6,10 +6,27 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./btn-section.component.css']
 })
 export class BtnSectionComponent implements OnInit {
+  @Output() show = new EventEmitter<string>();
+  
+  fill(empty:string) {
 
-  constructor() { }
+    const btnCards:any = document.querySelector('.cards');
+    const btnTabs:any = document.querySelector('.tabs');
 
-  ngOnInit(): void {
+    if (empty === 'cards') {
+      btnCards.style.fill = 'var(--acqua)';
+      btnTabs.style.fill = '';
+      
+    } else if (empty === 'tabs') {
+      btnTabs.style.fill = 'var(--acqua)';
+      btnCards.style.fill = '';
+
+    }
   }
 
+  constructor() { }
+  
+  ngOnInit(): void {
+  }
+  
 }

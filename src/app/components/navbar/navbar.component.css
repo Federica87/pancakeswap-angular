@@ -4,7 +4,10 @@
   box-sizing: border-box;
   font-family: Kanit, sans-serif;
 }
-
+.active {
+  color:var(--violachiaro) !important;
+  font-weight: bold !important;
+}
 .navbar {
   height: 56px;
   background-color: var(--cardsbg);

@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { poolsCrypto } from 'src/app/mockup/poolsData';
 import { Pools } from 'src/app/models/Pools';
+import { WalletService } from 'src/app/services/wallet.service';
 
 @Component({
   selector: 'app-pools-card',
@@ -9,7 +10,13 @@ import { Pools } from 'src/app/models/Pools';
 })
 export class PoolsCardComponent implements OnInit {
   pools:Pools[] = poolsCrypto
-  constructor() { }
+
+
+  connectWallet(): void {
+    this.walletService.connect();
+  }
+
+  constructor(private walletService: WalletService) { }
 
   ngOnInit(): void {
   }

@@ -1,33 +1,59 @@
-
-.pools-cards-container {
-    margin:0 15%;
-    border:2px solid rgb(233, 234, 235);
-    border-radius: 20px;
-    padding: 20px;
-    padding-bottom: 0;
-    border-bottom: 0;
+.card-container {
+    flex-wrap: wrap;
+    margin-left: 19%;
+    margin-right: 0%;
+    max-width: 1175px;
+    justify-content:space-around;
+    color: var(--violascuro);
 }
-.pools-card {
-    border-bottom: 2px solid rgb(233, 234, 235);
+.card {
+    min-width: 350px;
+    max-width: 350px;
+    min-height: 385px;
+    margin-bottom: 50px;
+    background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+    box-shadow: 0px 5px 5px 0px var(--boxshadow);
+    border-radius: 24px;
 }
-.w-fit-content {
+.card-top {
+    background: rgba(0, 0, 0, 0) linear-gradient(111.68deg, rgb(242, 236, 242) 0%, rgb(232, 242, 246) 100%) repeat scroll 0% 0%;
+    border-radius: 24px 24px 0px 0px;
+    padding: 15px;
+    padding-right: 30px;
+}
+.card-top p:first-of-type {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.1;
+    color: var(--violachiaro);
+    margin-bottom:0;
+    padding-top:10px;
+}
+.card-top p {
+    padding-left: 10px;
     width: fit-content;
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 14px;
+    color: var(--lilla)
+    
 }
 .tokens {
     max-height: 40px;
     max-width: 40px;
     width: 92%;
     inset: 0px auto auto 0px;
-    z-index: 5;
-    position: relative;
-    margin-right: 8px;
+    z-index: 3;
+    position:relative;
+    margin-top:10px;
+    margin-right: 10px;
 }
 .tokens::before, .big-token::before, .small-token::before {
     border-radius: 50%;
     content: "";
     height: 100%;
     left: 0px;
-    position: absolute;
+    /* position: absolute; */
     top: 0px;
     width: 100%;
     z-index: 7;
@@ -43,80 +69,60 @@
     inset: 0px auto auto 0px;
     z-index: 5;
 }
-.big-token img {
-    width:36.8px;
-    height:36.8px;
+.big-token img,.big-token svg {
+    width:58px;
+    height:58px;
 }
 .small-token {
     position: absolute;
     width: 50%;
     inset: auto 0px 0px auto;
     z-index: 6;
-    max-height: 20px;
-    max-width: 20px;
+    max-height: 9px;
+    max-width: 10px;
 }
 .small-token svg {
-    width:20px;
-    height:20px;
+    width:32px;
+    height:32px;
 }
-#text p {
-    line-height:1;
-}
-.mx-6 {
-    margin: 0 4.25em;
-}
-.ms-7 {
-    margin: 0 7em;
-}
-.text1 p {
-    color: var(--violascuro);
-    font-weight: bold;
-
-}
-.text1 p.subtitle {
-    color: var(--lilla);
-    font-weight: normal;
+.connect-wallet > p {
+    color:var(--lilla);
+    font-weight: 600;
+    line-height: 1.5;
+    text-transform: uppercase;
+    margin-bottom: 10px;
     font-size: 12px;
-    width: 6rem;
 }
-.text2 p {
-    font-size: 12px;
-    color: rgb(189, 194, 196);
+.btn-section {
+    width: 90%;
 }
-.text2 .p-staked {
-    color: var(--lilla);
-    width: fit-content;
+.card-middle p:first-of-type {
+    text-decoration: underline dotted var(--lilla);
 }
-.text2 .fs-16, div.text3 p, .text4  {
-    font-size: 16px;
-    font-weight: bold;
+div.bottom {
+    display: inline-flex;
 }
-.text3 .fs-12, .text4 .fs-12, .text5 .fs-12 {
-    font-size: 12px;
-    color: var(--lilla);
-}
-.text3 .cake-numbers {
-    color: var(--violascuro);
-}
-.text4 p:last-of-type, .text5 p:last-of-type {
-    color:var(--violascuro);
-}
-.text4 {
-    position: absolute;
-    left: 47%;   
-}
-.text5 {
-    position: absolute;
-    left: 60%;
+div.bottom .manual {
+    color :var(--lilla);
+    border: 2px solid var(--violachiaro);
+    border-radius: 16px;
+    padding: 1px 9px;
+    height: fit-content;
+    font-size: 14px;
 }
 .details {
-    position:absolute;
-    margin-top: 11px;
-    left: 78%;
-
+    position:relative;
+    /* left: 78%; */
+    padding-right: 10px;
 }
 .details-btn {
     height: min-content;
     color: var(--acqua);
     font-weight: bold;
+    background: none;
+	border: none;
+	padding: 0;
+    cursor: pointer;
+	font: inherit;
+	outline: inherit;
 }
