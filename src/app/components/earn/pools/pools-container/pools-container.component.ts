@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./pools-container.component.css']
 })
 export class PoolsContainerComponent implements OnInit {
+  show = 'tabs';
 
   constructor() { }
 

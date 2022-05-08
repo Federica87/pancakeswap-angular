@@ -1,12 +1,13 @@
 a {
     text-decoration: none;
     margin: 0px 15px;
-    border-bottom: 3px var(--acqua) solid;
-    color: var(--violachiaro);
-}
-a.active {
-    font-weight: bold;
+    color:var(--lilla);
 }
 .container {
     margin-top:8px;
+}
+.active-label {
+    border-bottom: 3px var(--acqua) solid;
+    color: var(--violachiaro);
+    font-weight: bold;
 }

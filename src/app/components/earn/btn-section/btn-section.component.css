@@ -1,12 +1,22 @@
 header {
+  margin: 0 19%;
   margin-top: 5vh;
 }
 
 header * {
   margin: 0px 10px;
 }
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font: inherit;
+  outline: inherit;
+}
 
-a svg {
+button svg {
+
   width: 20px;
   height: 20px;
   fill: rgb(189, 194, 196);
@@ -105,6 +115,7 @@ div.container>p {
 #dropdown {
   margin: 0;
   padding: 5px;
+
   border: 1px solid var(--secondsection2);
   border-radius: 40px;
   width: 168px;

@@ -25,9 +25,9 @@
       </div>
     </li>
     <li class="navbar-dropdown">
-      <a routerLink="farms">Earn</a>
+      <a routerLink="farms" routerLinkActive="active">Earn</a>
       <div class="dropdown">
-        <a [routerLink]="[earn.link]" *ngFor="let earn of earns;">{{ earn.earn }}</a>
+        <a [routerLink]="[earn.link]" routerLinkActive="active" *ngFor="let earn of earns;">{{ earn.earn }}</a>
       </div>
     </li>
     <li class="navbar-dropdown">
