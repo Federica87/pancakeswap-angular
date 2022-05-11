@@ -15,7 +15,7 @@ footer {
 
 @media screen and (max-width: 576px) {
   footer {
-    padding: 0px;
+    padding: 35px 0 0 0;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 4% 15% 65% 16%;

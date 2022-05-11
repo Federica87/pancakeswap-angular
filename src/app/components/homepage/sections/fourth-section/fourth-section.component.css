@@ -77,4 +77,9 @@ span {
   h2 {
     font-size: 32px;
   }
+
+  svg {
+    width: 0;
+  }
 }
+

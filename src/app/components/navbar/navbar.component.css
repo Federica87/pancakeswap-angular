@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: Kanit, sans-serif;
 }
+
 .active {
   color:var(--violachiaro) !important;
   font-weight: bold !important;
@@ -12,6 +13,7 @@
   height: 56px;
   background-color: var(--cardsbg);
   border-bottom: 1px solid var(--cardsbg);
+  overflow: hidden;
 }
 
 .logo {
@@ -210,6 +212,38 @@ button {
   transform: translate(-870%, 30%);
 }
 
+@media (max-width: 852px) {
+  .navbar {
+    height: 55px;
+  }
+
+  .logo {
+    position: absolute;
+  }
+
+  .navbar-links {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(0%, -100%);
+  }
+
+  .icon-rabbit {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(0%, -100%);
+  }
+
+  .icon-dollar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(0%, -100%);
+  }
+
+}
+
 @media (max-width: 576px) {
   .navbar {
     height: 55px;
@@ -266,34 +300,3 @@ button {
   }
 }
 
-@media (max-width: 852px) {
-  .navbar {
-    height: 55px;
-  }
-
-  .logo {
-    position: absolute;
-  }
-
-  .navbar-links {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(0%, -100%);
-  }
-
-  .icon-rabbit {
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(0%, -100%);
-  }
-
-  .icon-dollar {
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(0%, -100%);
-  }
-
-}

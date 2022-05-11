@@ -19,6 +19,10 @@
 h2 {
     margin-bottom: 24px;
 }
+
+p {
+  text-align: center;
+}
   
 .pbold {
     font-weight: 600;
@@ -56,5 +60,9 @@ a:hover {
 @media screen and (max-width: 852px) {
   .coins {
     display: none;
+  }
+
+  p {
+    margin: 0 20px 0;
   }
 }

@@ -87,4 +87,8 @@
   h2 {
     font-size: 32px !important;
   }
+
+  .second_section {
+    padding-top: 20px;
+  }
 }
