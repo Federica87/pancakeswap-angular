@@ -7,8 +7,8 @@
     </div>
 </div>
 <app-btn-section (show)="show = $event"></app-btn-section>
-<app-pools-table *ngIf="show === 'tabs'"></app-pools-table>
-<app-pools-card *ngIf="show === 'cards'"></app-pools-card>
+<app-pools-table class="test" *ngIf="show === 'tabs'"></app-pools-table>
+<app-pools-card class="d-flex" *ngIf="show === 'cards'"></app-pools-card>
 <!-- <div class="d-flex justify-content-center mb-5" *ngIf="'change'">
     <img width="190px" height="185px" src="assets\images\earn\3d-syrup-bunnies.png" alt="Syrup bunnies">
 </div> -->

@@ -212,6 +212,12 @@ button {
   transform: translate(-870%, 30%);
 }
 
+@media screen and (min-width: 577px) {
+  strong::after {
+    content: " Wallet";
+  }
+}
+
 @media (max-width: 852px) {
   .navbar {
     height: 55px;
@@ -297,6 +303,10 @@ button {
     right: 0;
     transform: translate(-10%, 30%);
     z-index: 1;
+  }
+
+  .hide {
+    display: none;
   }
 }
 

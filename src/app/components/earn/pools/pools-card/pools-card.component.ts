@@ -11,6 +11,18 @@ import { WalletService } from 'src/app/services/wallet.service';
 export class PoolsCardComponent implements OnInit {
   pools:Pools[] = poolsCrypto
 
+  details: boolean[] = Array.from({length: this.pools.length}).map(x => x = false);
+
+  openDetails(index: number): void {
+    if (this.details[index] === true) {
+      this.details[index] = false;
+    }
+    else {
+      this.details[index] = true;
+    }
+    console.log(index)
+  }
+
 
   connectWallet(): void {
     this.walletService.connect();
