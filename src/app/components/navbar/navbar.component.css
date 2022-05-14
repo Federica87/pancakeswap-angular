@@ -217,6 +217,10 @@ button {
   transform: translate(-870%, 30%);
 }
 
+.hr {
+  color: #939599;
+}
+
 @media screen and (min-width: 577px) {
   strong::after {
     content: " Wallet";
