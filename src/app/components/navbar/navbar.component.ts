@@ -13,10 +13,16 @@ export class NavbarComponent implements OnInit {
 
   trades: ITrade[] = [
     {
-      trade: "Exchange"
+      trade: "Swap"
+    },
+    {
+      trade: "Limit"
     },
     {
       trade: "Liquidity"
+    },
+    {
+      trade: "Perpetual"
     },
   ]
 
