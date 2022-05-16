@@ -25,7 +25,7 @@
       <div class="container">
           <p>SORT BY</p>
           <div class="dropdown">
-            <select id="dropdown">
+            <select id="dropdown" [formControl]="sortSelector" (ngModelChange)="sort()">
               <option value="Hot">Hot</option>
               <option value="APR">APR</option>
               <option value="Multiplier">Multiplier</option>
@@ -37,7 +37,7 @@
       </div>
       <div class="container">
           <p>SEARCH</p>
-          <input type="text" placeholder="Search Farms" class="search-bar">
+          <input type="text" placeholder="Search Farms" class="search-bar" [formControl]="searchInput" (ngModelChange)="search()">
       </div>
   </div>
 </header>
