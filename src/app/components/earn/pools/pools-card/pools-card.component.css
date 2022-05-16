@@ -175,8 +175,8 @@ div.bottom .manual, .auto {
 }
 
 .apy {
-  background-color: rgb(250, 249, 250);
-  border: 1px solid rgb(231, 227, 235);
+  background-color: var(--harvest);
+  border: 1px solid var(--border);
   border-radius: 16px;
   padding:1.25rem;
 }
