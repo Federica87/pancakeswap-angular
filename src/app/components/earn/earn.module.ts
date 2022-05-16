@@ -11,6 +11,7 @@ import { LabelComponent } from './label/label.component';
 import { FarmsCardComponent } from './farms/farms-card/farms-card.component';
 import { PoolsCardComponent } from "./pools/pools-card/pools-card.component";
 import { FarmsTableComponent } from './farms/farms-table/farms-table.component';
+import { ReactiveFormsModule } from "@angular/forms";
 
 @NgModule({
     declarations: [
@@ -27,7 +28,8 @@ import { FarmsTableComponent } from './farms/farms-table/farms-table.component';
     ],
     imports:[
         CommonModule,
-        RouterModule
+        RouterModule,
+        ReactiveFormsModule
     ]
 })
 export class EarnModule {}

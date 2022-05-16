@@ -1,4 +1,6 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { FormControl } from '@angular/forms';
+import { SortingService } from 'src/app/services/sorting.service';
 
 @Component({
   selector: 'app-btn-section',
@@ -24,7 +26,18 @@ export class BtnSectionComponent implements OnInit {
     }
   }
 
-  constructor() { }
+  sortSelector = new FormControl('Hot');
+  searchInput = new FormControl('');
+
+  sort(): void {
+    this.sortingService.sort(this.sortSelector.value);
+  }
+
+  search(): void {
+    this.sortingService.search(this.searchInput.value.toUpperCase());
+  }
+
+  constructor( private sortingService: SortingService) { }
   
   ngOnInit(): void {
   }
