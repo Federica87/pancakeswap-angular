@@ -16,7 +16,6 @@ button {
 }
 
 button svg {
-
   width: 20px;
   height: 20px;
   fill: rgb(189, 194, 196);
@@ -83,7 +82,9 @@ input:checked+.slider:before {
 span {
   color: var(--violascuro);
 }
-
+span.staked-text {
+  min-width: max-content;
+}
 div.ms {
   margin-left: 20%;
 }

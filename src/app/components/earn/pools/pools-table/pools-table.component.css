@@ -2,15 +2,19 @@
   background-color: var(--cardsbg);
   margin: 0 15%;
   border: 2px solid var(--border);
-  border-radius: 20px;
+  /* border-radius: 20px; */
   padding: 20px;
   padding-bottom: 0;
   border-bottom: 0;
   cursor: default;
 }
 
-.pools-card {
-  border-bottom: 2px solid var(--border);
+.pools-cards-container:last-child {
+  border-radius: 0 0 24px 24px;
+}
+
+.cake-card {
+  border-radius:24px 24px 0 0 ;
 }
 
 .w-fit-content {

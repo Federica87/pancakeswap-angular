@@ -14,6 +14,16 @@
   border-bottom-width: 3px;
 }
 
+.card:first-child {
+  animation: color-change 2s infinite;
+}
+
+@keyframes color-change {
+  0% { border-color: rgb(83, 222, 233); }
+  50% { border-color: rgb(118, 69, 217); }
+  100% { border-color: rgb(83, 222, 233); }
+} 
+
 .card-top {
   background: rgba(0, 0, 0, 0) linear-gradient(111.68deg, var(--wallet1) 0%, var(--wallet2) 100%) repeat scroll 0% 0%;
   border-radius: 24px 24px 0px 0px;
@@ -102,7 +112,7 @@
   height: 32px;
 }
 
-.connect-wallet>p {
+.connect-wallet>p, .first-row div:first-child, .second-row div:first-child{
   color: var(--lilla);
   font-weight: 600;
   line-height: 1.5;
@@ -123,13 +133,27 @@ div.bottom {
   display: inline-flex;
 }
 
-div.bottom .manual {
+div.bottom .manual, .auto {
   color: var(--lilla);
   border: 2px solid var(--violachiaro);
   border-radius: 16px;
   padding: 1px 9px;
   height: fit-content;
   font-size: 14px;
+  height: fit-content;
+}
+.fit {
+  height: fit-content;
+}
+.hide-container {
+  color: var(--violascuro);
+  height: fit-content;
+  font-size: 14px;
+
+}
+.auto {
+  color:rgb(49, 208, 170);
+  border-color: rgb(49, 208, 170);
 }
 
 .details {
@@ -148,4 +172,11 @@ div.bottom .manual {
   cursor: pointer;
   font: inherit;
   outline: inherit;
+}
+
+.apy {
+  background-color: rgb(250, 249, 250);
+  border: 1px solid rgb(231, 227, 235);
+  border-radius: 16px;
+  padding:1.25rem;
 }

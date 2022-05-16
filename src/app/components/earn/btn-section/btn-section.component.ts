@@ -7,7 +7,7 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 })
 export class BtnSectionComponent implements OnInit {
   @Output() show = new EventEmitter<string>();
-  
+ 
   fill(empty:string) {
 
     const btnCards:any = document.querySelector('.cards');
