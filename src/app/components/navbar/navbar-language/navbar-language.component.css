@@ -1,0 +1,72 @@
+.icon-globe svg {
+    width: 25px;
+    fill: var(--lilla);
+    margin-top: 5px;
+    margin-right: 1px;
+  }
+
+.language-links li a {
+    display: block;
+    text-decoration: none;
+    color: var(--violascuro);
+    padding: 20px 20px;
+    transition: 0.2s all;
+  }
+  
+  .language-links li.language-dropdown {
+    position: relative;
+  }
+  
+  .language-links li.language-dropdown:hover .dropdown- {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0px);
+    transform: translateX(-70px);
+  }
+  
+  .language-links li.language-dropdown .dropdown- {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    padding: 20px 0;
+    top: 100%;
+    transform: translateY(50px);
+    left: 0;
+    width: 200px;
+    height: 420px;
+    overflow: auto;
+    background-color: var(--cardsbg);
+    z-index: 111;
+  }
+  
+  .language-links li.language-dropdown .dropdown- a {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-weight: 700;
+  }
+  
+  .language-dropdown .dropdown- a:hover {
+    padding-left: 30px;
+    color: var(--violachiaro);
+  }
+  
+  .language-links li a:hover {
+    color: lightgrey;
+  }
+  
+  .language-links {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    transform: translate(-390%, 30%);
+  }
+
+  @media (max-width: 576px) {  
+    .language-links {
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(-300%, 30%);      
+    }
+}

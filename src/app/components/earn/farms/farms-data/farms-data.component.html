@@ -1,1 +1,3 @@
-<app-farms-card class="flex" [cardsData]="farms" (connected)="connectWallet()"></app-farms-card>
+<ng-container *ngIf="farms$ | async as farms">
+    <app-farms-card class="flex" [cardsData]="farms" (connected)="connectWallet()"></app-farms-card>
+</ng-container>

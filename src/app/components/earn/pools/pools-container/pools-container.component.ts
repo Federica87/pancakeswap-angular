@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-pools-container',
@@ -8,9 +9,10 @@ import { Component, OnInit } from '@angular/core';
 export class PoolsContainerComponent implements OnInit {
   show = 'tabs';
 
-  constructor() { }
+  constructor(private title: Title) { }
 
   ngOnInit(): void {
+    this.title.setTitle('Pools | PancakeSwap $7,241');
   }
 
 }

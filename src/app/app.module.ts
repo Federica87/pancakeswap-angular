@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, Title } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FirstSectionComponent } from './components/homepage/sections/first-section/first-section.component';
@@ -29,7 +29,8 @@ import { HomepageContainerComponent } from './components/homepage/homepage-conta
 import { AppRoutingModule } from './app-routing.module';
 import { EarnModule } from './components/earn/earn.module';
 import { LimitContainerComponent } from './components/trade/limit/limit-container/limit-container.component';
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
+import { NavbarLanguageComponent } from './components/navbar/navbar-language/navbar-language.component'
 
 
 @NgModule({
@@ -59,7 +60,8 @@ import { HttpClientModule } from '@angular/common/http'
     CakeStatsComponent,
     NavbarComponent,
     HomepageContainerComponent,
-    LimitContainerComponent
+    LimitContainerComponent,
+    NavbarLanguageComponent
     ],
   imports: [
     BrowserModule,
@@ -68,7 +70,7 @@ import { HttpClientModule } from '@angular/common/http'
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [Title],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

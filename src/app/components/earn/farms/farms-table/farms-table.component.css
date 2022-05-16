@@ -1,0 +1,51 @@
+.table-container {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid lightgray;
+    border-radius: 20px;
+    margin: 10px 300px;
+    padding: 30px 30px;
+  }
+  
+  table {
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+  } 
+  
+  .right-table {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  hr {
+    width: 100%;
+    border: 1px solid grey;
+    margin-bottom: 40px;
+  }
+
+  b {
+    padding-left: 20px;
+  }
+
+  .bunny{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    position: absolute;
+    z-index: 200;
+  }
+  
+  .coin{
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    position: relative;
+    bottom: 13px;
+    right: 8px;
+  }
+
+  
+  
+   
+  
