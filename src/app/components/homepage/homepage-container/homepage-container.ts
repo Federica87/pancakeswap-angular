@@ -1,3 +1,4 @@
+import { Title } from '@angular/platform-browser';
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Observable, Subscription } from 'rxjs';
 import { WalletService } from 'src/app/services/wallet.service';
@@ -9,8 +10,10 @@ import { WalletService } from 'src/app/services/wallet.service';
 })
 export class HomepageContainerComponent implements OnInit {
 
-  constructor() {}
+  constructor(private title: Title) {}
 
-  ngOnInit() { }
+  ngOnInit() { 
+    this.title.setTitle('Home | PancakeSwap $7,241')
+  }
 
 }
