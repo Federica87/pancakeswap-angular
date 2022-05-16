@@ -22,7 +22,7 @@
   <div class="right">
     <div class="logo-footer">
       <img src="assets/images/logo.png" alt="Logo">
-      <p class="pbold">${{ cryptoValue  }}</p>
+      <p class="pbold">{{ cryptoValue | currency: "USD": "symbol":"1.0-0"  }}</p>
     </div>
     <button class="btn-bar btn-flex">Buy CAKE
       <div class="cake-arrow">

@@ -1,3 +1,4 @@
+import { Title } from '@angular/platform-browser';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -8,9 +9,10 @@ import { Component, OnInit } from '@angular/core';
 export class FarmsContainerComponent implements OnInit {
   show: string = 'tabs';
 
-  constructor() { }
+  constructor(private title: Title) { }
 
   ngOnInit(): void {
+    this.title.setTitle('Farms | PancakeSwap $7,241');
   }
 
 }

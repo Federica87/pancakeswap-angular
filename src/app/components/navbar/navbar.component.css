@@ -16,7 +16,7 @@
   z-index: 3;
 }
 @media screen and (max-width:576px) {
-  .navbar {
+  ul, li, a {
     overflow: hidden;
   }
 }
@@ -101,13 +101,6 @@ svg {
   transform: translate(-1350%, 60%);
 }
 
-.icon-globe svg {
-  width: 25px;
-  fill: var(--lilla);
-  margin-top: 5px;
-  margin-right: 1px;
-}
-
 .icon-dollar {
   position: absolute;
   top: 14px;
@@ -157,64 +150,6 @@ button {
   right: 0;
   transform: translate(-10%, 30%);
   z-index: 1;
-}
-
-.language-links li a {
-  display: block;
-  text-decoration: none;
-  color: var(--violascuro);
-  padding: 20px 20px;
-  transition: 0.2s all;
-}
-
-.language-links li.language-dropdown {
-  position: relative;
-}
-
-.language-links li.language-dropdown:hover .dropdown- {
-  visibility: visible;
-  opacity: 1;
-  transform: translateY(0px);
-}
-
-.language-links li.language-dropdown .dropdown- {
-  visibility: hidden;
-  opacity: 0;
-  position: absolute;
-  padding: 20px 0;
-  top: 100%;
-  transform: translateY(50px);
-  left: 0;
-  width: 200px;
-  height: 420px;
-  overflow: auto;
-  background-color: var(--cardsbg);
-  border: 1px solid lightgray;
-  z-index: 111;
-  transition: 0.3s all;
-}
-
-.language-links li.language-dropdown .dropdown- a {
-  padding-top: 5px;
-  padding-bottom: 5px;
-  text-align: center;
-  font-weight: 700;
-}
-
-.language-dropdown .dropdown- a:hover {
-  padding-left: 30px;
-  color: var(--violachiaro);
-}
-
-.language-links li a:hover {
-  color: lightgrey;
-}
-
-.language-links {
-  position: absolute;
-  top: 0;
-  right: 0;
-  transform: translate(-870%, 30%);
 }
 
 .hr {
@@ -292,17 +227,10 @@ button {
     transform: translate(0%, -100%);
   }
 
-  .language-links {
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin-right: -75px;
-  }
-
   .icon-setting svg {
     fill: var(--lilla);
     position: absolute;
-    margin-right: -70px;
+    margin-right: -60px;
   }
 
   button {
