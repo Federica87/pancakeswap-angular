@@ -1,5 +1,5 @@
 import { Farms } from './../../../../models/Farms';
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { farmCrypto } from 'src/app/mockup/farmsData';
 import { WalletService } from 'src/app/services/wallet.service';
 import { SortingService } from 'src/app/services/sorting.service';
@@ -11,6 +11,8 @@ import { Observable, Subscription } from 'rxjs';
   styleUrls: ['./farms-data.component.css']
 })
 export class FarmsDataComponent implements OnInit {
+
+  @Input() show: string = 'tabs';
 
   farms$!: Observable<Farms[]>
 

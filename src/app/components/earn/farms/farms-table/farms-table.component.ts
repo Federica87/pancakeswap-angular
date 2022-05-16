@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Farms } from 'src/app/models/Farms';
 
 @Component({
   selector: 'app-farms-table',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FarmsTableComponent implements OnInit {
 
+  @Input() tableData: Farms [] = [];
+  @Output() connected = new EventEmitter<void>();
+
   constructor() { }
 
   ngOnInit(): void {
+    console.log(this.tableData);
+  }
+
+  connectWallet(): void {
+    this.connected.emit();
   }
 
 }

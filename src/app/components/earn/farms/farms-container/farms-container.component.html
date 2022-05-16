@@ -15,7 +15,7 @@
         </div>
     </div>
 </div>
-<app-btn-section></app-btn-section>
-<app-farms-data></app-farms-data>
-<!-- <app-farms-table></app-farms-table> -->
+<app-btn-section (show)="show = $event"></app-btn-section>
+<app-farms-data [show]="show"></app-farms-data>
+
 

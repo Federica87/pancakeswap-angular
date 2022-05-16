@@ -7,7 +7,7 @@ import { Title } from '@angular/platform-browser';
   styleUrls: ['./pools-container.component.css']
 })
 export class PoolsContainerComponent implements OnInit {
-  show = 'tabs';
+  show: string = 'tabs';
 
   constructor(private title: Title) { }
 

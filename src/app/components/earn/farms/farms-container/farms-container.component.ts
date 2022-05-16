@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./farms-container.component.css']
 })
 export class FarmsContainerComponent implements OnInit {
+  show: string = 'tabs';
 
   constructor(private title: Title) { }
 
