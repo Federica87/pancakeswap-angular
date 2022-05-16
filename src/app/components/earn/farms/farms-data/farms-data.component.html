@@ -1,3 +1,4 @@
 <ng-container *ngIf="farms$ | async as farms">
-    <app-farms-card class="flex" [cardsData]="farms" (connected)="connectWallet()"></app-farms-card>
+    <app-farms-card *ngIf="show === 'cards'" class="flex" [cardsData]="farms" (connected)="connectWallet()"></app-farms-card>
+    <app-farms-table *ngIf="show === 'tabs'" [tableData]="farms" (connected)="connectWallet()"></app-farms-table>
 </ng-container>
