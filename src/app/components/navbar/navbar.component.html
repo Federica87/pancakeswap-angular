@@ -19,9 +19,9 @@
 
   <ul [style.listStyleType]="'none'" [style.display]="'flex'" [style.zIndex]="1" class="navbar-links">
     <li class="navbar-dropdown">
-      <a href="#">Trade</a>
+      <a>Trade</a>
       <div class="dropdown">
-        <a href="#" *ngFor="let trade of trades;">{{ trade.trade }}</a>
+        <a *ngFor="let trade of trades;">{{ trade.trade }}</a>
       </div>
     </li>
     <li class="navbar-dropdown">
@@ -31,21 +31,21 @@
       </div>
     </li>
     <li class="navbar-dropdown">
-      <a href="#">Win</a>
+      <a>Win</a>
       <div class="dropdown">
-        <a href="#" *ngFor="let win of wins;">{{ win.win }}</a>
+        <a *ngFor="let win of wins;">{{ win.win }}</a>
       </div>
     </li>
     <li class="navbar-dropdown">
-      <a href="#">NFT</a>
+      <a>NFT</a>
       <div class="dropdown">
-        <a href="#" *ngFor="let nft of nfts;">{{ nft.nft }}</a>
+        <a *ngFor="let nft of nfts;">{{ nft.nft }}</a>
       </div>
     </li>
     <li class="navbar-dropdown">
-      <a href="#">...</a>
+      <a>...</a>
       <div class="dropdown">
-        <a href="#" *ngFor="let other of others;">{{ other.other }}</a>
+        <a *ngFor="let other of others;">{{ other.other }}</a>
       </div>
     </li>
   </ul>
