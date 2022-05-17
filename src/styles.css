@@ -9,6 +9,10 @@ body {
   background-color: var(--bg-color);
 }
 
+a {
+  cursor: pointer;
+}
+
 /*Colori*/
 :root {
   --violachiaro: #7645d9;
