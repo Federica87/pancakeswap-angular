@@ -39,6 +39,7 @@ a {
   --wallet2: rgb(243, 239, 255);
   --harvest: rgb(233, 234, 235);
   --search: rgb(238, 234, 244);
+  --collapse: rgb(246, 246, 246);
 }
 
 [data-theme="dark"] {
@@ -66,6 +67,7 @@ a {
   --wallet2: #3C2B54;
   --harvest: #3C3742;
   --search: #372f47;
+  --collapse: #1E1D20;
 }
 
 .w100 {
