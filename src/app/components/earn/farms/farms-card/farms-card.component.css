@@ -1,7 +1,6 @@
 .card {
   background-color: var(--cardsbg);
   display: inline-flex;
-  align-self: center;
   width: 350px;
   border: 1px solid var(--border);
   border-bottom-width: 3px;
