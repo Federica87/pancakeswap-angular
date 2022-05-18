@@ -203,12 +203,13 @@ div.bottom .manual, .auto {
 
 @media screen  and (max-width:852px){
   .card {
-    margin: 0 15px;
+    margin: 0 25px;
     margin-bottom: 20px;
+
   }
   .card-cake {
     margin-right: 0;
-    margin-left: 0;
+    margin-bottom: 0;
   }
 
 }
