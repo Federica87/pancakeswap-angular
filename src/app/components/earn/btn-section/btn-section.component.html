@@ -27,7 +27,7 @@
     </div>
     </div>
     <div class="d-flex">
-      <div class="container">
+      <div class="container me-0">
           <p>SORT BY</p>
           <div class="dropdown">
             <select id="dropdown" [formControl]="sortSelector" (ngModelChange)="sort()">
@@ -40,7 +40,7 @@
             </select>
           </div>    
       </div>
-      <div class="container">
+      <div class="container ms-0">
           <p>SEARCH</p>
           <input type="text" placeholder="Search Farms" class="search-bar" [formControl]="searchInput" (ngModelChange)="search()">
       </div>
