@@ -6,6 +6,7 @@ header {
 header * {
   margin: 0px 10px;
 }
+
 header .tabs {
   fill:var(--acqua);
 }
@@ -135,6 +136,10 @@ div.container>p {
   color: var(--violascuro);
   border-radius: 40px;
   padding: 8px;
+}
+
+.acqua svg{
+  fill: var(--acqua);
 }
 
 @media screen and (max-width: 852px) {

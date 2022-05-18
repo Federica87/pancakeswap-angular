@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { poolsCrypto } from 'src/app/mockup/poolsData';
 import { Pools } from 'src/app/models/Pools';
 
@@ -8,10 +8,7 @@ import { Pools } from 'src/app/models/Pools';
   styleUrls: ['./pools-table.component.css']
 })
 export class PoolsTableComponent implements OnInit {
-  
-  pools:Pools[] = poolsCrypto
-
-  
+  @Input() pools: Pools[] = [];
 
   ngOnInit(): void {
   }

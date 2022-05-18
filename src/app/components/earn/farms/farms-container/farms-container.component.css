@@ -40,6 +40,13 @@ body {
   align-items: center;
 }
 
+.pan {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
 @media screen and (max-width: 852px) {
   .header-content{
     margin-left: 10px;
