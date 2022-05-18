@@ -11,6 +11,17 @@ export class FarmsTableComponent implements OnInit {
   @Input() tableData: Farms [] = [];
   @Output() connected = new EventEmitter<void>();
 
+  details: boolean[] = Array.from({length: this.tableData.length}).map(x => x = false);
+
+  openDetails(index: number): void {
+    if (this.details[index] === true) {
+      this.details[index] = false;
+    }
+    else {
+      this.details[index] = true;
+    }
+  }
+
   constructor() { }
 
   ngOnInit(): void {
