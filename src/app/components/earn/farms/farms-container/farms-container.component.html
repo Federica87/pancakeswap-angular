@@ -15,7 +15,8 @@
         </div>
     </div>
 </div>
-<app-btn-section (show)="show = $event"></app-btn-section>
-<app-farms-data [show]="show"></app-farms-data>
+<app-btn-section (show)="show = $event" (stakedEvent)="staked = $event" [sortTypes]="sortTypes"></app-btn-section>
+<app-farms-data *ngIf="!staked" [show]="show"></app-farms-data>
+<div class="pan"><img src="/assets/images/decorations/3dpan.png" alt=""></div>
 
 

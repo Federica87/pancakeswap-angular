@@ -6,9 +6,11 @@ header {
 header * {
   margin: 0px 10px;
 }
+
 header .tabs {
   fill:var(--acqua);
 }
+
 button {
   background: none;
   border: none;
@@ -134,4 +136,8 @@ div.container>p {
   color: var(--violascuro);
   border-radius: 40px;
   padding: 8px;
+}
+
+.acqua svg{
+  fill: var(--acqua);
 }

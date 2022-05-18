@@ -25,7 +25,6 @@ export class FarmsTableComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    console.log(this.tableData);
   }
 
   connectWallet(): void {
