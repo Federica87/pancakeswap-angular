@@ -1,16 +1,31 @@
+.table-container {
+  background-color: var(--cardsbg);
+  border: 1px solid var(--border);
+  border-bottom: none;
+  border-radius: 16px;
+  max-width: 1152px;
+  margin: auto;
+  margin-bottom: 48px;
+}
+
 .pools-cards-container {
   background-color: var(--cardsbg);
-  margin: 0 15%;
-  border: 2px solid var(--border);
-  /* border-radius: 20px; */
   padding: 20px;
   padding-bottom: 0;
   border-bottom: 0;
-  cursor: default;
+  cursor: pointer;
+  width: 100%;
 }
 
 .pools-cards-container:last-child {
   border-radius: 0 0 24px 24px;
+}
+
+.pools-card {
+  width: 1150px;
+  display: grid;
+  grid-template-columns: 0.35fr 1.2fr 1.5fr 1.5fr 1.1fr 1.8fr 1fr;
+  align-items: center;
 }
 
 .cake-card {
@@ -78,6 +93,10 @@
   height: 20px;
 }
 
+#text {
+  width: max-content;
+}
+
 #text p {
   line-height: 1;
 }
@@ -135,24 +154,12 @@ div.text3 p,
 .text5 p:last-of-type {
   color: var(--violascuro);
 }
-
-.text4 {
-  position: absolute;
-  left: 47%;
+.text5 p.numbers, .text5 svg {
+  display:inline-block;
 }
-
-.text5 {
-  position: absolute;
-  left: 60%;
+div.text5 p.numbers {
+  min-width: 120px;
 }
-
-.details {
-  position: absolute;
-  margin-top: 11px;
-  left: 78%;
-
-}
-
 .details-btn {
   height: min-content;
   color: var(--acqua);
