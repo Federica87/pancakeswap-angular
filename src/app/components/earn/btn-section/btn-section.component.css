@@ -141,3 +141,36 @@ div.container>p {
 .acqua svg{
   fill: var(--acqua);
 }
+
+@media screen and (max-width: 852px) {
+ .align-item-center {
+   align-items: flex-start;
+ }
+
+div.d-flex.ms {
+   margin-left: 0;
+ }
+
+ .mb-3 {
+   margin-top: 25px;
+ }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    padding-left: 0;
+  }
+
+  .ms-3 {
+    margin-left: 0;
+  } 
+
+  #dropdown {
+    width: 120px;
+  }
+
+  .search-bar {
+    width: 200px;
+  }
+
+}

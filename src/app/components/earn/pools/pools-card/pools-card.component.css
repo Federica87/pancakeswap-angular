@@ -13,7 +13,9 @@
   border-radius: 24px;
   border-bottom-width: 3px;
 }
-
+.card-cake {
+  margin-bottom: 0;
+}
 .card:first-child {
   animation: color-change 2s infinite;
 }
@@ -149,6 +151,7 @@ div.bottom .manual, .auto {
   color: var(--violascuro);
   height: fit-content;
   font-size: 14px;
+  padding: 0 24px 24px 24px;
   cursor: pointer;
 }
 .hide-container svg{
@@ -197,3 +200,24 @@ div.bottom .manual, .auto {
     color: var(--acqua);
     fill: var(--acqua);
 }
+
+@media screen  and (max-width:852px){
+  .card {
+    margin: 0 15px;
+    margin-bottom: 20px;
+  }
+  .card-cake {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+}
+  @media screen and (max-width: 576px) {
+    .card {
+      margin: 0 15px;
+      margin-bottom: 20px;
+    }
+    .card-cake {
+      margin-left: 0;
+    }
+  }
