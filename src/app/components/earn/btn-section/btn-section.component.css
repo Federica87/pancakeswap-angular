@@ -9,6 +9,7 @@ header * {
 header .tabs {
   fill:var(--acqua);
 }
+
 button {
   background: none;
   border: none;
@@ -134,4 +135,29 @@ div.container>p {
   color: var(--violascuro);
   border-radius: 40px;
   padding: 8px;
+}
+
+@media screen and (max-width: 852px) {
+ .align-item-center {
+   align-items: flex-start;
+ }
+
+div.d-flex.ms {
+   margin-left: 0;
+ }
+
+ .mb-3 {
+   margin-top: 25px;
+ }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    padding-left: 0;
+  }
+
+  .ms-3 {
+    margin-left: 0;
+  } 
+
 }
