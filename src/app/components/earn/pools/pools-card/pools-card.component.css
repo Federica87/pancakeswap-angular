@@ -149,7 +149,11 @@ div.bottom .manual, .auto {
   color: var(--violascuro);
   height: fit-content;
   font-size: 14px;
-
+  cursor: pointer;
+}
+.hide-container svg{
+  width: 14px;
+  height: 14px;
 }
 .auto {
   color:rgb(49, 208, 170);
@@ -180,6 +184,16 @@ div.bottom .manual, .auto {
   border-radius: 16px;
   padding:1.25rem;
 }
+
 .staked div:first-child {
   text-decoration: underline dotted var(--lilla);
+}
+.stake-limit div:last-child {
+  color: var(--acqua);
+  fill: var(--acqua);
+}
+.links * {
+    margin-bottom: 2px;
+    color: var(--acqua);
+    fill: var(--acqua);
 }
