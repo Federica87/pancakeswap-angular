@@ -14,8 +14,6 @@
 }
 
 .header h1 {
-  width: 100%;
-  font-size: 64px;
   color: var(--violachiaro);
 }
 
@@ -42,8 +40,14 @@ body {
   align-items: center;
 }
 
-@media screen and (max-width: 856px) {
+@media screen and (max-width: 852px) {
   .header-content{
     margin-left: 10px;
   }  
+}
+
+@media screen and (max-width: 576px) {
+ h1{
+    font-size: 48px;
+  }
 }
