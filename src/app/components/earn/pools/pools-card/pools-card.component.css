@@ -180,3 +180,6 @@ div.bottom .manual, .auto {
   border-radius: 16px;
   padding:1.25rem;
 }
+.staked div:first-child {
+  text-decoration: underline dotted var(--lilla);
+}

@@ -17,11 +17,11 @@ export class BtnSectionComponent implements OnInit {
 
     if (empty === 'cards') {
       btnCards.style.fill = 'var(--acqua)';
-      btnTabs.style.fill = '';
+      btnTabs.style.fill = 'rgb(189, 194, 196)';
       
     } else if (empty === 'tabs') {
       btnTabs.style.fill = 'var(--acqua)';
-      btnCards.style.fill = '';
+      btnCards.style.fill = 'rgb(189, 194, 196)';
 
     }
   }
