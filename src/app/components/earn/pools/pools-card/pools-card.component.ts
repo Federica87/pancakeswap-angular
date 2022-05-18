@@ -1,4 +1,4 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { poolsCrypto } from 'src/app/mockup/poolsData';
 import { Pools } from 'src/app/models/Pools';
 import { WalletService } from 'src/app/services/wallet.service';
@@ -9,7 +9,7 @@ import { WalletService } from 'src/app/services/wallet.service';
   styleUrls: ['./pools-card.component.css']
 })
 export class PoolsCardComponent implements OnInit {
-  pools:Pools[] = poolsCrypto
+  @Input() pools: Pools[] = [];
 
   details: boolean[] = Array.from({length: this.pools.length}).map(x => x = false);
 
@@ -22,7 +22,6 @@ export class PoolsCardComponent implements OnInit {
     }
     console.log(index)
   }
-
 
   connectWallet(): void {
     this.walletService.connect();
