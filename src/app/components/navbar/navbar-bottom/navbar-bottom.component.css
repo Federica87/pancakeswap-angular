@@ -1,4 +1,10 @@
+.nav-container{
+    display: none;
+}
+
+@media screen and (max-width:576px) {    
 .nav-container {
+    display: block;
     position: sticky;
     max-width: 576px;
     overflow:hidden;
@@ -10,8 +16,10 @@
 
 svg{
     width: 20px;
+    margin-top: 15px;
 }
 
 h6 {
     font-size: 13px;
+}
 }
