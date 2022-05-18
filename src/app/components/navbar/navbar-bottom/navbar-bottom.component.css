@@ -1,0 +1,17 @@
+.nav-container {
+    position: sticky;
+    max-width: 576px;
+    overflow:hidden;
+    height: 60px;
+    bottom: 0;
+    background-color: var(--bg-color);
+    z-index: 111;
+}
+
+svg{
+    width: 20px;
+}
+
+h6 {
+    font-size: 13px;
+}
