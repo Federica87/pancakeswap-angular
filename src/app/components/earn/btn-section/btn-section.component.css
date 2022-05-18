@@ -160,4 +160,12 @@ div.d-flex.ms {
     margin-left: 0;
   } 
 
+  #dropdown {
+    width: 120px;
+  }
+
+  .search-bar {
+    width: 200px;
+  }
+
 }
