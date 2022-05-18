@@ -2,6 +2,11 @@
     display: none;
 }
 
+.active {
+    color:var(--violachiaro) !important;
+    font-weight: bold !important;
+  }
+
 .dropup {
     display: inline-block;
     position: relative;
