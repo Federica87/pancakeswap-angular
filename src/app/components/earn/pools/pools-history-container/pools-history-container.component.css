@@ -35,13 +35,6 @@
     max-width: 1152px;
   }
   
-  /* .test {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    max-width: 1152px;
-  } */
-  
   @media screen and (max-width: 852px) {
     .section-header {
       margin-left: 10px;

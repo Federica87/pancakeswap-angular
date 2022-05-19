@@ -131,6 +131,10 @@
   text-decoration: underline dotted var(--lilla);
 }
 
+p{
+  color: var(--violascuro);
+}
+
 div.bottom {
   display: inline-flex;
 }

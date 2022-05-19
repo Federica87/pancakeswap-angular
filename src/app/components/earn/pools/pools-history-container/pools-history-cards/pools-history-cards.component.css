@@ -1,0 +1,232 @@
+.card-container {
+    flex-wrap: wrap;
+    margin: 0 12px 46px;
+    justify-content: space-around;
+    color: var(--violascuro);
+  }
+
+  .inactive {
+      color: var(--inactive);
+  }
+
+  p{
+    color: var(--violascuro);
+  }
+  
+  .card {
+    width: 350px;
+    min-height: 385px;
+    margin-bottom: 50px;
+    background: var(--cardsbg) none repeat scroll 0% 0%;
+    border-radius: 24px;
+    border-bottom-width: 3px;
+  }
+  .card-cake {
+    margin-bottom: 0;
+  }
+  .card:first-child {
+    animation: color-change 2s infinite;
+  }
+  
+  @keyframes color-change {
+    0% { border-color: rgb(83, 222, 233); }
+    50% { border-color: rgb(118, 69, 217); }
+    100% { border-color: rgb(83, 222, 233); }
+  } 
+  
+  .card-top {
+    background-color: var(--bginactive);
+    border-radius: 24px 24px 0px 0px;
+    padding: 15px;
+    padding-right: 30px;
+  }
+  
+  .card-top p:first-of-type {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.1;
+    color: var(--inactive);
+    margin-bottom: 0;
+    padding-top: 10px;
+  }
+  
+  .card-top p {
+    padding-left: 10px;
+    width: fit-content;
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 14px;
+    color: var(--lilla)
+  }
+  
+  .border-bot {
+    border-bottom: 1px solid var(--border);
+  }
+  
+  .tokens {
+    max-height: 40px;
+    max-width: 40px;
+    width: 92%;
+    inset: 0px auto auto 0px;
+    z-index: 3;
+    position: relative;
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+  
+  .tokens::before,
+  .big-token::before,
+  .small-token::before {
+    border-radius: 50%;
+    content: "";
+    height: 100%;
+    left: 0px;
+    /* position: absolute; */
+    top: 0px;
+    width: 100%;
+    z-index: 7;
+  }
+  
+  .tokens::after,
+  .big-token::after,
+  .small-token::after {
+    content: "";
+    display: block;
+    padding-top: 100%;
+  }
+  
+  .big-token {
+    position: absolute;
+    width: 92%;
+    inset: 0px auto auto 0px;
+    z-index: 5;
+  }
+  
+  .big-token img,
+  .big-token svg {
+    width: 58px;
+    height: 58px;
+  }
+  
+  .small-token {
+    position: absolute;
+    width: 50%;
+    inset: auto 0px 0px auto;
+    z-index: 6;
+    max-height: 9px;
+    max-width: 10px;
+  }
+  
+  .small-token svg {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .connect-wallet>p, .first-row div:first-child, .second-row div:first-child{
+    color: var(--lilla);
+    font-weight: 600;
+    line-height: 1.5;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: 12px;
+  }
+  
+  .btn-section {
+    width: 90%;
+  }
+  
+  .card-middle p:first-of-type {
+    text-decoration: underline dotted var(--lilla);
+  }
+  
+  div.bottom {
+    display: inline-flex;
+  }
+  
+  div.bottom .manual, .auto {
+    color: var(--lilla);
+    border: 2px solid var(--violachiaro);
+    border-radius: 16px;
+    padding: 1px 9px;
+    height: fit-content;
+    font-size: 14px;
+    height: fit-content;
+  }
+  .fit {
+    height: fit-content;
+  }
+  .hide-container {
+    color: var(--violascuro);
+    height: fit-content;
+    font-size: 14px;
+    padding: 0 24px 24px 24px;
+    cursor: pointer;
+  }
+  .hide-container svg{
+    width: 14px;
+    height: 14px;
+  }
+  .auto {
+    color:rgb(49, 208, 170);
+    border-color: rgb(49, 208, 170);
+  }
+  
+  .details {
+    position: relative;
+    /* left: 78%; */
+    padding-right: 10px;
+  }
+  
+  .details-btn {
+    height: min-content;
+    color: var(--acqua);
+    font-weight: bold;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    font: inherit;
+    outline: inherit;
+  }
+  
+  .apy {
+    background-color: var(--harvest);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding:1.25rem;
+  }
+  
+  .staked div:first-child {
+    text-decoration: underline dotted var(--lilla);
+  }
+  .stake-limit div:last-child {
+    color: var(--acqua);
+    fill: var(--acqua);
+  }
+  .links * {
+      margin-bottom: 2px;
+      color: var(--acqua);
+      fill: var(--acqua);
+  }
+  
+  @media screen  and (max-width:852px){
+    .card {
+      margin: 0 25px;
+      margin-bottom: 20px;
+  
+    }
+    .card-cake {
+      margin-right: 0;
+      margin-bottom: 0;
+    }
+  
+  }
+    @media screen and (max-width: 576px) {
+      .card {
+        margin: 0 15px;
+        margin-bottom: 20px;
+      }
+      .card-cake {
+        margin-left: 0;
+      }
+    }
