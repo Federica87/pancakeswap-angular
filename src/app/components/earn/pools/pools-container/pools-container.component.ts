@@ -12,6 +12,7 @@ import { SortingService } from 'src/app/services/sorting.service';
 })
 export class PoolsContainerComponent implements OnInit {
   show: string = 'cards';
+  staked:boolean = false;
   sortTypes = Object.values(PoolsSort);
 
   pools$!: Observable<Pools[]>

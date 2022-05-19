@@ -10,7 +10,7 @@
     </div>
     <div class="btn-switch">
         <label class="switch m-0">
-          <input type="checkbox" (change)="changeStaked()">
+          <input type="checkbox" [checked]="this.staked" (click)="changeStaked()">
           <span class="slider m-0"></span>
         </label>
     </div>
