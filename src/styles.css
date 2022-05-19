@@ -40,6 +40,8 @@ a {
   --harvest: rgb(233, 234, 235);
   --search: rgb(238, 234, 244);
   --collapse: rgb(246, 246, 246);
+  --inactive: rgb(189, 194, 196);
+  --bginactive: #E9EAEB;
 }
 
 [data-theme="dark"] {
@@ -68,6 +70,8 @@ a {
   --harvest: #3C3742;
   --search: #372f47;
   --collapse: #1E1D20;
+  --inactive: rgb(102, 97, 113);
+  --bginactive: #3C3742;
 }
 
 .w100 {

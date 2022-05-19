@@ -132,6 +132,11 @@
   text-decoration: underline dotted var(--lilla);
 }
 
+
+p{
+  color: var(--violascuro);
+}
+
 div.bottom {
   display: inline-flex;
 }
@@ -215,7 +220,11 @@ div.bottom .manual, .auto {
 
 }
   @media screen and (max-width: 576px) {
+    .card-container {
+      width: auto;
+    }
     .card {
+      width: 325px;
       margin: 0 15px;
       margin-bottom: 20px;
     }

@@ -27,14 +27,14 @@ export class SortingService {
   sort(value: string, componentType: string): void {
     if (value === 'APR') {
       if (componentType === 'farms') {
-        this.farmsSubject.next([...farmCrypto].sort((a, b) => b.apr - a.apr));
+        this.farmsSubject.next([...farmCrypto].sort((a, b) => b.apr! - a.apr!));
       }
       else if (componentType === 'pools') {
-        this.poolsSubject.next([...poolsCrypto].sort((a, b) => b.apr - a.apr));
+        this.poolsSubject.next([...poolsCrypto].sort((a, b) => b.apr! - a.apr!));
       }
     }
     else if (value === 'Multiplier') {
-      this.farmsSubject.next([...farmCrypto].sort((a, b) => b.multiplier - a.multiplier));
+      this.farmsSubject.next([...farmCrypto].sort((a, b) => b.multiplier! - a.multiplier!));
     }
     else if (value === 'Liquidity') {
       this.farmsSubject.next([...farmCrypto].sort((a, b) => b.liquidity - a.liquidity));

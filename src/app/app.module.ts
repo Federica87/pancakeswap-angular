@@ -30,7 +30,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { EarnModule } from './components/earn/earn.module';
 import { LimitContainerComponent } from './components/trade/limit/limit-container/limit-container.component';
 import { HttpClientModule } from '@angular/common/http';
-import { NavbarLanguageComponent } from './components/navbar/navbar-language/navbar-language.component'
+import { NavbarLanguageComponent } from './components/navbar/navbar-language/navbar-language.component';
+import { NavbarBottomComponent } from './components/navbar/navbar-bottom/navbar-bottom.component'
 
 
 @NgModule({
@@ -61,7 +62,8 @@ import { NavbarLanguageComponent } from './components/navbar/navbar-language/nav
     NavbarComponent,
     HomepageContainerComponent,
     LimitContainerComponent,
-    NavbarLanguageComponent
+    NavbarLanguageComponent,
+    NavbarBottomComponent
     ],
   imports: [
     BrowserModule,

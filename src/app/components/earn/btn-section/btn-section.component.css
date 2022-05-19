@@ -170,7 +170,10 @@ div.d-flex.ms {
   }
 
   .search-bar {
-    width: 200px;
+    width: 170px;
   }
-
+  .search {
+    padding-right: 0;
+    margin-right: 0;
+  }
 }

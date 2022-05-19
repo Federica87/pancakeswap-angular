@@ -58,3 +58,56 @@ export const poolsCrypto: Pools[] = [
         end: 125116
     }
 ]
+
+export const finishedPools: Pools[] = [
+    {
+        crypto: 'CEEK.svg',
+        name: 'CEEK',
+        total: 294346
+    },
+    {
+        crypto: 'TINC.svg',
+        name: 'TINC',
+        total: 54381
+    },
+    {
+        crypto: 'PEX.svg',
+        name: 'PEX',
+        total: 4238
+    },
+    {
+        crypto: 'GMI.png',
+        name: 'GMI',
+        total: 10195
+    },
+    {
+        crypto: 'BSW.svg',
+        name: 'BSW',
+        total: 950223
+    },
+    {
+        crypto: 'DUET.svg',
+        name: 'DUET',
+        total: 17770
+    },
+    {
+        crypto: 'GMT.svg',
+        name: 'GMT',
+        total: 1029830
+    },
+    {
+        crypto: 'XWG.png',
+        name: 'XWG',
+        total: 4699
+    },
+    {
+        crypto: 'HIGH.png',
+        name: 'HIGH',
+        total: 12747
+    },
+    {
+        crypto: 'THG.png',
+        name: 'THG',
+        total: 6439
+    },
+]
