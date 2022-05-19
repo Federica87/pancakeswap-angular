@@ -29,12 +29,12 @@ export class BtnSectionComponent implements OnInit {
   }
 
   changeStaked() {
-    if (this.staked === false) {
-      this.staked = true;
-    }
-    else {
-      this.staked = false;
-    }
+      if (this.staked === false) {
+        this.staked = true;
+      }
+      else if (this.staked === true) {
+        this.staked = false;
+      }
     this.stakedEvent.emit(this.staked);
   }
 
