@@ -22,9 +22,9 @@
 }
 
 .pools-card {
-  width: 1150px;
+  width: 1130px;
   display: grid;
-  grid-template-columns: 0.35fr 1.2fr 1.5fr 1.5fr 1.1fr 1.8fr 1fr;
+  grid-template-columns: 0.35fr 1.2fr 1.5fr 1.5fr 1.1fr 1.8fr 0.8fr;
   align-items: center;
 }
 
@@ -170,4 +170,120 @@ div.text5 p.numbers {
   cursor: pointer;
   font: inherit;
   outline: inherit;
+}
+
+.hidden-container {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 1fr;
+  font-size: 14px;
+  color: var(--violascuro);
+  padding-bottom:16px;
+}
+.links * {
+  margin-bottom: 2px;
+  color: var(--acqua);
+  fill: var(--acqua);
+}
+.end div:last-of-type, .end svg {
+  color: var(--acqua);
+  fill: var(--acqua);
+}
+div.manual {
+  color: var(--violachiaro);
+  border: 2px solid var(--violachiaro);
+  border-radius: 16px;
+  padding: 1px 9px;
+  height: fit-content;
+  font-size: 14px;
+  width: fit-content;
+}
+.center, .right {
+  padding: 16px;
+}
+.crypto-earned {
+  padding: 16px;
+  border:1px solid var(--border);
+  border-radius: 16px;
+}
+.crypto-earned p {
+  color: var(--violachiaro);
+  font-size: 12px;
+  font-weight: bold;
+}
+.crypto-earned span {
+  color: var(--violascuro);
+  font-size: 20px;
+  font-weight: bold;
+}
+.harvest {
+  color: rgb(189, 194, 196);
+  background-color: rgb(233, 234, 235);
+  border: 1px solid rgb(233, 234, 235);
+  border-radius: 16px;
+  padding: 10px 24px;
+  cursor: not-allowed;
+}
+.connect-wallet>p, .first-row div:first-child, .second-row div:first-child{
+  color: var(--lilla);
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.btn-section {
+  width: 90%;
+}
+.end.lock div {
+  color: var(--violascuro);
+}
+.end.lock div:first-child{
+  text-decoration: underline dotted var(--lilla);
+}
+
+
+@media screen and (max-width: 576px) {
+  .pools-card {
+    max-width:fit-content;
+    grid-template-columns:0.4fr 0.7fr 0.85fr 1fr 0px;
+  }
+  .text3, .text5 {
+    display: none;
+  }
+  .text1 p{
+    font-weight: normal;
+    font-size: 14px;
+    width: min-content;
+  }
+  .earn-none {
+   display: none; 
+  }
+  .details span:first-of-type {
+    display: none;
+  }
+  .text4 {
+    width: min-content !important;
+  }
+  .text2.locked {
+    margin-left: 30px;
+  }
+  .text4.locked {
+    margin-left: 10px;
+    margin-right: 37px;
+  }
+  #text svg {
+    display: none;
+  }
+  .hidden-container {
+    grid-template-columns: none;
+    grid-template-rows: 0.5fr 1fr 1fr;
+  }
+  .center {
+    grid-row:1;
+  }
+  .right {
+    grid-row: 2;
+  }
+  .links {
+    align-items:flex-end !important;
+  }
 }

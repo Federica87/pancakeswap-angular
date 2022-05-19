@@ -137,7 +137,7 @@ div.bottom {
 }
 
 div.bottom .manual, .auto {
-  color: var(--lilla);
+  color: var(--violachiaro);
   border: 2px solid var(--violachiaro);
   border-radius: 16px;
   padding: 1px 9px;

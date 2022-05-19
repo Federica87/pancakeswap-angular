@@ -9,7 +9,8 @@
 <app-btn-section (show)="show = $event" [sortTypes]="sortTypes" (stakedEvent)="staked = $event"></app-btn-section>
 <div *ngIf="!staked; else bunnies">
     <ng-container *ngIf="pools$ | async as pools">
-        <app-pools-table class="test" *ngIf="show === 'tabs'" [pools]="pools"></app-pools-table>
+        <!-- *ngIf="show === 'tabs'" -->
+        <app-pools-table class="test"  [pools]="pools"></app-pools-table>
         <app-pools-card class="d-flex" *ngIf="show === 'cards'" [pools]="pools"></app-pools-card>
     </ng-container>
 </div>
