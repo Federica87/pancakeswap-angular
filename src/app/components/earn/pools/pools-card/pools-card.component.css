@@ -12,6 +12,7 @@
   background: var(--cardsbg) none repeat scroll 0% 0%;
   border-radius: 24px;
   border-bottom-width: 3px;
+  margin-left: 20px;
 }
 .card-cake {
   margin-bottom: 0;
@@ -129,6 +130,11 @@
 
 .card-middle p:first-of-type {
   text-decoration: underline dotted var(--lilla);
+}
+
+
+p{
+  color: var(--violascuro);
 }
 
 div.bottom {

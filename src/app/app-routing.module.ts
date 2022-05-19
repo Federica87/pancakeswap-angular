@@ -1,3 +1,4 @@
+import { PoolsHistoryContainerComponent } from './components/earn/pools/pools-history-container/pools-history-container.component';
 import { NgModule } from '@angular/core';
 import { RouterModule,Routes } from '@angular/router';
 import { FarmsContainerComponent } from './components/earn/farms/farms-container/farms-container.component';
@@ -10,6 +11,7 @@ const routes: Routes = [
     {path: 'home', component: HomepageContainerComponent},
     {path:'farms', component:FarmsContainerComponent},
     {path:'pools', component: PoolsContainerComponent},
+    {path: 'pools/history', component: PoolsHistoryContainerComponent},
     {path: 'limit', component: LimitContainerComponent },
     {path: '**', redirectTo: 'home'}
 
