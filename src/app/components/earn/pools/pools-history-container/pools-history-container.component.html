@@ -1,0 +1,21 @@
+<app-label></app-label>
+<div class="pools-section-header"> 
+    <div class="section-header"> 
+        <h1 class="title-header">Syrup Pools</h1> 
+        <h3 class="subtitle h2-20">Just stake some tokens to earn.</h3> 
+        <h3 class="subtitle h2-20">High APR, low risk.</h3> 
+    </div>
+</div>
+<app-btn-section (show)="show = $event" [sortTypes]="sortTypes" (stakedEvent)="staked = $event"></app-btn-section>
+<div *ngIf="!staked; else bunnies">
+    <ng-container *ngIf="pools$ | async as pools">
+        <!-- <app-pools-table class="test" *ngIf="show === 'tabs'" [pools]="pools"></app-pools-table> -->
+        <app-pools-history-cards class="d-flex" *ngIf="show === 'cards'"></app-pools-history-cards>
+    </ng-container>
+</div>
+
+<ng-template #bunnies>
+    <div class="d-flex justify-content-center mb-5">
+        <img width="190px" height="185px" src="assets\images\earn\3d-syrup-bunnies.png" alt="Syrup bunnies">
+    </div>
+</ng-template>
