@@ -85,19 +85,19 @@ export const farmCrypto: Farms[] = [
 
 export const finishedFarms: Farms[] = [
     {
-        crypto1: 'XCN.pgn',
+        crypto1: 'XCN.png',
         crypto2: 'BNB.svg',
         name: 'XCN-BNB',
         liquidity: 1124879
     },
     {
-        crypto1: 'WZRD.pgn',
+        crypto1: 'WZRD.png',
         crypto2: 'BUSD.svg',
         name: 'WZRD-BUSD',
         liquidity: 84444
     },
     {
-        crypto1: 'SPAY.SVG',
+        crypto1: 'SPAY.svg',
         crypto2: 'BUSD.svg',
         name: 'SPAY-BUSD',
         liquidity: 9645
@@ -109,49 +109,49 @@ export const finishedFarms: Farms[] = [
         liquidity: 14085
     },
     {
-        crypto1: 'ACH.pgn',
+        crypto1: 'ACH.png',
         crypto2: 'USDT.png',
         name: 'ACH-USDT',
         liquidity: 387990
     },
     {
-        crypto1: 'ERTHA.pgn',
+        crypto1: 'ERTHA.png',
         crypto2: 'BNB.svg',
         name: 'ERTHA-BNB',
         liquidity: 106675
     },
     {
-        crypto1: 'DPT.pgn',
+        crypto1: 'DPT.png',
         crypto2: 'BNB.svg',
         name: 'DPT-BNB',
         liquidity: 21649
     },
     {
-        crypto1: 'QI.pgn',
+        crypto1: 'QI.png',
         crypto2: 'BNB.svg',
         name: 'QI-BNB',
         liquidity: 38300
     },
     {
-        crypto1: 'DKT.pgn',
+        crypto1: 'DKT.png',
         crypto2: 'BNB.svg',
         name: 'DKT-BNB',
         liquidity: 25717
     },
     {
-        crypto1: 'NFT.pgn',
+        crypto1: 'NFT.png',
         crypto2: 'BNB.svg',
         name: 'NFT-BNB',
         liquidity: 214404
     },
     {
-        crypto1: 'RUSD.pgn',
+        crypto1: 'RUSD.png',
         crypto2: 'BUSD.svg',
         name: 'RUSD-BUSD',
         liquidity: 139587
     },
     {
-        crypto1: 'BELT.pgn',
+        crypto1: 'BELT.png',
         crypto2: 'BNB.svg',
         name: 'BELT-BNB',
         liquidity: 43320
