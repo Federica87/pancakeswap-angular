@@ -1,0 +1,197 @@
+.card {
+    background-color: var(--cardsbg);
+    display: inline-flex;
+    width: 350px;
+    border: 1px solid var(--border);
+    border-bottom-width: 3px;
+    border-radius: 24px;
+    margin-bottom: 10px;
+    color: var(--violascuro);
+    margin: 0 12px 46px;
+  }
+  
+  .card>div:first-child {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    border-bottom: 2px solid var(--border);
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+  }
+  
+  .svg {
+    width: 64px;
+    height: 64px;
+    position: relative;
+  }
+  
+  .svg img {
+    position: absolute;
+  }
+  
+  .svg img:nth-child(2) {
+    bottom: 0;
+    right: 0;
+  }
+  
+  .name {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  h2 {
+    font-size: 20px;
+    font-weight: 600px;
+    line-height: 1.1;
+    margin-bottom: 4px;
+  }
+  
+  .status {
+    display: flex;
+    font-weight: 400;
+    font-size: 14px;
+    height: 28px;
+    column-gap: 4px;
+  }
+  
+  .status div:first-child {
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+    padding: 0px 8px;
+    color: rgb(118, 69, 217);
+    background: var(--svg);
+    border: 2px solid rgb(118, 69, 217);
+    border-radius: 16px;
+  }
+  
+  .status svg {
+    fill: rgb(118, 69, 217);
+  }
+  
+  .status div:nth-child(2) {
+    display: flex;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    padding: 0px 8px;
+    background-color: rgb(118, 69, 217);
+    border-radius: 16px;
+  }
+  
+  .APR {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .APR button {
+    color: var(--violascuro);
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    background: transparent;
+    border: none;
+    font-weight: 600;
+  }
+  
+  .APR button:hover {
+    opacity: 0.4;
+    transition: 0.2s;
+  }
+  
+  .APR button svg {
+    fill: var(--violascuro);
+  }
+  
+  .earn {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+  }
+  
+  .earn span:nth-child(2) {
+    font-weight: 600;
+  }
+  
+  p {
+    color: rgb(118, 69, 217);
+    font-weight: 600;
+    font-size: 12px;
+    margin: 0;
+  }
+  
+  .harvest {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  
+  .harvest span {
+    font-size: 20px;
+    font-weight: 600;
+    opacity: 0.4;
+  }
+  
+  .harvest button {
+    background-color: var(--harvest);
+    border: none;
+    color: rgb(189, 194, 196);
+    border-radius: 16px;
+    cursor: not-allowed;
+    height: 48px;
+    padding: 0 24px;
+  }
+  
+  .btn-section {
+    width: 100%;
+    margin-top: 8px;
+  }
+  
+  .details {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+  }
+  
+  .details button {
+    align-self: center;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    color: rgb(31, 199, 212);
+  }
+  
+  .details svg {
+    fill: rgb(31, 199, 212);
+  }
+  
+  .details>div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+  }
+  
+  .liquidity {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  a {
+    text-decoration: none;
+    color: rgb(31, 199, 212);
+  }
+  
+  a span {
+    margin-right: 4px;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    background-color: transparent;
+  }

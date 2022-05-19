@@ -1,3 +1,5 @@
+import { Title } from '@angular/platform-browser';
+import { FarmsSort } from 'src/app/models/SorterEnums';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FarmsHistoryContainerComponent implements OnInit {
 
-  constructor() { }
+  show: string = 'cards';
+  staked: boolean = false;
+  sortTypes = Object.values(FarmsSort);
+
+  constructor(private title: Title) { }
 
   ngOnInit(): void {
+    this.title.setTitle('PancakeSwap $7,241');
   }
 
 }

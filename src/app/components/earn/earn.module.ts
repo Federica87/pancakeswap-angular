@@ -15,6 +15,8 @@ import { ReactiveFormsModule } from "@angular/forms";
 import { PoolsHistoryContainerComponent } from './pools/pools-history-container/pools-history-container.component';
 import { PoolsHistoryCardsComponent } from './pools/pools-history-container/pools-history-cards/pools-history-cards.component';
 import { FarmsHistoryContainerComponent } from './farms/farms-history-container/farms-history-container.component';
+import { FarmsHistoryCardsComponent } from './farms/farms-history-container/farms-history-cards/farms-history-cards.component';
+import { FarmsHistoryDataComponent } from './farms/farms-history-container/farms-history-data/farms-history-data.component';
 
 @NgModule({
     declarations: [
@@ -30,7 +32,9 @@ import { FarmsHistoryContainerComponent } from './farms/farms-history-container/
         FarmsTableComponent,
         PoolsHistoryContainerComponent,
         PoolsHistoryCardsComponent,
-        FarmsHistoryContainerComponent
+        FarmsHistoryContainerComponent,
+        FarmsHistoryCardsComponent,
+        FarmsHistoryDataComponent
     ],
     imports:[
         CommonModule,
