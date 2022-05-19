@@ -1,0 +1,86 @@
+.nav-container{
+    display: none;
+}
+
+.active {
+    color:var(--violachiaro) !important;
+    font-weight: bold !important;
+  }
+
+.dropup {
+    display: inline-block;
+    position: relative;
+}
+
+.up {
+  display: none;
+  position: absolute;
+  background-color: var(--cardsbg);
+  z-index: 5;
+  padding: 12px 16px;
+  min-height: 100px;
+  border-radius: 10px;
+  min-width: 250px;
+}
+
+.up-earn {
+    bottom: 58px;
+    margin-left: -100px;
+}
+
+.up-win {
+    bottom: 57px;
+    margin-left: -130px;
+}
+
+.up-nft {
+    bottom: 58px;
+    margin-left: -160px;
+}
+
+.up-other {
+    bottom: 46px;
+    margin-left: -210px;
+}
+
+.up a {
+    display: block;
+    font-family: "Kanit", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-decoration: none;
+    color: var(--violascuro);
+    margin: 10px 0;
+  }
+
+  .up a:hover {
+    color: var(--violachiaro);
+  }
+  
+  .dropup:hover .up {
+    display: block;
+  }
+
+
+
+@media screen and (max-width:576px) {    
+.nav-container {
+    display: block;
+    position: sticky;
+    max-width: 576px;
+    bottom: 0;
+    background-color: var(--bg-color);
+    z-index: 111;
+}
+
+svg{
+    width: 20px;
+    margin-top: 15px;
+}
+
+h6 {
+    font-size: 13px;
+}
+
+}
