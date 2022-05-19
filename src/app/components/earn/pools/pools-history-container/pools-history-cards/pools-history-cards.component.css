@@ -20,19 +20,11 @@
     background: var(--cardsbg) none repeat scroll 0% 0%;
     border-radius: 24px;
     border-bottom-width: 3px;
+    margin-left: 20px;
   }
   .card-cake {
     margin-bottom: 0;
   }
-  .card:first-child {
-    animation: color-change 2s infinite;
-  }
-  
-  @keyframes color-change {
-    0% { border-color: rgb(83, 222, 233); }
-    50% { border-color: rgb(118, 69, 217); }
-    100% { border-color: rgb(83, 222, 233); }
-  } 
   
   .card-top {
     background-color: var(--bginactive);
