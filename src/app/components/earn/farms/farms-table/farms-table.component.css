@@ -200,14 +200,14 @@ p {
   margin: 0;
 }
 
-.collapsible>div:nth-child(2) {
+.collapsible .harvestContainer {
   padding: 16px;
   border: 2px solid var(--border);
   border-radius: 16px;
   flex-grow: 1;
 }
 
-.collapsible>div:nth-child(3) {
+.collapsible .wallet {
   display: flex;
   flex-direction: column;
   padding: 16px;
@@ -223,6 +223,14 @@ tbody:last-child tr:last-child {
 
 .rotated svg {
   transform: rotate(180deg);
+}
+
+.details {
+  display: none;
+}
+
+.collapsible .liquidity, .collapsible .multiplier {
+  display: none;
 }
 
 /* .infobox + span {
@@ -260,3 +268,51 @@ tbody:last-child tr:last-child {
 .infobox:hover + span {
   display:block;
 } */
+
+@media screen and (max-width: 576px) {
+  
+  td .liquidity, td .multiplier, td .info {
+    display: none;
+  }
+
+  .collapsible .liquidity {
+    display: inherit;
+  }
+
+  .collapsible .multiplier {
+    display: block;
+  }
+
+  td {
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .header {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    justify-self: start;
+  }
+
+  tr {
+    min-height: 124px;
+  }
+
+  .collapsible {
+    flex-direction: column-reverse;
+    row-gap: 25px;
+  }
+
+  .info {
+    margin-top: 0;
+    margin-bottom: 6.5px;
+    margin-left: 8px;
+  }
+
+  .details {
+    color: var(--acqua);
+    display: inline;
+  }
+  
+}
