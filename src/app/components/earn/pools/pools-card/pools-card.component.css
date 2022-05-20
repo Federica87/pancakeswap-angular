@@ -8,11 +8,11 @@
 .card {
   width: 350px;
   min-height: 385px;
-  margin-bottom: 50px;
+  margin-bottom: 20px !important;
   background: var(--cardsbg) none repeat scroll 0% 0%;
   border-radius: 24px;
   border-bottom-width: 3px;
-  margin-left: 20px;
+  margin: 0 10px;
 }
 .card-cake {
   margin-bottom: 0;
@@ -142,7 +142,7 @@ div.bottom {
 }
 
 div.bottom .manual, .auto {
-  color: var(--lilla);
+  color: var(--violachiaro);
   border: 2px solid var(--violachiaro);
   border-radius: 16px;
   padding: 1px 9px;
@@ -220,7 +220,11 @@ div.bottom .manual, .auto {
 
 }
   @media screen and (max-width: 576px) {
+    .card-container {
+      width: auto;
+    }
     .card {
+      width: 325px;
       margin: 0 15px;
       margin-bottom: 20px;
     }
