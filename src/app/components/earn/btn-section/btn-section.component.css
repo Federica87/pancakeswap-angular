@@ -111,11 +111,12 @@ div.container>p {
   background-color: var(--search);
   border: 1px solid var(--secondsection2);
   border-radius: 40px;
-  padding: 5px;
+  height: 35px;
 }
 
 .double-btn a {
   color: var(--lilla);
+  
 }
 
 #dropdown {
@@ -143,12 +144,15 @@ div.container>p {
 }
 
 .live-finished {
-  background-color: var(--violachiaro);
+  background-color: var(--lilla);
 }
 .live-finished a {
   color: white;
 }
-
+.live, .finished {
+  border: 1px solid transparent;
+  border-radius: 16px;
+}
 
 @media screen and (max-width: 852px) {
  .align-item-center {

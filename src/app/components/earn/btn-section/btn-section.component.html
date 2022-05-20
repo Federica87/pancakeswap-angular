@@ -16,13 +16,13 @@
     </div>
     <span class="staked-text">Staked only</span>
     </div>
-    <div class="d-flex fw-bold mt-3 mb-3">
-      <div class="double-btn" [ngClass]="{'live-finished': backActive}">
+    <div class="double-btn d-flex fw-bold mt-3 mb-3">
+      <div class="live mx-0 pt-1" [ngClass]="{'live-finished': backActive}">
         <a class="live text-decoration-none" (click)="navigateBack()" >
         Live
         </a>
       </div>
-      <div class="double-btn" [ngClass]="{'live-finished': historyActive}">
+      <div class="finished mx-0 pt-1" [ngClass]="{'live-finished': historyActive}">
         <a class="finished text-decoration-none" (click)="navigateToHistory()" >
         Finished
         </a>
