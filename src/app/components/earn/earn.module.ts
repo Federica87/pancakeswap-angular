@@ -18,6 +18,7 @@ import { FarmsHistoryContainerComponent } from './farms/farms-history-container/
 import { FarmsHistoryCardsComponent } from './farms/farms-history-container/farms-history-cards/farms-history-cards.component';
 import { FarmsHistoryDataComponent } from './farms/farms-history-container/farms-history-data/farms-history-data.component';
 import { PoolsHistoryTableComponent } from './pools/pools-history-container/pools-history-table/pools-history-table.component';
+import { FarmsHistoryTableComponent } from './farms/farms-history-container/farms-history-table/farms-history-table.component';
 
 @NgModule({
     declarations: [
@@ -36,7 +37,8 @@ import { PoolsHistoryTableComponent } from './pools/pools-history-container/pool
         FarmsHistoryContainerComponent,
         FarmsHistoryCardsComponent,
         FarmsHistoryDataComponent,
-        PoolsHistoryTableComponent
+        PoolsHistoryTableComponent,
+        FarmsHistoryTableComponent
     ],
     imports:[
         CommonModule,
